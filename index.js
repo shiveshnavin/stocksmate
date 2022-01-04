@@ -18,10 +18,31 @@ async function main() {
     //     else
     //         console.log(e.message)
     // }
-
-    for (let index = 10; index < 28; index++) {
-        await backTestDay(index + '-12-2021')
+    let profs = 0;
+    let loss = 0
+    let net = 0;
+    for (let index = 1; index < 28; index++) {
+        let profit = await backTestDay(index + '-11-2021')
+        if (profit != undefined) {
+            if (profit > 0)
+                profs++
+            else
+                loss++
+            net += parseFloat(profit);
+        }
     }
+    for (let index = 1; index < 28; index++) {
+        let profit = await backTestDay(index + '-12-2021')
+        if (profit != undefined) {
+            if (profit > 0)
+                profs++
+            else
+                loss++
+            net += parseFloat(profit);
+
+        }
+    }
+    console.log('\nProfits', profs, 'losses', loss, 'net', net)
 
 
 
@@ -31,7 +52,7 @@ async function backTestDay(date) {
     // console.log(date)
     let trades = []
     var position = 0;
-    var overallMargin = 10000;
+    var overallMargin = 40000;
 
     let onBuy = (tick, qty, price) => {
         let margin = qty * price;
@@ -77,6 +98,7 @@ async function backTestDay(date) {
             const tick = ticks[index];
             await timebasedstratergy.evaluate(tick);
         }
+        return timebasedstratergy.profit;
     } catch (e) {
         // console.log('Error in date', date, e.message)
     }
