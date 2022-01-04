@@ -4,7 +4,8 @@
   "description": "Stock trading automation",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "fivepaisa:minify": "node adapters/fivepaisa/filterscrip.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/shiveshnavin/stocksmate#readme",
   "dependencies": {
     "5paisajs": "0.0.14",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "moment": "^2.29.1"
   }
 }
