@@ -769,9 +769,25 @@ function FivePaisaClient(conf) {
               var bodyValues = JSON.parse(body);
               var candleList = bodyValues.data.candles
               var columns = ['Datetime', 'Open', 'High', 'Low', 'Close', 'Volume']
-              var df = pd.DataFrame(candleList, columns)
+              if (!candleList || candleList.length == 0) {
+                reject('No data available')
+                return;
+              }
 
+              let df = []
+              candleList.forEach(element => {
+
+                df.push({
+                  Datetime: element[0],
+                  Open: element[1],
+                  High: element[2],
+                  Low: element[3],
+                  Close: element[4],
+                  Volume: element[5],
+                })
+              });
               resolve(df)
+
             });
 
           } else {

@@ -18,4 +18,27 @@ class BaseAdapter {
     async fetchHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
         console.log('Not Implemented BaseAdapter:fetchHistoricalData')
     }
+
+    async getMarketFeed(exchange, exchange_type, symbol) {
+        console.log('Not Implemented BaseAdapter:getMarketFeed')
+    }
+
+    async getPosition(symbol) {
+        
+    }
+    
+    async getTrades(symbol) {
+        
+    }
+    
+    async getAvailableMargin() {
+        
+    }
+    async sell(tick, qty, price) {
+        console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', qty * price)
+    }
+
+    async buy(tick, qty, price) {
+        console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', qty * price)
+    }
 }

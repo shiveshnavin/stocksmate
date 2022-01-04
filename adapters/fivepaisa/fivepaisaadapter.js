@@ -61,7 +61,8 @@ class FivePaisaAdapter {
         if (scrip) {
             // https://www.5paisa.com/developerapi/historical-data
             let df = await this.client.historicalData(exchange, exchange_type, scrip.Scripcode, interval, from_date, to_date)
-            df.data.forEach(element => {
+            let data = df;
+            data.forEach(element => {
                 ticks.push(new Tick({
                     symbol: symbol,
                     close: element.Close,
@@ -89,6 +90,25 @@ class FivePaisaAdapter {
         return await this.client.getMarketFeed(a)
     }
 
+    async getPosition(symbol) {
+        
+    }
+    
+    async getAvailableMargin() {
+        
+    }
+    
+    async getTrades(symbol) {
+        
+    }
+    
+    async sell(tick, qty, price) {
+        console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', qty * price)
+    }
+
+    async buy(tick, qty, price) {
+        console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', qty * price)
+    }
 }
 
 module.exports = FivePaisaAdapter;
