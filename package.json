@@ -1,0 +1,26 @@
+{
+  "name": "stocksmate",
+  "version": "1.0.0",
+  "description": "Stock trading automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiveshnavin/stocksmate.git"
+  },
+  "keywords": [
+    "stocks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiveshnavin/stocksmate/issues"
+  },
+  "homepage": "https://github.com/shiveshnavin/stocksmate#readme",
+  "dependencies": {
+    "5paisajs": "0.0.14",
+    "dotenv": "^10.0.0"
+  }
+}
