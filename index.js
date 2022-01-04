@@ -4,7 +4,7 @@ const FivePaisaAdapter = require('./adapters/fivepaisa/fivepaisaadapter')
 
 let adapter = new FivePaisaAdapter();
 let TimeBasedStratergy = require('./stratergies/timebasedstratergy')
-let stock = 'SBILIFE'
+let stock = 'CIPLA'
 
 async function main() {
     await adapter.init(process.env.EMAIL, process.env.PASSWORD, process.env.DOB)
@@ -49,7 +49,7 @@ async function backTestDay(date) {
     // console.log(date)
     let trades = []
     var position = 0;
-    var overallMargin = 40000;
+    var overallMargin = 20000;
 
     let onBuy = (tick, qty, price) => {
         let margin = qty * price;

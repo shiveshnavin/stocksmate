@@ -37,7 +37,7 @@ class TimeBasedStratergy extends Stratergy {
 
         if (!this.morningBuyDone) {
 
-            if (hours < 10 && hours >= 9) {
+            if (hours < 11 && hours >= 10) {
                 if (mins >=15) {
                     let availableMargin = await this.adapter.getAvailableMargin();
                     if (availableMargin > tick.close) {
@@ -51,16 +51,16 @@ class TimeBasedStratergy extends Stratergy {
                             this.minimumBreakEvenPrice = (price + minBrokerage.breakeven).toFixed(2);
 
                             // based on small profit
-                            // this.targetPrice = parseFloat(this.minimumBreakEvenPrice) + 10.0;
+                            this.targetPrice = parseFloat(this.minimumBreakEvenPrice) + 10.0;
 
 
                             // based on profit i want
-                            let initialTargetPrice = this.targetProfitPerCycle / qty + price;
-                            let targetBrokerage = brokerageCalc(price, initialTargetPrice, qty).total_tax
+                            // let initialTargetPrice = this.targetProfitPerCycle / qty + price;
+                            // let targetBrokerage = brokerageCalc(price, initialTargetPrice, qty).total_tax
 
-                            let revisedTargetPerCycle = this.targetProfitPerCycle + targetBrokerage;
-                            this.targetPrice = parseFloat(revisedTargetPerCycle / qty + price).toFixed(2);
-                            let finalBrokerage = brokerageCalc(price, this.targetPrice, qty).total_tax
+                            // let revisedTargetPerCycle = this.targetProfitPerCycle + targetBrokerage;
+                            // this.targetPrice = parseFloat(revisedTargetPerCycle / qty + price).toFixed(2);
+                            // let finalBrokerage = brokerageCalc(price, this.targetPrice, qty).total_tax
                                 ;//console.log('Buy@', price, 'Target sell @', this.targetPrice, 'target brokerage', finalBrokerage, 'and desperate minimum sell @', parseFloat(this.minimumBreakEvenPrice))
                             ;//console.log('------------------', hours, ':', mins, '---------------', tick.close, '--------------')
 
