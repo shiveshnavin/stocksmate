@@ -7,9 +7,10 @@ class TimeBasedStratergy extends Stratergy {
     morningBuyDone = false;
     morningSellDone = false;
     minimumBreakEvenPrice;
-    targetProfitPerCycle = 500;
+    targetProfitPerCycle = 100;
     targetPrice;
     profit = 0;
+    date;
 
     high = { close: 0 };
     low = { close: 9999999 };
@@ -37,23 +38,28 @@ class TimeBasedStratergy extends Stratergy {
         if (!this.morningBuyDone) {
 
             if (hours < 10 && hours >= 9) {
-                if (mins > 17) {
+                if (mins >=15) {
                     let availableMargin = await this.adapter.getAvailableMargin();
                     if (availableMargin > tick.close) {
                         let canSpend = availableMargin / 2;
                         let price = tick.close;
-                        let qty = Math.ceil(canSpend / price);
+                        let qty = Math.floor(canSpend / price);
                         if (qty > 0) {
                             this.adapter.buy(tick, qty, price)
                             this.morningBuyDone = true;
                             let minBrokerage = brokerageCalc(price, price, qty, true)
                             this.minimumBreakEvenPrice = (price + minBrokerage.breakeven).toFixed(2);
 
+                            // based on small profit
+                            // this.targetPrice = parseFloat(this.minimumBreakEvenPrice) + 10.0;
+
+
+                            // based on profit i want
                             let initialTargetPrice = this.targetProfitPerCycle / qty + price;
                             let targetBrokerage = brokerageCalc(price, initialTargetPrice, qty).total_tax
 
                             let revisedTargetPerCycle = this.targetProfitPerCycle + targetBrokerage;
-                            this.targetPrice = revisedTargetPerCycle / qty + price;
+                            this.targetPrice = parseFloat(revisedTargetPerCycle / qty + price).toFixed(2);
                             let finalBrokerage = brokerageCalc(price, this.targetPrice, qty).total_tax
                                 ;//console.log('Buy@', price, 'Target sell @', this.targetPrice, 'target brokerage', finalBrokerage, 'and desperate minimum sell @', parseFloat(this.minimumBreakEvenPrice))
                             ;//console.log('------------------', hours, ':', mins, '---------------', tick.close, '--------------')
@@ -90,7 +96,7 @@ class TimeBasedStratergy extends Stratergy {
                             this.adapter.sell(tick, qty, sp);
                             let profit = qty * (sp - bp) - brokerageCalc(bp, sp, qty).total_tax
                             this.profit = (this.profit + profit).toFixed(2)
-                            console.log('Target', this.targetPrice.toFixed(2), `[${this.high.close},${this.low.close}]`, 'but Selling ', bp, '->', sp, 'with profit after brokerage', profit.toFixed(2), ' >> ', reason)
+                            console.log(tick.datetime, 'Target', parseFloat(this.targetPrice).toFixed(2), `[${this.high.close},${this.low.close}]`, 'but Selling ', bp, '->', sp, 'with profit after brokerage', profit.toFixed(2), ' >> ', reason)
                         }
                         this.morningSellDone = true;
                     }

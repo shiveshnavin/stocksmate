@@ -1,9 +1,10 @@
 require('dotenv').config()
+let moment = require('moment')
 const FivePaisaAdapter = require('./adapters/fivepaisa/fivepaisaadapter')
 
 let adapter = new FivePaisaAdapter();
 let TimeBasedStratergy = require('./stratergies/timebasedstratergy')
-let stock = 'INFY'
+let stock = 'SBILIFE'
 
 async function main() {
     await adapter.init(process.env.EMAIL, process.env.PASSWORD, process.env.DOB)
@@ -21,18 +22,13 @@ async function main() {
     let profs = 0;
     let loss = 0
     let net = 0;
-    for (let index = 1; index < 28; index++) {
-        let profit = await backTestDay(index + '-11-2021')
-        if (profit != undefined) {
-            if (profit > 0)
-                profs++
-            else
-                loss++
-            net += parseFloat(profit);
-        }
-    }
-    for (let index = 1; index < 28; index++) {
-        let profit = await backTestDay(index + '-12-2021')
+
+    const currentMoment = moment().subtract(40, 'days');
+    const endMoment = moment().add(1, 'days');
+    while (currentMoment.isBefore(endMoment, 'day')) {
+        let cur = currentMoment.format('DD-MM-YYYY');
+        currentMoment.add(1, 'days');
+        let profit = await backTestDay(cur)
         if (profit != undefined) {
             if (profit > 0)
                 profs++
@@ -42,7 +38,8 @@ async function main() {
 
         }
     }
-    console.log('\nProfits', profs, 'losses', loss, 'net', net)
+
+    console.log('\nProfits', profs, 'losses', loss, 'net', net.toFixed(2))
 
 
 
@@ -90,6 +87,7 @@ async function backTestDay(date) {
     adapter.getPosition = getPosition;
 
     timebasedstratergy.init(adapter, onBuy, onSell);
+    timebasedstratergy.date = date;
 
     try {
         let ticks = await adapter.fetchHistoricalData('n', 'c', stock, '1m', date, date)
