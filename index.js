@@ -3,7 +3,7 @@ let moment = require('moment')
 const FivePaisaAdapter = require('./adapters/fivepaisa/fivepaisaadapter')
 
 let adapter = new FivePaisaAdapter();
-let TimeBasedStratergy = require('./stratergies/timebasedstratergy')
+let TimeBasedStratergy = require('./stratergies/timebasedstratergy_del')
 let stock = 'CIPLA'
 
 async function main() {
@@ -45,49 +45,50 @@ async function main() {
 
 }
 
+
+let trades = []
+var position = 0;
+var overallMargin = 20000;
+
+let onBuy = (tick, qty, price) => {
+    let margin = qty * price;
+    // console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', margin)
+    position = position + qty;
+    overallMargin = overallMargin - margin;
+    trades.push({ isBuy: true, datetime: Date.now(), price: price, qty: qty })
+}
+
+let onSell = (tick, qty, price) => {
+    let margin = qty * price;
+    // console.log('Sell', tick.symbol, '@', price, 'x', qty, 'Credit', qty * price)
+    position = position - qty;
+    overallMargin = overallMargin + margin;
+    trades.push({ isBuy: false, datetime: Date.now(), price: price, qty: qty })
+}
+
+let getPosition = (symbol) => {
+    return position;
+}
+
+let getAvailableMargin = () => {
+    return overallMargin;
+}
+
+let getTrades = (symbol) => {
+    return trades;
+}
+
+let timebasedstratergy = new TimeBasedStratergy();
+adapter.buy = onBuy;
+adapter.sell = onSell;
+adapter.getAvailableMargin = getAvailableMargin;
+adapter.getTrades = getTrades;
+adapter.getPosition = getPosition;
+
+timebasedstratergy.init(adapter, onBuy, onSell);
+
 async function backTestDay(date) {
     // console.log(date)
-    let trades = []
-    var position = 0;
-    var overallMargin = 20000;
-
-    let onBuy = (tick, qty, price) => {
-        let margin = qty * price;
-        // console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', margin)
-        position = position + qty;
-        overallMargin = overallMargin - margin;
-        trades.push({ isBuy: true, datetime: Date.now(), price: price, qty: qty })
-    }
-
-    let onSell = (tick, qty, price) => {
-        let margin = qty * price;
-        // console.log('Sell', tick.symbol, '@', price, 'x', qty, 'Credit', qty * price)
-        position = position - qty;
-        overallMargin = overallMargin + margin;
-        trades.push({ isBuy: false, datetime: Date.now(), price: price, qty: qty })
-    }
-
-    let getPosition = (symbol) => {
-        return position;
-    }
-
-    let getAvailableMargin = () => {
-        return overallMargin;
-    }
-
-    let getTrades = (symbol) => {
-        return trades;
-    }
-
-    let timebasedstratergy = new TimeBasedStratergy();
-    adapter.buy = onBuy;
-    adapter.sell = onSell;
-    adapter.getAvailableMargin = getAvailableMargin;
-    adapter.getTrades = getTrades;
-    adapter.getPosition = getPosition;
-
-    timebasedstratergy.init(adapter, onBuy, onSell);
-    timebasedstratergy.date = date;
 
     try {
         let ticks = await adapter.fetchHistoricalData('n', 'c', stock, '1m', date, date)

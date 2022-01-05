@@ -23,6 +23,7 @@
   "dependencies": {
     "5paisajs": "0.0.14",
     "dotenv": "^10.0.0",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "smartapi-javascript": "^1.0.14"
   }
 }
