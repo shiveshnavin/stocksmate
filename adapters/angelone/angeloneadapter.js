@@ -67,7 +67,7 @@ class AngelOneAdapter {
      * @param {*} from DD-MM-YYYY
      * @param {*} to DD-MM-YYYY
      */
-    async fetchHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
+    async getHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
         let from_date = moment(from).format('yyyy-MM-DD HH:mm')
         let to_date = moment(to).format('yyyy-MM-DD HH:mm')
         if (from_date == to_date) {

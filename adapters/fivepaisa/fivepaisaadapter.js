@@ -60,7 +60,7 @@ class FivePaisaAdapter {
      * @param {*} from DD-MM-YYYY
      * @param {*} to DD-MM-YYYY
      */
-    async fetchHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
+    async getHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
         let scrip = getScrip(symbol);
 
         const from_date = moment(from).format('YYYY-MM-DD')

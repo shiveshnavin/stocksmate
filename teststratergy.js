@@ -85,7 +85,7 @@ async function backTestDay(date) {
     // console.log(date)
 
     try {
-        let ticks = await adapter.fetchHistoricalData('n', 'c', stock, '1m', date, date)
+        let ticks = await adapter.getHistoricalData('n', 'c', stock, '1m', date, date)
         // console.log('Fetched', ticks.length, 'historical ticks for', stock)
         for (let index = 0; index < ticks.length; index++) {
             const tick = ticks[index];

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/shiveshnavin/stocksmate#readme",
   "dependencies": {
     "5paisajs": "0.0.14",
+    "cron": "^1.8.2",
     "dotenv": "^10.0.0",
     "moment": "^2.29.1",
     "smartapi-javascript": "^1.0.14"

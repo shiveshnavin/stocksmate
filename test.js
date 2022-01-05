@@ -15,7 +15,7 @@ async function testAngelOneAdapter() {
     for (let index = 0; index < scrips.length; index++) {
         const element = scrips[index];
         console.log(element.symbol)
-        let ticks = await adapter.fetchHistoricalData('n', 'c', element.symbol, '1m', "2021-12-11 09:15", "2021-12-10 09:45")
+        let ticks = await adapter.getHistoricalData('n', 'c', element.symbol, '1m', "2021-12-11 09:15", "2021-12-10 09:45")
         console.log(element.symbol, ticks.length)
     }
 

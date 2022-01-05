@@ -15,8 +15,8 @@ class BaseAdapter {
      * @param {*} from DD-MM-YYYY
      * @param {*} to DD-MM-YYYY
      */
-    async fetchHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
-        console.log('Not Implemented BaseAdapter:fetchHistoricalData')
+    async getHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
+        console.log('Not Implemented BaseAdapter:getHistoricalData')
     }
 
     async getMarketFeed(exchange, exchange_type, symbol) {

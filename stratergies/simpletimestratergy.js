@@ -25,4 +25,4 @@ class SimpleTimeStratergy {
 
 }
 
-module.exports = Stratergy
+module.exports = SimpleTimeStratergy
