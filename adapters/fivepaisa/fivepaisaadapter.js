@@ -63,8 +63,8 @@ class FivePaisaAdapter {
     async fetchHistoricalData(exchange, exchange_type, symbol, interval, from, to) {
         let scrip = getScrip(symbol);
 
-        const from_date = moment(from, 'DD-MM-YYYY').format('YYYY-MM-DD')
-        const to_date = moment(to, 'DD-MM-YYYY').format('YYYY-MM-DD')
+        const from_date = moment(from).format('YYYY-MM-DD')
+        const to_date = moment(to).format('YYYY-MM-DD')
 
         let ticks = []
         if (scrip) {

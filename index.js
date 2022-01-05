@@ -6,30 +6,21 @@ const AngelOneAdapter = require('./adapters/angelone/angeloneadapter')
 // let adapter = new FivePaisaAdapter(process.env.EMAIL, process.env.PASSWORD, process.env.DOB);
 let adapter = new AngelOneAdapter(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD);
 
-let TimeBasedStratergy = require('./stratergies/timebasedstratergy_del')
-let stock = 'CIPLA'
+let TimeBasedStratergy = require('./stratergies/timebasedstratergy')
+let stock = 'SBILIFE'
 
 async function main() {
     await adapter.init()
     console.log(adapter.name, ' adapter Initialization success')
-    // console.log(JSON.stringify(ticks, null, 2))
-    // try {
-    //     let live = await adapter.getMarketFeed('n', 'c', stock)
-    //     console.log(live)
-    // } catch (e) {
-    //     if (e == 'Success')
-    //         console.log('No data avalable')
-    //     else
-    //         console.log(e.message)
-    // }
+
     let profs = 0;
     let loss = 0
     let net = 0;
 
-    const currentMoment = moment().subtract(40, 'days');
+    const currentMoment = moment().subtract(12, 'days');
     const endMoment = moment().add(1, 'days');
     while (currentMoment.isBefore(endMoment, 'day')) {
-        let cur = currentMoment.format('DD-MM-YYYY');
+        let cur = currentMoment.format('YYYY-MM-DD');
         currentMoment.add(1, 'days');
         let profit = await backTestDay(cur)
         if (profit != undefined) {
@@ -102,7 +93,7 @@ async function backTestDay(date) {
         }
         return timebasedstratergy.profit;
     } catch (e) {
-        // console.log('Error in date', date, e.message)
+        console.log('Error in date', date, e.message)
     }
 }
 main();
