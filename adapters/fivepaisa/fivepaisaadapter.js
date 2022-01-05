@@ -29,7 +29,16 @@ class FivePaisaAdapter {
 
     client;
     name = '5paisa';
-    init(email, password, dob) {
+    email;
+    password;
+    dob;
+    constructor(email, password, dob) {
+        this.email = email;
+        this.password = password;
+        this.dob = dob;
+    }
+    init() {
+        let email = this.email, password = this.password, dob = this.dob;
         this.client = new FivePaisaClient(conf)
         return new Promise((res, rej) => {
             this.client.login(email, password, dob).then((response) => {
@@ -91,17 +100,17 @@ class FivePaisaAdapter {
     }
 
     async getPosition(symbol) {
-        
+
     }
-    
+
     async getAvailableMargin() {
-        
+
     }
-    
+
     async getTrades(symbol) {
-        
+
     }
-    
+
     async sell(tick, qty, price) {
         console.log('Buy', tick.symbol, '@', price, 'x', qty, 'Debit', qty * price)
     }

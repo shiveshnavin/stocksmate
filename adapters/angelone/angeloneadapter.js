@@ -1,28 +1,35 @@
 let { SmartAPI, WebSocket } = require("smartapi-javascript");
 
-let smart_api = new SmartAPI({
-    api_key: "3NnxKp3S"
-});
 
 
-// If user does not have valid access token and refresh token then use generateSession method 
-smart_api.generateSession(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD)
-    .then((data) => {
-        return smart_api.getProfile();
-    });
-smart_api.setSessionExpiryHook(customSessionHook);
 
-function customSessionHook() {
-    console.log("User loggedout");
 
-    // NEW AUTHENTICATION CAN TAKE PLACE HERE
-}
+
+
 class AngelOneAdapter {
 
     client;
     name = 'angelone';
-    init() {
-        console.log('Not Implemented BaseAdapter:init')
+    smart_api = new SmartAPI({
+        api_key: "U9IreNhv"
+    });
+    ag_client_code;
+    ag_password;
+    constructor(ag_client_code, ag_password) {
+        this.ag_client_code = ag_client_code;
+        this.ag_password = ag_password;
+    }
+
+    async customSessionHook() {
+        console.log("User loggedout. Authenticating again");
+        await this.init()
+    }
+
+    async init() {
+        this.smart_api.setSessionExpiryHook(this.customSessionHook);
+        await this.smart_api.generateSession(this.ag_client_code, this.ag_password)
+        let user = await this.smart_api.getProfile();
+        console.log('Angel One Adapter initialized-', user.data.name)
     }
 
     /**

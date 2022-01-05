@@ -1,13 +1,16 @@
 require('dotenv').config()
 let moment = require('moment')
 const FivePaisaAdapter = require('./adapters/fivepaisa/fivepaisaadapter')
+const AngelOneAdapter = require('./adapters/angelone/angeloneadapter')
 
-let adapter = new FivePaisaAdapter();
+// let adapter = new FivePaisaAdapter(process.env.EMAIL, process.env.PASSWORD, process.env.DOB);
+let adapter = new AngelOneAdapter(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD);
+
 let TimeBasedStratergy = require('./stratergies/timebasedstratergy_del')
 let stock = 'CIPLA'
 
 async function main() {
-    await adapter.init(process.env.EMAIL, process.env.PASSWORD, process.env.DOB)
+    await adapter.init()
     console.log(adapter.name, ' adapter Initialization success')
     // console.log(JSON.stringify(ticks, null, 2))
     // try {
