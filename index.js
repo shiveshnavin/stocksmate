@@ -4,19 +4,24 @@ const fetch = require('node-fetch');
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 const AngelOneAdapter = require('./adapters/angelone/angeloneadapter')
-let stock = 'SBILIFE'
+let stock = 'HDFCBANK'
 let SimpleTimeBasedStratergy = require('./stratergies/simpletimestratergy')
 var axios = require('axios');
 let adapter = new AngelOneAdapter(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD);
+let bCalc = require('./brokerage')
 
 /***************CONFIG***************/
 let Z_USERID = "AMC939"
-let enctoken = "oSo7qevue4IYCoRWJzI5V2FZ5zw9gIPFz0gM+PenQsWs1sVrBwTllY/xZlBkjq+3rgoUiZ6l76gd7vGI8cDc65+Yj6fLzBpwcYwQgCjeKnbWrjmLcivH/A=="
+let enctoken = "DSDW8Nh+v8PNG15K9CpuAhEWpyysFHTx2/j0VEAHc+37SAdgwzFM8amCgl0wiY08sUuoxHmTWcDAIdKlBnNQQK+vq/GAvrzmfq/41hqkt+gFDroV4UPlqg=="
 let usablableBalance = function (balance) {
-    return balance * 0.65;
+    return balance * 0.9;
 }
 let START_HRS = 9, START_MINS = 15
 let trade = 'MIS'
+let TARGET_PROF_PER_SHARE = 10;
+let BUY_AT_MAX_FROM_PREV_DAY = 1;
+let FORCE_BUY = true;
+let calculator = trade == 'MIS' ? bCalc.cal_intra : bCalc.cal_delivery
 /******************************/
 
 
@@ -39,12 +44,12 @@ async function start(symbol) {
     let marginAvailable = await getMargins();
     let balance = marginAvailable.available.live_balance;
     // let watchList = await getWatchlist('get', 'https://kite.zerodha.com/api/marketwatch')
-    console.log('Zerodha flight test done. Avaialble margin', balance)
+    console.log('Zerodha flight test done. Avaialble margin', balance, 'Max spend', usablableBalance(balance), 'Collateral', parseFloat(balance - usablableBalance(balance)).toFixed(2))
 
     let lastClose = lastDay.close;
 
     // try to buy before 9:15
-    await tryToPlaceLimitOrderBefore915(lastClose + 0.5, symbol)
+    await tryToPlaceLimitOrderBefore915(lastClose + BUY_AT_MAX_FROM_PREV_DAY, symbol)
 
 
 
@@ -62,25 +67,31 @@ async function tryToPlaceLimitOrderBefore915(limitPrice, symbol) {
             setTimeout(async () => {
                 let curH = moment().get('hours');
                 let curM = moment().get('m');
-                if (curH == START_HRS && curM < START_MINS) {
+                if (FORCE_BUY || curH == START_HRS && curM < START_MINS) {
                     let marginForOneQty = await zerodhaRequiredMargin(limitPrice, 1, 'BUY', symbol);
                     if (!marginForOneQty) {
                         return callMyself()
                     }
                     let qty = Math.floor(toSpend / marginForOneQty.total)
                     let requiredMargin = await zerodhaRequiredMargin(limitPrice, qty, 'BUY', symbol);
-                    console.log('Trying to place a buy order before market opens @', limitPrice, 'x', qty, '=', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`)
+
+                    let targetSell = limitPrice + TARGET_PROF_PER_SHARE;
+                    let brokerage = calculator(limitPrice, targetSell, qty, true)
+                    let brokerageMin = calculator(limitPrice, limitPrice, qty, true)
+
+                    let brokerageInfo = `[Total Charges ${brokerage.total_tax} Target Breakeven ${brokerage.breakeven} Target Profit ${brokerage.net_profit} | Min Breakeven ${brokerageMin.breakeven}]`
+
+                    console.log('Trying to place a buy order before market opens @', limitPrice, 'x', qty, '=', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`, brokerageInfo)
 
                     let orderPlaceResult = await tryToPlaceOrderZerodha(limitPrice, qty, 'BUY', symbol)
                     if (orderPlaceResult.ok) {
                         console.log('-------------ORDER PLACED----------', orderPlaceResult)
-                        let target = limitPrice + 10;
-                        let sell = await tryToPlaceOrderZerodha(target, qty, 'SELL', symbol)
+                        let sell = await tryToPlaceOrderZerodha(targetSell, qty, 'SELL', symbol)
                         if (sell.ok) {
-                            console.log('-------------SELL ORDER PLACED---------- target @', target)
+                            console.log('-------------SELL ORDER PLACED---------- target @', targetSell)
                         }
                         else {
-                            console.log('!!!!!! SELL ORDER NOT PLACED !!!!!! Please do manually, target @', target)
+                            console.log('!!!!!! SELL ORDER NOT PLACED !!!!!! Please do manually, target @', targetSell)
                         }
                         res(orderPlaceResult)
                     }
