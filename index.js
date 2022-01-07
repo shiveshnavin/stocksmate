@@ -9,6 +9,7 @@ let SimpleTimeBasedStratergy = require('./stratergies/simpletimestratergy')
 var axios = require('axios');
 let adapter = new AngelOneAdapter(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD);
 let bCalc = require('./brokerage')
+let KiteTicker = require('./adapters/zerodha/ticker')
 
 /***************CONFIG***************/
 let Z_USERID = "AMC939"
@@ -406,7 +407,7 @@ async function waitTillOrderIsOpen(orderId) {
 
 async function startMarketWatch() {
     let position = [{}]
-    let wsUrl = `wss://ws.zerodha.com/?api_key=kitefront&user_id=${Z_USERID}&enctoken=${encodeURI(enctoken)}&uid=1641444782679&user-agent=kite3-web&version=2.9.10`
+    let wsUrl = `wss://ws.zerodha.com/?api_key=kitefront&user_id=${Z_USERID}&enctoken=${encodeURIComponent(enctoken)}&uid=1641444782679&user-agent=kite3-web&version=2.9.10`
     const WebSocket = require('ws');
     const headers = {
     };
@@ -414,6 +415,8 @@ async function startMarketWatch() {
     ws.binaryType = 'arraybuffer';
     ws.on('open', () => {
         console.log('connected', Date());
+        var message = { "a": "subscribe", "v": [408065, 884737] };
+        ws.send(JSON.stringify(message))
     });
 
     ws.on('message', function message(data) {
