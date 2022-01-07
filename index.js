@@ -168,13 +168,7 @@ async function start(symbol) {
 
 
 
-}
-
-function getAsianMarketOutlook() {
-    return new Promise((resolve, reject) => {
-        resolve(true)
-    });
-}
+} 
 
 function shouldITradeToday(symbol) {
     if (FORCE_SKIP_OUTLOOK_CHECK)
