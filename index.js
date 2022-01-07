@@ -38,6 +38,7 @@ let BUY_AT_MAX_FROM_PREV_DAY = 1;
 let FORCE_BUY = false;
 let FORCE_SELL = false;
 let FORCE_QTY = undefined;
+let FORCE_SKIP_OUTLOOK_CHECK = false;
 
 let calculator = trade == 'MIS' ? bCalc.cal_intra : bCalc.cal_delivery
 /*****************************
@@ -136,7 +137,7 @@ async function start(symbol) {
     }
 
     let initalPriceToday = await getInitialPrice(symbol)
-    console.log('Last trade for', symbol, 'was', initalPriceToday.last_price, 'on', moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))
+    console.log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on', c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')))
     let lastPrice = initalPriceToday ?
         initalPriceToday.last_price
         //initalPriceToday.average_traded_price
@@ -145,15 +146,14 @@ async function start(symbol) {
 
     let buyOrderResult = await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
 
-    console.log('Starting market watch of', symbol)
-    startMarketWatch([symbol], (ticks) => {
-        let tick = ticks[0]
-        let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
-        console.log(strip)
-    })
-
     if (buyOrderResult.ok) {
         let buyOrderDetails = await waitTillOrderIsExecuted(buyOrderResult.order_id, 'BUY')
+        console.log('Starting market watch of', symbol)
+        startMarketWatch([symbol], (ticks) => {
+            let tick = ticks[0]
+            let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
+            console.log(strip)
+        })
         if (buyOrderDetails.ok) {
             console.log('Order execution success with buy average_price', buyOrderDetails.average_price, 'x', buyOrderDetails.quantity)
             let sellOrderResult = await tryToPlaceSellOrder(buyOrderDetails)
@@ -177,10 +177,12 @@ function getAsianMarketOutlook() {
 }
 
 function shouldITradeToday(symbol) {
+    if (FORCE_SKIP_OUTLOOK_CHECK)
+        return true;
 
     return new Promise(async (resolve, reject) => {
 
-        let asianMarketOutlook = await getAsianMarketOutlook()
+        let asianMarketOutlook = await require('./asian_market_scrap')('asia')
         await startMarketWatch(undefined, (ticks, ticker) => {
             let gapUps = 0;
             let gapDowns = 0;
