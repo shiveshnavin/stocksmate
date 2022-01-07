@@ -9,9 +9,17 @@ var axios = require('axios');
 let adapter = new AngelOneAdapter(process.env.AG_CLIENT_CODE, process.env.AG_PASSWORD);
 let bCalc = require('./brokerage')
 let KiteTicker = require('./adapters/zerodha/ticker')
+const { r, g, b, w, c, m, y, k } = [
+    ['r', 1], ['g', 2], ['b', 4], ['w', 7],
+    ['c', 6], ['m', 5], ['y', 3], ['k', 0],
+].reduce((cols, col) => ({
+    ...cols, [col[0]]: f => `\x1b[3${col[1]}m${f}\x1b[0m`
+}), {})
+
+
 
 /***************CONFIG***************/
-let stock = 'UJJIVANSFB'
+let stock = 'HDFCBANK'
 let Z_USERID = "AMC939"
 let enctoken = "/5yidvI2GWMwI3nnLy7355BTnsBumsgNSUfJGxpc5yowwu4B0nMgN3ZKwjjWKlZHd8Dg+Gb853eqyCR2n2uQlDuvvIh+5Bb++WC4nCFd3FUDhaEchgMJaw=="
 let kf_session = "GtrI359QORoZipNW7lIZgmASEIFA3z7p"
@@ -29,7 +37,7 @@ let TARGET_PROF_PER_SHARE = 10;
 let BUY_AT_MAX_FROM_PREV_DAY = 1;
 let FORCE_BUY = false;
 let FORCE_SELL = false;
-let FORCE_QTY = 1;
+let FORCE_QTY = undefined;
 
 let calculator = trade == 'MIS' ? bCalc.cal_intra : bCalc.cal_delivery
 /*****************************
@@ -83,7 +91,7 @@ async function start(symbol) {
 
     console.log('========================')
     console.log('Hello !', Z_USERID)
-    console.log('Todays trade is', symbol)
+    console.log('Todays trade is', g(symbol))
 
     await adapter.init()
 
@@ -92,14 +100,13 @@ async function start(symbol) {
     const endMoment = moment().subtract(0, 'days').format('YYYY-MM-DD HH:mm');
     let prevData = await adapter.getHistoricalData('n', 'c', symbol, '1m', currentMoment, endMoment)
     let lastDay = prevData[prevData.length - 1]
-    console.log('Angel One flight test done lastPrice on', moment(lastDay.datetime).format('YYYY-MM-DD HH:mm'), lastDay.close)
+    console.log('Angel One flight test done lastPrice on', moment(lastDay.datetime).format('YYYY-MM-DD HH:mm'), 'was', lastDay.close)
 
     let marginAvailable = await getMargins();
     let balance = marginAvailable.available.live_balance;
     // let watchList = await getWatchlist('get', 'https://kite.zerodha.com/api/marketwatch')
     console.log('Zerodha flight test done. Avaialble margin', balance, 'Max spend', usablableBalance(balance), 'Collateral', parseFloat(balance - usablableBalance(balance)).toFixed(2))
 
-    let LIMIT_BUY_PRICE = lastDay.close + BUY_AT_MAX_FROM_PREV_DAY;
 
     // try to buy before 9:15
     async function waitTill(h, m) {
@@ -116,7 +123,7 @@ async function start(symbol) {
             }
         }
     }
-    await waitTill(START_HRS, 0)
+    await waitTill(START_HRS, START_MINS - 10)
 
     /******************/
     // LIMIT_BUY_PRICE = 21.35;
@@ -124,31 +131,85 @@ async function start(symbol) {
     // TARGET_PROF_PER_SHARE = 0.15;
     /******************/
     if (!(await shouldITradeToday(symbol))) {
-        console.log('Kill Switch Active for morning. Not trading today')
+        console.log(r('Kill Switch Active for morning. Not trading today'))
+        return;
     }
 
-    let orderResult =  await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
+    let initalPriceToday = await getInitialPrice(symbol)
+    console.log('Last trade for', symbol, 'was', initalPriceToday.last_price, 'on', moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))
+    let lastPrice = initalPriceToday ?
+        initalPriceToday.last_price
+        //initalPriceToday.average_traded_price
+        : lastDay.close;
+    let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY;
 
+    let buyOrderResult = await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
 
-    let actualOrder = await waitTillOrderIsExecuted(orderResult.order_id)
+    console.log('Starting market watch of', symbol)
+    startMarketWatch([symbol], (ticks) => {
+        let tick = ticks[0]
+        let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
+        console.log(strip)
+    })
 
-    if (actualOrder.ok) {
-        console.log('Order execution success with buy average_price', actualOrder.average_price, 'x', actualOrder.quantity)
-        startMarketWatch(stock, (tick) => {
-            let strip = `[${JSON.stringify(tick.ohlc)}] last_trade_time=${tick.last_trade_time} | change=${tick.change} | last_price=${tick.last_price}`
-            // console.log(strip)
-        })
-        await tryToPlaceSellOrder(actualOrder)
-    }
-    else {
-        console.log('Order Cancelled . Restarting whole thing...' + orderResult.order_id)
-        return start(symbol)
+    if (buyOrderResult.ok) {
+        let buyOrderDetails = await waitTillOrderIsExecuted(buyOrderResult.order_id, 'BUY')
+        if (buyOrderDetails.ok) {
+            console.log('Order execution success with buy average_price', buyOrderDetails.average_price, 'x', buyOrderDetails.quantity)
+            let sellOrderResult = await tryToPlaceSellOrder(buyOrderDetails)
+            let sellOrderDetails = await waitTillOrderIsExecuted(sellOrderResult.order_id, 'SELL')
+
+        }
+        else {
+            console.log('Order Cancelled . Restarting whole thing...' + buyOrderResult.order_id)
+            return start(symbol)
+        }
     }
 
 
 
 }
-async function shouldITradeToday(symbol) {
+
+function getAsianMarketOutlook() {
+    return new Promise((resolve, reject) => {
+        resolve(true)
+    });
+}
+
+function shouldITradeToday(symbol) {
+
+    return new Promise(async (resolve, reject) => {
+
+        let asianMarketOutlook = await getAsianMarketOutlook()
+        await startMarketWatch(undefined, (ticks, ticker) => {
+            let gapUps = 0;
+            let gapDowns = 0;
+            let noChange = 0;
+
+            let lastTrade = '';
+            for (let i = 0; i < ticks.length; i++) {
+                const tick = ticks[i];
+                lastTrade = moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss')
+                if (tick.change < 0) {
+                    gapDowns++
+                }
+                else if (tick.change > 0) {
+                    gapUps++
+                }
+                else {
+                    noChange++;
+                }
+            }
+            let verdictUp = gapUps > gapDowns || asianMarketOutlook;
+            console.log('Should I Trade ? ', verdictUp, `(NSE ${gapUps > gapDowns} | Asia ${asianMarketOutlook})`, lastTrade, '| gapUps = ', gapUps, "| gapDowns = ", gapDowns, "| noChange = ", noChange)
+
+            resolve(verdictUp)
+            ticker.autoReconnect(false, 0, 1)
+            ticker.disconnect()
+        })
+
+    })
+
     return true;
 }
 
@@ -185,7 +246,7 @@ async function tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol) {
 
                 let orderPlaceResult = await tryToPlaceOrderZerodha(LIMIT_BUY_PRICE, qty, 'BUY', symbol, 'LIMIT')
                 if (orderPlaceResult.ok) {
-                    let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id)
+                    let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, 'BUY')
                     if (placed == 1) {
                         console.log('-------------ORDER PLACED----------', orderPlaceResult)
                         res(orderPlaceResult)
@@ -198,7 +259,10 @@ async function tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol) {
                     callMyself();
             }
             else {
-                res(false)
+                console.log('')
+                res({
+                    ok: false
+                })
             }
         }
         callMyself()
@@ -221,7 +285,7 @@ async function tryToPlaceSellOrder(actualOrder) {
             console.log('Placing sell order @', actualOrder.average_price, '-->', targetSell, 'x', actualOrder.quantity, brokerageInfo)
             let orderPlaceResult = await tryToPlaceOrderZerodha(targetSell, qty, 'SELL', symbol, 'LIMIT')
             if (orderPlaceResult.ok) {
-                let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id)
+                let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, 'SELL')
                 if (placed == 1) {
                     console.log('-------------SELL ORDER PLACED---------- target @', targetSell, orderPlaceResult)
                     resolve(orderPlaceResult)
@@ -406,8 +470,8 @@ async function getWatchlist() {
     return body.items;
 }
 
-async function waitTillOrderIsOpen(orderId) {
-    console.log('Waiting for order', orderId, 'to reach OPEN or REJECTED state')
+async function waitTillOrderIsOpen(orderId, type) {
+    console.log('Waiting for order', type, orderId, 'to reach OPEN or REJECTED state')
 
     return new Promise(async (resolve, reject) => {
 
@@ -456,8 +520,8 @@ async function waitTillOrderIsOpen(orderId) {
     })
 }
 
-async function waitTillOrderIsExecuted(orderId) {
-    console.log('Waiting for order', orderId, 'to reach COMPLETE | CANCELLED state')
+async function waitTillOrderIsExecuted(orderId, type) {
+    console.log('Waiting for order', type, orderId, 'to reach COMPLETE | CANCELLED state')
 
     return new Promise(async (resolve, reject) => {
 
@@ -507,23 +571,48 @@ async function waitTillOrderIsExecuted(orderId) {
         callMyself()
     })
 }
-async function startMarketWatch(symbol, onTick) {
 
+async function getInitialPrice(symbol) {
+    return new Promise(async (resolve, reject) => {
+
+
+        await startMarketWatch([symbol], (ticks, ticker) => {
+            let tick = ticks[0]
+            resolve(tick)
+            ticker.autoReconnect(false, 0, 1)
+            ticker.disconnect()
+        })
+
+    })
+}
+async function startMarketWatch(symbols, onTick) {
+
+    // console.log('Starting market watch of', symbols)
     let watchList = await getWatchlist()
     if (!watchList) {
         return console.log('Fatal failure while retrieving watchlist')
     }
 
-    let instrument_token = undefined;
+    let instrument_tokens = [];
     for (let index = 0; index < watchList.length; index++) {
         const element = watchList[index];
-        if (element.tradingsymbol == symbol) {
-            instrument_token = element.instrument_token
-            break;
+        if (symbols) {
+
+            for (let j = 0; j < symbols.length; j++) {
+                const symbol = symbols[j];
+                if (element.tradingsymbol == symbol) {
+                    instrument_tokens.push(element.instrument_token)
+                    break;
+                }
+            }
+        }
+        else {
+            instrument_tokens.push(element.instrument_token)
         }
     }
-    if (!instrument_token) {
-        console.log('Fatal !', symbol, 'is not present in your zerodha watchlist 1 . Please Add')
+
+    if (instrument_tokens.length == 0) {
+        console.log('Fatal ! none of', symbols, 'is present in your zerodha watchlist 1 . Please Add')
     }
 
     let wsUrl = `wss://ws.zerodha.com/?api_key=kitefront&user_id=${Z_USERID}&enctoken=${encodeURIComponent(enctoken)}&uid=${(new Date().getTime().toString())}&user-agent=kite3-web&version=2.9.10`
@@ -537,14 +626,16 @@ async function startMarketWatch(symbol, onTick) {
     ticker.on("connect", subscribe);
     function onTicks(ticks) {
         if (onTick) {
-            onTick(ticks[0])
+            onTick(ticks, ticker)
         }
     }
     function subscribe() {
-        var items = [instrument_token];
+        var items = instrument_tokens;
         ticker.subscribe(items);
         ticker.setMode(ticker.modeFull, items);
     }
+
+    return ticker;
 
 }
 
