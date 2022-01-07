@@ -137,12 +137,13 @@ async function start(symbol) {
     }
 
     let initalPriceToday = await getInitialPrice(symbol)
-    console.log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on', c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')))
     let lastPrice = initalPriceToday ?
         initalPriceToday.last_price
         //initalPriceToday.average_traded_price
         : lastDay.close;
     let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY;
+    console.log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on',
+        c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target buy @', g(LIMIT_BUY_PRICE))
 
     let buyOrderResult = await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
 
@@ -168,7 +169,7 @@ async function start(symbol) {
 
 
 
-} 
+}
 
 function shouldITradeToday(symbol) {
     if (FORCE_SKIP_OUTLOOK_CHECK)
