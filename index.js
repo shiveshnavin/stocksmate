@@ -13,8 +13,12 @@ let bCalc = require('./brokerage')
 /***************CONFIG***************/
 let Z_USERID = "AMC939"
 let enctoken = "/5yidvI2GWMwI3nnLy7355BTnsBumsgNSUfJGxpc5yowwu4B0nMgN3ZKwjjWKlZHd8Dg+Gb853eqyCR2n2uQlDuvvIh+5Bb++WC4nCFd3FUDhaEchgMJaw=="
+let kf_session = "GtrI359QORoZipNW7lIZgmASEIFA3z7p"
 let usablableBalance = function (balance) {
-    return balance;
+    return balance * 0.45;
+}
+let usablableBackupBalance = function (balance) {
+    return balance * 0.9;
 }
 let START_HRS = 9, START_MINS = 15;
 let STOP_HRS = 15, STOP_MINS = 10
@@ -77,29 +81,51 @@ async function start(symbol) {
 
     await adapter.init()
 
+    console.log('Todays trade is', symbol)
     // get last day data
-    const currentMoment = moment().subtract(5, 'days').format('YYYY-MM-DD');
-    const endMoment = moment().subtract(0, 'days').format('YYYY-MM-DD');
-    let prevData = await adapter.getHistoricalData('n', 'c', symbol, '1d', currentMoment, endMoment)
+    const currentMoment = moment().subtract(5, 'days').format('YYYY-MM-DD HH:mm');
+    const endMoment = moment().subtract(0, 'days').format('YYYY-MM-DD HH:mm');
+    let prevData = await adapter.getHistoricalData('n', 'c', symbol, '1m', currentMoment, endMoment)
     let lastDay = prevData[prevData.length - 1]
-    console.log('Angel One flight test done')
+    console.log('Angel One flight test done lastPrice on', moment(lastDay.datetime).format('YYYY-MM-DD HH:mm'), lastDay.close)
 
     let marginAvailable = await getMargins();
     let balance = marginAvailable.available.live_balance;
     // let watchList = await getWatchlist('get', 'https://kite.zerodha.com/api/marketwatch')
     console.log('Zerodha flight test done. Avaialble margin', balance, 'Max spend', usablableBalance(balance), 'Collateral', parseFloat(balance - usablableBalance(balance)).toFixed(2))
 
-    let lastClose = lastDay.close;
+    let LIMIT_BUY_PRICE = lastDay.close + BUY_AT_MAX_FROM_PREV_DAY;
 
     // try to buy before 9:15
-    await tryToPlaceLimitOrderBefore915(1544.1, symbol)
+    async function waitTill(h, m) {
+        console.log('Waiting till ', h, ":", m)
+        while (1) {
+            let curH = moment().get('hours');
+            let curM = moment().get('m');
+            if (curH == h && curM >= m || curH > h) {
+                console.log('Starting trade ! Good Luck')
+                return;
+            }
+            else {
+                await delay(1000);
+            }
+        }
+    }
+    await waitTill(START_HRS, 0)
+
+    /******************/
+    LIMIT_BUY_PRICE = 1386;
+    FORCE_BUY = true;
+    /******************/
+
+    await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
 
 
 
 }
 
 
-async function tryToPlaceLimitOrderBefore915(limitPrice, symbol) {
+async function tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol) {
 
     let marginAvailable = await getMargins();
     let balance = marginAvailable.available.live_balance;
@@ -111,34 +137,30 @@ async function tryToPlaceLimitOrderBefore915(limitPrice, symbol) {
                 let curH = moment().get('hours');
                 let curM = moment().get('m');
                 if (FORCE_BUY || curH == START_HRS && curM < START_MINS) {
-                    let marginForOneQty = await zerodhaRequiredMargin(limitPrice, 1, 'BUY', symbol);
+                    let marginForOneQty = await zerodhaRequiredMargin(LIMIT_BUY_PRICE, 1, 'BUY', symbol);
                     if (!marginForOneQty) {
                         return callMyself()
                     }
                     let qty = Math.floor(toSpend / marginForOneQty.total)
-                    let requiredMargin = await zerodhaRequiredMargin(limitPrice, qty, 'BUY', symbol);
+                    let requiredMargin = await zerodhaRequiredMargin(LIMIT_BUY_PRICE, qty, 'BUY', symbol);
 
-                    let targetSell = limitPrice + TARGET_PROF_PER_SHARE;
-                    let brokerage = calculator(limitPrice, targetSell, qty, true)
-                    let brokerageMin = calculator(limitPrice, limitPrice, qty, true)
+                    let targetSell = LIMIT_BUY_PRICE + TARGET_PROF_PER_SHARE;
+                    let brokerage = calculator(LIMIT_BUY_PRICE, targetSell, qty, true)
+                    let brokerageMin = calculator(LIMIT_BUY_PRICE, LIMIT_BUY_PRICE, qty, true)
 
                     let brokerageInfo = `[Total Charges ${brokerage.total_tax} Min Breakeven +${brokerage.breakeven} Target Profit ${brokerage.net_profit}]`
 
-                    console.log('Trying to place a buy order before market opens @', limitPrice, 'x', qty, '=', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`, brokerageInfo)
+                    console.log('Trying to place a buy order before market opens @', LIMIT_BUY_PRICE, 'x', qty, '=', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`, brokerageInfo)
 
-                    let orderPlaceResult = await tryToPlaceOrderZerodha(limitPrice, 31, 'BUY', symbol, 'LIMIT')
+                    let orderPlaceResult = await tryToPlaceOrderZerodha(LIMIT_BUY_PRICE, 31, 'BUY', symbol, 'LIMIT')
                     if (orderPlaceResult.ok) {
-                        await waitTillOrderIsOpen(orderPlaceResult.order_id)
-                        console.log('-------------ORDER PLACED----------', orderPlaceResult)
-                        let sell = await tryToPlaceOrderZerodha(targetSell, qty, 'SELL', symbol, 'LIMIT')
-                        if (sell.ok) {
-                            console.log('-------------SELL ORDER PLACED---------- target @', targetSell, sell)
-                            // startMarketWatch()
+                        let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id)
+                        if (placed == 1) {
+                            console.log('-------------ORDER PLACED----------', orderPlaceResult)
                         }
                         else {
-                            console.log('!!!!!! SELL ORDER NOT PLACED !!!!!! Please do manually, target @', targetSell)
+                            callMyself();
                         }
-                        res(orderPlaceResult)
                     }
                     else
                         callMyself();
@@ -151,6 +173,18 @@ async function tryToPlaceLimitOrderBefore915(limitPrice, symbol) {
         callMyself()
     })
 
+}
+
+async function tryToPlaceSellOrder(params) {
+    let sell = await tryToPlaceOrderZerodha(targetSell, qty, 'SELL', symbol, 'LIMIT')
+    if (sell.ok) {
+        console.log('-------------SELL ORDER PLACED---------- target @', targetSell, sell)
+        // startMarketWatch()
+    }
+    else {
+        console.log('!!!!!! SELL ORDER NOT PLACED !!!!!! Please do manually, target @', targetSell)
+    }
+    res(orderPlaceResult)
 }
 
 
@@ -203,7 +237,7 @@ async function zerodhaCall(method, url, data) {
             "sec-fetch-site": "same-origin",
             "x-kite-userid": "AMC939",
             "x-kite-version": "2.9.10",
-            "cookie": "_ga=GA1.2.494953855.1641359787; _gid=GA1.2.397832564.1641359787; _gat_gtag_UA_29026012_17=1; kf_session=tyDC85onLpIP7h5Wa2Xi0L0DwO7Ga0uH; user_id=AMC939; public_token=DtNYzYC8R2nTs364gnBEwR8ajtSvM3qh; enctoken=6nNxhB9ZF67S6KzjPVuYlq65dIDJhDyWNNCjE5mxvAhTtThOKkZF2Cv0HLewvPDkQC94s2H815QaZq0isnZXNG5NdC9/J816DZFnls6CC5CiD9GKgNYejg==",
+            "cookie": `kf_session=${kf_session}; user_id=${Z_USERID}; enctoken=${enctoken}`,
             "Referer": "https://kite.zerodha.com/dashboard",
             "Referrer-Policy": "strict-origin-when-cross-origin",
             "x-csrftoken": "DtNYzYC8R2nTs364gnBEwR8ajtSvM3qh"
@@ -262,6 +296,9 @@ function wrap(fetchPromise) {
         fetchPromise
             .then(res => res.json())
             .then(json => {
+                if (!json.data) {
+                    return resolve(json)
+                }
                 resolve(json.data[0] || json.data)
             })
             .catch(err => {
@@ -293,77 +330,83 @@ async function getHistoricalData(tickerId) {
 }
 
 async function getWatchlist(params) {
-    let fet = fetch("https://kite.zerodha.com/api/marketwatch", {
+    let fet = await wrap(fetch("https://kite.zerodha.com/api/marketwatch", {
         "headers": {
             "accept": "application/json, text/plain, */*",
             "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-            "if-none-match": "W/\"OBI43Y4WV2KOoPln\"",
+            "if-none-match": "W/\"058v4pAh85m94R2Y\"",
             "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"Windows\"",
             "sec-fetch-dest": "empty",
             "sec-fetch-mode": "cors",
             "sec-fetch-site": "same-origin",
-            "x-csrftoken": "DtNYzYC8R2nTs364gnBEwR8ajtSvM3qh",
+            "x-csrftoken": "S9zrVZIsogam8gCFlD5CWQraS11XQbpk",
             "x-kite-version": "2.9.10",
-            "cookie": "_ga=GA1.2.494953855.1641359787; _gid=GA1.2.397832564.1641359787; kf_session=tyDC85onLpIP7h5Wa2Xi0L0DwO7Ga0uH; user_id=AMC939; public_token=DtNYzYC8R2nTs364gnBEwR8ajtSvM3qh; enctoken=6nNxhB9ZF67S6KzjPVuYlq65dIDJhDyWNNCjE5mxvAhTtThOKkZF2Cv0HLewvPDkQC94s2H815QaZq0isnZXNG5NdC9/J816DZFnls6CC5CiD9GKgNYejg==",
-            "Referer": "https://kite.zerodha.com/chart/web/tvc/NSE/GOLDBEES/3693569",
+            "cookie": `kf_session=${kf_session}; user_id=${Z_USERID}; enctoken=${enctoken}`,
+            "Referer": "https://kite.zerodha.com/marketwatch",
             "Referrer-Policy": "strict-origin-when-cross-origin"
         },
         "body": null,
         "method": "GET"
-    });
-    let result = await fet;
-    let body = fet.body();
+    }))
+    let result = fet
+    let body = result;
     return body;
 }
 
 async function waitTillOrderIsOpen(orderId) {
     return new Promise(async (resolve, reject) => {
-        let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
-            "headers": {
-                "accept": "application/json, text/plain, */*",
-                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-                "authorization": "enctoken " + enctoken,
-                "if-none-match": "W/\"5tkudQ119aB023AJ\"",
-                "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
-                "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": "\"Windows\"",
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "same-origin",
-                "x-kite-version": "2.9.10"
-            },
-            "referrer": "https://kite.zerodha.com/orders",
-            "referrerPolicy": "strict-origin-when-cross-origin",
-            "body": null,
-            "method": "GET",
-            "mode": "cors",
-            "credentials": "include"
-        }))
 
-        for (let index = 0; index < orders.length; index++) {
-            const order = orders[index];
-            if (order.order_id == orderId) {
-                if (order.status == "OPEN") {
-                    resolve(1)
-                }
-                else if (order.status == "REJECTED") {
-                    console.log('Order', orderId, 'rejected.', order.status_message)
-                    resolve(-1)
-                }
-                else {
-                    resolve(0)
+        async function callMyself() {
+            let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
+                "headers": {
+                    "accept": "application/json, text/plain, */*",
+                    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                    "authorization": "enctoken " + enctoken,
+                    "if-none-match": "W/\"5tkudQ119aB023AJ\"",
+                    "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-origin",
+                    "x-kite-version": "2.9.10"
+                },
+                "referrer": "https://kite.zerodha.com/orders",
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": null,
+                "method": "GET",
+                "mode": "cors",
+                "credentials": "include"
+            }))
+
+            for (let index = 0; index < orders.length; index++) {
+                const order = orders[index];
+                if (order.order_id == orderId) {
+                    if (order.status == "OPEN") {
+                        console.log('Order', orderId, 'is now OPEN.', order.status_message)
+                        resolve(1)
+                    }
+                    else if (order.status == "REJECTED") {
+                        console.log('Order', orderId, 'rejected.', order.status_message)
+                        resolve(-1)
+                    }
+                    else {
+                        console.log('Waiting for order', orderId, 'to reach terminal state')
+                        await delay(500)
+                        callMyself()
+                    }
                 }
             }
         }
+        callMyself()
     })
 }
 
 async function startMarketWatch() {
     let position = [{}]
     let wsUrl = `wss://ws.zerodha.com/?api_key=kitefront&user_id=${Z_USERID}&enctoken=${encodeURI(enctoken)}&uid=1641444782679&user-agent=kite3-web&version=2.9.10`
-    wsUrl= "wss://ws.zerodha.com/?api_key=kitefront&user_id=AMC939&enctoken=DSDW8Nh%2Bv8PNG15K9CpuAhEWpyysFHTx2%2Fj0VEAHc%2B37SAdgwzFM8amCgl0wiY08sUuoxHmTWcDAIdKlBnNQQK%2Bvq%2FGAvrzmfq%2F41hqkt%2BgFDroV4UPlqg%3D%3D&uid=1641444782679&user-agent=kite3-web&version=2.9.10"
     const WebSocket = require('ws');
     const headers = {
     };
@@ -375,7 +418,7 @@ async function startMarketWatch() {
 
     ws.on('message', function message(data) {
         console.log('received: %s', JSON.stringify(data));
-      });
+    });
     ws.on('close', () => {
         console.log('disconnected', Date());
     });
@@ -399,5 +442,6 @@ async function startMarketWatch() {
 
 
 
-start(stock)
-// startMarketWatch();
+// start(stock)
+startMarketWatch();
+// getWatchlist()
