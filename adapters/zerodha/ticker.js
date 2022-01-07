@@ -1,5 +1,4 @@
 var WebSocket = require("ws");
-var utils = require("./utils");
 
 /**
  * The WebSocket client for connecting to Kite connect streaming quotes service.
@@ -260,13 +259,14 @@ var KiteTicker = function(params) {
 		// Skip if its already connected
 		if(ws && (ws.readyState == ws.CONNECTING || ws.readyState == ws.OPEN)) return;
 
-		var url = root + "?api_key=" + params.api_key +
-					"&access_token=" + params.access_token + "&uid=" + (new Date().getTime().toString());
+		var url = root
+		//  + "?api_key=" + params.api_key +
+		// 			"&access_token=" + params.access_token + "&uid=" + (new Date().getTime().toString());
 
 		ws = new WebSocket(url, {
 			headers: {
 				"X-Kite-Version": "3",
-				"User-Agent": utils.getUserAgent()
+				"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4810.0 Safari/537.36'
 			}
 		});
 
