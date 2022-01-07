@@ -124,7 +124,7 @@ async function start(symbol) {
             }
         }
     }
-    await waitTill(START_HRS, START_MINS - 10)
+    await waitTill(START_HRS, START_MINS - 7)
 
     /******************/
     // LIMIT_BUY_PRICE = 21.35;
