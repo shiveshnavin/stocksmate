@@ -81,6 +81,14 @@ which is benificial ? and do that . and place an order for
 
 If MARKET_PRICE dosent hit the 
 
+
+>>>>>>>> TODO
+While in market watch if the MARKET_PRICE goes below 
+ACTUAL_BUY_PRICE - 10 then check if the sell order is executed or not
+if not executed then buy at BACKUP_PRICE the collateral
+and set the NEW_SELL_PRICE = ACTUAL_BUY_PRICE + Min Break even
+If this doesn't work then God Help Us ! Manual Intervention Needed !!!
+
 *****************************/
 
 
