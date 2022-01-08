@@ -1,6 +1,7 @@
 require('dotenv').config()
 let moment = require('moment')
 const fetch = require('node-fetch');
+const zlogin = require('./adapters/zerodha/login')
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 const AngelOneAdapter = require('./adapters/angelone/angeloneadapter')
@@ -20,9 +21,12 @@ const { r, g, b, w, c, m, y, k } = [
 
 /***************CONFIG***************/
 let stock = 'HDFCBANK'
-let Z_USERID = "AMC939"
-let enctoken = "/5yidvI2GWMwI3nnLy7355BTnsBumsgNSUfJGxpc5yowwu4B0nMgN3ZKwjjWKlZHd8Dg+Gb853eqyCR2n2uQlDuvvIh+5Bb++WC4nCFd3FUDhaEchgMJaw=="
-let kf_session = "GtrI359QORoZipNW7lIZgmASEIFA3z7p"
+let Z_USERID = process.env.Z_USERID
+let Z_PASSWORD = process.env.Z_PASSWORD
+let Z_PIN = process.env.Z_PIN
+
+let enctoken = ""
+let kf_session = ""
 let usablableBalance = function (balance) {
     return balance * 0.45;
 }
@@ -99,6 +103,9 @@ process.on('unhandledRejection', (reason, p) => {
 async function start(symbol) {
 
     console.log('========================')
+    let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
+    enctoken = loginData.enctoken;
+    kf_session = loginData.kf_session;
     console.log('Hello !', Z_USERID)
     console.log('Todays trade is', g(symbol))
 
@@ -114,7 +121,7 @@ async function start(symbol) {
     let marginAvailable = await getMargins();
     let balance = marginAvailable.available.live_balance;
     // let watchList = await getWatchlist('get', 'https://kite.zerodha.com/api/marketwatch')
-    console.log('Zerodha flight test done. Avaialble margin', balance, 'Max spend', usablableBalance(balance), 'Collateral', parseFloat(balance - usablableBalance(balance)).toFixed(2))
+    console.log('Zerodha flight test done. Avaialble margin', balance, 'Max spend', usablableBalance(balance).toFixed(2), 'Collateral', parseFloat(balance - usablableBalance(balance)).toFixed(2))
 
 
     // try to buy before 9:15
