@@ -27,13 +27,14 @@ let Z_PIN = process.env.Z_PIN
 
 let enctoken = ""
 let kf_session = ""
+let public_token = ""
 let usablableBalance = function (balance) {
     return balance * 0.45;
 }
 let usablableBackupBalance = function (balance) {
     return balance * 0.9;
 }
-let START_HRS = 9, START_MINS = 15;
+let START_HRS = 9, START_MINS = 20;
 let STOP_HRS = 15, STOP_MINS = 10
 
 let trade = 'MIS'
@@ -106,6 +107,7 @@ async function start(symbol) {
     let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
     enctoken = loginData.enctoken;
     kf_session = loginData.kf_session;
+    public_token = loginData.public_token;
     console.log('Hello !', Z_USERID)
     console.log('Todays trade is', g(symbol))
 
@@ -139,13 +141,14 @@ async function start(symbol) {
             }
         }
     }
-    await waitTill(START_HRS, START_MINS - 7)
 
     /******************/
     // LIMIT_BUY_PRICE = 21.35;
-    // FORCE_BUY = true;
+    FORCE_BUY = true;
     // TARGET_PROF_PER_SHARE = 0.15;
     /******************/
+    // await waitTill(START_HRS, START_MINS - 7)
+
     if (!(await shouldITradeToday(symbol))) {
         console.log(r('Kill Switch Active for morning. Not trading today'))
         return;
@@ -368,7 +371,7 @@ async function zerodhaCall(method, url, data) {
             "cookie": `kf_session=${kf_session}; user_id=${Z_USERID}; enctoken=${enctoken}`,
             "Referer": "https://kite.zerodha.com/dashboard",
             "Referrer-Policy": "strict-origin-when-cross-origin",
-            "x-csrftoken": "DtNYzYC8R2nTs364gnBEwR8ajtSvM3qh"
+            "x-csrftoken": public_token
         },
         data: data
     };
@@ -469,7 +472,7 @@ async function getWatchlist() {
             "sec-fetch-dest": "empty",
             "sec-fetch-mode": "cors",
             "sec-fetch-site": "same-origin",
-            "x-csrftoken": "S9zrVZIsogam8gCFlD5CWQraS11XQbpk",
+            "x-csrftoken": public_token,
             "x-kite-version": "2.9.10",
             "cookie": `kf_session=${kf_session}; user_id=${Z_USERID}; enctoken=${enctoken}`,
             "Referer": "https://kite.zerodha.com/marketwatch",

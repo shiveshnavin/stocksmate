@@ -106,11 +106,16 @@ async function login(userId, password, pin) {
         "method": "POST"
     }))
     let headerSetCok = tw2.headers.get('set-cookie')
-    let encToken = parseCookies(headerSetCok)["SameSite, enctoken"]
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    let encToken = parseCookies(headerSetCok)["enctoken"]
+    let public_token = parseCookies(headerSetCok)['public_token']
     console.log('Zerodha login complete')
     return {
         enctoken: encToken,
-        kf_session: kf_session
+        kf_session: kf_session,
+        public_token: public_token
     };
 }
 
