@@ -181,7 +181,7 @@ async function start(symbol) {
         }
         else {
             console.log('Order Cancelled . Restarting whole thing...' + buyOrderResult.order_id)
-            return start(symbol)
+            return //start(symbol)
         }
     }
 
