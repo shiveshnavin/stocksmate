@@ -143,7 +143,7 @@ async function start(symbol) {
     }
 
 
-    await waitTill(START_HRS, START_MINS - 7)
+    await waitTill(START_HRS, 0)
 
     if (!(await shouldITradeToday(symbol))) {
         console.log(r('Kill Switch Active for morning. Not trading today'))
