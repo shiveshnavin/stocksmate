@@ -133,7 +133,7 @@ async function start(symbol) {
             let curH = moment().get('hours');
             let curM = moment().get('m');
             if (curH == h && curM >= m || curH > h) {
-                console.log('Starting trade ! Good Luck')
+                console.log('Starting trade ! Good Luck', moment())
                 return;
             }
             else {
