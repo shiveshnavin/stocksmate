@@ -4,6 +4,7 @@
   "description": "Stock trading automation",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
     "test": "node test.js",
     "fivepaisa:minify": "node adapters/fivepaisa/filterscrip.js",
     "angelone:minify": "node adapters/angelone/filterscrip.js",
