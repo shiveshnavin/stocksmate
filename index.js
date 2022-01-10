@@ -188,7 +188,8 @@ async function start(symbol) {
 
             lastTick = tick;
             let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | abs_change=${tick.abs_change < 0 ? r(tick.abs_change) : g(tick.change)} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
-            console.log(strip)
+            if (process.env.LOG)
+                console.log(strip)
         })
         if (buyOrderDetails.ok) {
             console.log('Order execution success with buy average_price', buyOrderDetails.average_price, 'x', buyOrderDetails.quantity)
@@ -635,8 +636,8 @@ async function checkIfAnyOrderIsPlacedAlready(type) {
 
             for (let index = 0; index < orders.length; index++) {
                 const order = orders[index];
-                if (order.transaction_type == type && order.status == "COMPLETE" || order.status == "OPEN") {
-                    console.log('Order', order.order_id, 'is now COMPLETE|OPEN. actual average_price @', order.average_price)
+                if (order.transaction_type == type && (order.status == "COMPLETE" || order.status == "OPEN")) {
+                    console.log('Order', order.transaction_type, order.order_id, 'is now COMPLETE|OPEN. actual average_price @', order.average_price)
                     order.ok = true;
                     resolve(order)
                 }
@@ -650,12 +651,16 @@ async function checkIfAnyOrderIsPlacedAlready(type) {
 async function getInitialPrice(symbol) {
     return new Promise(async (resolve, reject) => {
 
+        let today = moment(moment().format('YYYY-MM-DD'))
 
         await startMarketWatch([symbol], (ticks, ticker) => {
             let tick = ticks[0]
-            resolve(tick)
-            ticker.autoReconnect(false, 0, 1)
-            ticker.disconnect()
+            let cur = moment(tick.last_trade_time)
+            if (cur.isAfter(today)) {
+                resolve(tick)
+                ticker.autoReconnect(false, 0, 1)
+                ticker.disconnect()
+            }
         })
 
     })
