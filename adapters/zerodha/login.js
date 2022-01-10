@@ -37,6 +37,7 @@ function parseCookies(cookieHeader) {
 }
 
 async function login(userId, password, pin) {
+    console.log('Logging in to', userId)
 
     let home = await wrap(fetch("https://kite.zerodha.com/", {
         "headers": {
