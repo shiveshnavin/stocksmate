@@ -142,11 +142,7 @@ async function start(symbol) {
         }
     }
 
-    /******************/
-    // LIMIT_BUY_PRICE = 21.35;
-    FORCE_BUY = true;
-    // TARGET_PROF_PER_SHARE = 0.15;
-    /******************/
+
     // await waitTill(START_HRS, START_MINS - 7)
 
     if (!(await shouldITradeToday(symbol))) {
@@ -163,14 +159,35 @@ async function start(symbol) {
     console.log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on',
         c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target buy @', g(LIMIT_BUY_PRICE))
 
-    let buyOrderResult = await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
+    /******************/
+    // LIMIT_BUY_PRICE = 1550;
+    // FORCE_BUY = true;
+    // FORCE_QTY= 1    
+    // TARGET_PROF_PER_SHARE = 0.15;
+    /******************/
+
+    let alreadyBuyOrder = await checkIfAnyOrderIsPlacedAlready('BUY')
+    let buyOrderResult;
+    if (alreadyBuyOrder.ok) {
+        buyOrderResult = alreadyBuyOrder;
+    }
+    else {
+        buyOrderResult = await tryToPlaceLimitOrderBefore915(LIMIT_BUY_PRICE, symbol)
+    }
 
     if (buyOrderResult.ok) {
         let buyOrderDetails = await waitTillOrderIsExecuted(buyOrderResult.order_id, 'BUY')
         console.log('Starting market watch of', symbol)
+        let lastTick = { abs_change: 0, last_price: 0, change: 0, total_buy_quantity: 0, total_sell_quantity: 0 }
         startMarketWatch([symbol], (ticks) => {
             let tick = ticks[0]
-            let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
+            tick.abs_change = (tick.last_price - lastTick.last_price).toFixed(3)
+            tick.change = ((tick.abs_change * 100) / lastTick.last_price).toFixed(3)
+            tick.total_buy_quantity = tick.total_buy_quantity - lastTick.total_buy_quantity
+            tick.total_sell_quantity = tick.total_sell_quantity - lastTick.total_sell_quantity
+
+            lastTick = tick;
+            let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | abs_change=${tick.abs_change < 0 ? r(tick.abs_change) : g(tick.change)} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity}`
             console.log(strip)
         })
         if (buyOrderDetails.ok) {
@@ -582,6 +599,49 @@ async function waitTillOrderIsExecuted(orderId, type) {
                     }
                 }
             }
+        }
+        callMyself()
+    })
+}
+
+
+async function checkIfAnyOrderIsPlacedAlready(type) {
+    console.log('Waiting for an order', type, 'to reach OPEN | COMPLETE state')
+
+    return new Promise(async (resolve, reject) => {
+
+        async function callMyself() {
+            let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
+                "headers": {
+                    "accept": "application/json, text/plain, */*",
+                    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                    "authorization": "enctoken " + enctoken,
+                    "if-none-match": "W/\"5tkudQ119aB023AJ\"",
+                    "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-origin",
+                    "x-kite-version": "2.9.10"
+                },
+                "referrer": "https://kite.zerodha.com/orders",
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": null,
+                "method": "GET",
+                "mode": "cors",
+                "credentials": "include"
+            }))
+
+            for (let index = 0; index < orders.length; index++) {
+                const order = orders[index];
+                if (order.transaction_type == type && order.status == "COMPLETE" || order.status == "OPEN") {
+                    console.log('Order', order.order_id, 'is now COMPLETE|OPEN. actual average_price @', order.average_price)
+                    order.ok = true;
+                    resolve(order)
+                }
+            }
+            resolve({ ok: false })
         }
         callMyself()
     })
