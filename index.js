@@ -155,7 +155,7 @@ async function start(symbol) {
         initalPriceToday.last_price
         //initalPriceToday.average_traded_price
         : lastDay.close;
-    let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY;
+    let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY - 10;
     console.log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on',
         c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target buy @', g(LIMIT_BUY_PRICE))
 
