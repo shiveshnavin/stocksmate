@@ -3,17 +3,12 @@ name: Run Zerodha
 on:
   workflow_dispatch:
   schedule:
-    - cron: "29 3 * * *"
+    - cron: "45 3 * * *"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [ 14.x ] 
-
+    timeout-minutes: 350
     steps:
     - uses: szenius/set-timezone@v1.0
       with:
