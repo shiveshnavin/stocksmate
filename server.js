@@ -44,6 +44,7 @@ app.all('/start', function (req, res) {
             return
         lastLog = params
         res.write(params)
+        res.flush()
         if (params.indexOf("Killed") > -1) {
             res.end('Exit')
         }
@@ -54,6 +55,8 @@ app.all('/start', function (req, res) {
                     resop.write(params)
                 if (resop.end && params.indexOf("Killed") > -1)
                     resop.end('Exit')
+                if (resop.flush)
+                    resop.flush();
             } catch (e) {
             }
         });
