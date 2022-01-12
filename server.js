@@ -77,6 +77,7 @@ app.all('/update', function (req, res) {
     //https://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@github.com/shiveshnavin/stocksmate
     exec('git pull origin master', (error, stdout, stderr) => {
         res.send('DONE! Restarting now...', error, stdout, stderr)
+        process.exit(0)
     })
 })
 
