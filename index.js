@@ -120,7 +120,7 @@ function trader(stock, isBullTrade, onLog) {
         kf_session = loginData.kf_session;
         public_token = loginData.public_token;
         log('Hello !', Z_USERID)
-        log('Todays trade is', g(symbol))
+        log('Todays trading is going to happen on', g(symbol))
 
         await adapter.init()
 
