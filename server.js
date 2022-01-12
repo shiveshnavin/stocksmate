@@ -35,7 +35,8 @@ let traderKill;
 
 let lastLog = ""
 app.all('/start', function (req, res) {
-    res.setHeader('Content-Type', 'text/plain');
+    res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' })
+    killTrader()
     trader = require('./index')
     logs = ""
     observers = []
@@ -44,7 +45,6 @@ app.all('/start', function (req, res) {
             return
         lastLog = params
         res.write(params)
-        res.flush()
         if (params.indexOf("Killed") > -1) {
             res.end('Exit')
         }
@@ -55,27 +55,26 @@ app.all('/start', function (req, res) {
                     resop.write(params)
                 if (resop.end && params.indexOf("Killed") > -1)
                     resop.end('Exit')
-                if (resop.flush)
-                    resop.flush();
             } catch (e) {
             }
         });
     })
 })
 
-app.all('/reset', function (req, res) {
+let killTrader = function (req, res) {
 
     if (traderKill) {
         traderKill()
     }
     observers = []
     logs = ""
-    res.send("Killed")
-})
+    if (res)
+        res.send("Killed")
+};
+app.all('/reset', killTrader)
 
 app.all('/logs', function (req, res) {
-    res.setHeader('Content-Type', 'text/plain');
-
+    res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' })
     res.write(logs)
     observers.push(res)
 })
@@ -85,8 +84,10 @@ app.all('/update', function (req, res) {
     //https://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@github.com/shiveshnavin/stocksmate
     exec('git pull origin master', (error, stdout, stderr) => {
         console.log('Updating and restarting app')
-        res.send('DONE! Restarting now...', error, stdout, stderr)
-        process.exit(0)
+        res.send('DONE! Restarting now...' + error + "\n" + stdout + "\n" + stderr)
+        setTimeout(() => {
+            process.exit(0)
+        }, 2000)
     })
 })
 

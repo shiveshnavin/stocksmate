@@ -27,8 +27,9 @@ function trader(stock, isBullTrade, onLog) {
 
     let isKill = false;
     let log = function (...params) {
-        console.log(params)
-        onLog(params.toString().replaceAll(',', " ") + '\n')
+        let text = params.toString().replaceAll(',', " ")
+        console.log(text)
+        onLog(text + '\n')
     }
     /***************CONFIG***************/
     let Z_USERID = process.env.Z_USERID
