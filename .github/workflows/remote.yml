@@ -1,0 +1,14 @@
+name: Run Remote Zerodha
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 3 * * 1-5"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+    - run: curl http://35.206.65.195:8080/reset
+    - run: curl http://35.206.65.195:8080/start
