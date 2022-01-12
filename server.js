@@ -39,16 +39,21 @@ app.all('/start', function (req, res) {
     trader = require('./index')
     logs = ""
     observers = []
-    traderKill = trader(req.query.stock || 'HDFCBANK', false, function (params) {
+    traderKill = trader(req.query.stock || 'ADANIGREEN', false, function (params) {
         if (logs.indexOf(params) > -1)
             return
         lastLog = params
         res.write(params)
+        if (params.indexOf("Killed") > -1) {
+            res.end('Exit')
+        }
         logs = logs + params;
         observers.forEach(resop => {
             try {
                 if (resop.write)
                     resop.write(params)
+                if (resop.end && params.indexOf("Killed") > -1)
+                    resop.end('Exit')
             } catch (e) {
             }
         });
@@ -76,6 +81,7 @@ app.all('/logs', function (req, res) {
 app.all('/update', function (req, res) {
     //https://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@github.com/shiveshnavin/stocksmate
     exec('git pull origin master', (error, stdout, stderr) => {
+        console.log('Updating and restarting app')
         res.send('DONE! Restarting now...', error, stdout, stderr)
         process.exit(0)
     })

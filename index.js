@@ -277,7 +277,7 @@ function trader(stock, isBullTrade, onLog) {
                 if (isKill) {
                     return;
                 }
-                await delay(500)
+                await delay(5000)
                 let curH = moment().get('hours');
                 let curM = moment().get('m');
                 if (FORCE_BUY || curH == START_HRS && curM < START_MINS) {
@@ -333,7 +333,7 @@ function trader(stock, isBullTrade, onLog) {
             let brokerageInfo = `[Total Charges ${brokerage.total_tax} Min Breakeven +${brokerage.breakeven} Target Profit ${brokerage.net_profit}]`
 
             async function callMyself() {
-                await delay(500)
+                await delay(5000)
 
                 if (isKill) {
                     return;
@@ -570,7 +570,7 @@ function trader(stock, isBullTrade, onLog) {
                             resolve(-1)
                         }
                         else {
-                            await delay(500)
+                            await delay(5000)
                             callMyself()
                         }
                     }
@@ -626,7 +626,7 @@ function trader(stock, isBullTrade, onLog) {
                             resolve(order)
                         }
                         else {
-                            await delay(500)
+                            await delay(5000)
                             callMyself()
                         }
                     }
