@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  workflow_dispatch:  
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: curl http://35.206.65.195:8080/update
