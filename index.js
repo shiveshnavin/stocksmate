@@ -49,7 +49,7 @@ function trader(stock, isBullTrade, onLog) {
     let STOP_HRS = 15, STOP_MINS = 10
 
     let trade = 'MIS'
-    let TARGET_PROF_PER_SHARE = 10;
+    let TARGET_PROF_PER_SHARE = 20;
     let BUY_AT_MAX_FROM_PREV_DAY = 1;
     let FORCE_BUY = false;
     let FORCE_SELL = false;
@@ -172,7 +172,7 @@ function trader(stock, isBullTrade, onLog) {
             initalPriceToday.last_price
             //initalPriceToday.average_traded_price
             : lastDay.close;
-        let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY - 10;
+        let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY;
         log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on',
             c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target buy @', g(LIMIT_BUY_PRICE))
 
