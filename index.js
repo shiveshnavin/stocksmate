@@ -113,7 +113,7 @@ function trader(stock, isBullTrade, onLog) {
 
     async function start(symbol) {
 
-        log('======&&&&&&&==================')
+        log('========================')
         let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
         enctoken = loginData.enctoken;
         kf_session = loginData.kf_session;
