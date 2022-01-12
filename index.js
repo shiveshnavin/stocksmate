@@ -157,7 +157,7 @@ function trader(stock, isBullTrade, onLog) {
         }
 
 
-        await waitTill(START_HRS, 0)
+        await waitTill(START_HRS, 8)
 
         if (isKill) {
             return;
