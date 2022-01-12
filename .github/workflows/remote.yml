@@ -11,4 +11,4 @@ jobs:
     timeout-minutes: 90
     steps:
     - run: curl http://35.206.65.195:8080/reset
-    - run: curl http://35.206.65.195:8080/start --no-buffer
+    - run: curl http://35.206.65.195:8080/start --no-buffer --silent
