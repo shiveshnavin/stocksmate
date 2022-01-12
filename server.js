@@ -66,10 +66,10 @@ let killTrader = function (req, res) {
     if (traderKill) {
         traderKill()
     }
+    if (res)
+        res.send("Killed\n" + logs)
     observers = []
     logs = ""
-    if (res)
-        res.send("Killed")
 };
 app.all('/reset', killTrader)
 
