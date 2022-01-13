@@ -23,7 +23,7 @@ String.prototype.replaceAll = function (search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
-function trader(stock, isBullTrade, onLog) {
+function trader(stock, isBearTrade, onLog) {
 
     let isKill = false;
     let log = function (...params) {
@@ -49,8 +49,9 @@ function trader(stock, isBullTrade, onLog) {
     let STOP_HRS = 15, STOP_MINS = 10
 
     let trade = 'MIS'
-    let TARGET_PROF_PER_SHARE = 20;
+    let TARGET_PROF_PER_SHARE = 20; 
     let BUY_AT_MAX_FROM_PREV_DAY = 1;
+    let SHORT_SELL_AT_MIN_FROM_PREV_DAY = 10;
     let FORCE_BUY = false;
     let FORCE_SELL = false;
     let FORCE_QTY = undefined;
@@ -173,8 +174,13 @@ function trader(stock, isBullTrade, onLog) {
             //initalPriceToday.average_traded_price
             : lastDay.close;
         let LIMIT_BUY_PRICE = lastPrice + BUY_AT_MAX_FROM_PREV_DAY;
+
+        if(isBearTrade){
+            LIMIT_BUY_PRICE = lastPrice + SHORT_SELL_AT_MIN_FROM_PREV_DAY
+        }
+
         log('\nLast trade for', symbol, 'was', initalPriceToday.last_price, 'on',
-            c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target buy @', g(LIMIT_BUY_PRICE))
+            c(moment(initalPriceToday.last_trade_time).format('YYYY-MM-DD HH:mm:ss')), 'so todays target @',(isBearTrade?'SELL':'BUY'), g(LIMIT_BUY_PRICE))
 
         /******************/
         // LIMIT_BUY_PRICE = 1550;
@@ -183,7 +189,7 @@ function trader(stock, isBullTrade, onLog) {
         // TARGET_PROF_PER_SHARE = 0.15;
         /******************/
 
-        let alreadyBuyOrder = await checkIfAnyOrderIsPlacedAlready('BUY')
+        let alreadyBuyOrder = await checkIfAnyOrderIsPlacedAlready(isBearTrade ? 'SELL' : 'BUY')
         let buyOrderResult;
         if (alreadyBuyOrder.ok) {
             buyOrderResult = alreadyBuyOrder;
@@ -193,7 +199,7 @@ function trader(stock, isBullTrade, onLog) {
         }
 
         if (buyOrderResult.ok) {
-            let buyOrderDetails = await waitTillOrderIsExecuted(buyOrderResult.order_id, 'BUY')
+            let buyOrderDetails = await waitTillOrderIsExecuted(buyOrderResult.order_id, isBearTrade ? 'SELL' : 'BUY')
             log('Starting market watch of', symbol)
             let lastTick = { abs_change: 0, last_price: 0, change: 0, total_buy_quantity: 0, total_sell_quantity: 0 }
             startMarketWatch([symbol], (ticks) => {
@@ -211,7 +217,7 @@ function trader(stock, isBullTrade, onLog) {
             if (buyOrderDetails.ok) {
                 log('Order execution success with buy average_price', buyOrderDetails.average_price, 'x', buyOrderDetails.quantity)
                 let sellOrderResult = await tryToPlaceSellOrder(buyOrderDetails)
-                let sellOrderDetails = await waitTillOrderIsExecuted(sellOrderResult.order_id, 'SELL')
+                let sellOrderDetails = await waitTillOrderIsExecuted(sellOrderResult.order_id, isBearTrade ? 'BUY' :'SELL')
 
             }
             else {
@@ -287,7 +293,9 @@ function trader(stock, isBullTrade, onLog) {
                         return callMyself()
                     }
                     let qty = FORCE_QTY || Math.floor(toSpend / marginForOneQty.total)
-                    let requiredMargin = await zerodhaRequiredMargin(LIMIT_BUY_PRICE, qty, 'BUY', symbol);
+                    let ot = isBearTrade ? 'SELL' : 'BUY'
+
+                    let requiredMargin = await zerodhaRequiredMargin(LIMIT_BUY_PRICE, qty, ot, symbol);
 
                     let targetSell = LIMIT_BUY_PRICE + TARGET_PROF_PER_SHARE;
                     let brokerage = calculator(LIMIT_BUY_PRICE, targetSell, qty, true)
@@ -295,11 +303,11 @@ function trader(stock, isBullTrade, onLog) {
 
                     let brokerageInfo = `[Total Charges ${brokerage.total_tax} Min Breakeven +${brokerage.breakeven} Target Profit ${brokerage.net_profit}]`
 
-                    log('Trying to place a buy order before market opens @', LIMIT_BUY_PRICE, 'x', qty, 'requiredMargin', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`, brokerageInfo)
+                    log('Trying to place a ',ot,' order before market opens @', LIMIT_BUY_PRICE, 'x', qty, 'requiredMargin', requiredMargin ? requiredMargin.total : `[${qty * marginForOneQty.total}]`, brokerageInfo)
 
-                    let orderPlaceResult = await tryToPlaceOrderZerodha(LIMIT_BUY_PRICE, qty, 'BUY', symbol, 'LIMIT')
+                    let orderPlaceResult = await tryToPlaceOrderZerodha(LIMIT_BUY_PRICE, qty, ot, symbol, 'LIMIT')
                     if (orderPlaceResult.ok) {
-                        let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, 'BUY')
+                        let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, ot)
                         if (placed == 1) {
                             log('-------------ORDER PLACED----------', orderPlaceResult)
                             res(orderPlaceResult)
@@ -330,6 +338,9 @@ function trader(stock, isBullTrade, onLog) {
             let qty = actualOrder.quantity;
             let symbol = actualOrder.tradingsymbol
             let targetSell = (actualOrder.average_price + TARGET_PROF_PER_SHARE).toFixed(2);
+            if(isBearTrade){
+                targetSell = (actualOrder.average_price - TARGET_PROF_PER_SHARE).toFixed(2);
+            }
             let brokerage = calculator(actualOrder.average_price, targetSell, qty, true)
             let brokerageInfo = `[Total Charges ${brokerage.total_tax} Min Breakeven +${brokerage.breakeven} Target Profit ${brokerage.net_profit}]`
 
@@ -339,12 +350,13 @@ function trader(stock, isBullTrade, onLog) {
                 if (isKill) {
                     return;
                 }
-                log('Placing sell order @', actualOrder.average_price, '-->', targetSell, 'x', actualOrder.quantity, brokerageInfo)
-                let orderPlaceResult = await tryToPlaceOrderZerodha(targetSell, qty, 'SELL', symbol, 'LIMIT')
+                let ot = isBearTrade ? 'BUY' : 'SELL'
+                log('Placing ',ot,' order @', actualOrder.average_price, '-->', targetSell, 'x', actualOrder.quantity, brokerageInfo)
+                let orderPlaceResult = await tryToPlaceOrderZerodha(targetSell, qty, ot, symbol, 'LIMIT')
                 if (orderPlaceResult.ok) {
-                    let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, 'SELL')
+                    let placed = await waitTillOrderIsOpen(orderPlaceResult.order_id, ot)
                     if (placed == 1) {
-                        log('-------------SELL ORDER PLACED---------- target @', targetSell, orderPlaceResult)
+                        log('-------------',ot,' ORDER PLACED---------- target @', targetSell, orderPlaceResult)
                         resolve(orderPlaceResult)
                     }
                     else {

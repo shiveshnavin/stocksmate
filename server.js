@@ -11,7 +11,11 @@ app.all('/', function (req, res) {
     <body>
 
     <h3>
-        <a href="/start">START</a>
+        <a href="/start?isBearTrade=false">START BULL</a>
+    </h3>
+    <br>
+    <h3>
+        <a href="/start?isBearTrade=true">START BEAR</a>
     </h3>
     <br>
     <h3>
@@ -40,7 +44,7 @@ app.all('/start', function (req, res) {
     trader = require('./index')
     logs = ""
     observers = []
-    traderKill = trader(req.query.stock || 'ADANIGREEN', false, function (params) {
+    traderKill = trader(req.query.stock || 'ADANIGREEN', req.query.isBearTrade, function (params) {
         if (logs.indexOf(params) > -1)
             return
         lastLog = params
