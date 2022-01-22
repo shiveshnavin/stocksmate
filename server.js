@@ -41,7 +41,7 @@ let lastLog = ""
 app.all('/start', function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive' })
     killTrader()
-    trader = require('./index')
+    trader = require('./stratergies/optionsbracket')
     logs = ""
     observers = []
     traderKill = trader(req.query.stock || 'ADANIGREEN', req.query.isBearTrade, function (params) {
