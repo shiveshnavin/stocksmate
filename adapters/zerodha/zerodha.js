@@ -2,6 +2,7 @@ let moment = require('moment')
 const fetch = require('node-fetch');
 const zlogin = require('./login')
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+const Tick = require('../../dao/tick')
 
 var axios = require('axios');
 let bCalc = require('../../archive/brokerage')
@@ -49,25 +50,6 @@ module.exports = function (config, log) {
     let enctoken = ""
     let kf_session = ""
     let public_token = ""
-    let usablableBalance = function (balance) {
-        return balance * 0.45;
-    }
-    let usablableBackupBalance = function (balance) {
-        return balance * 0.9;
-    }
-    let START_HRS = 9, START_MINS = 20;
-    let STOP_HRS = 15, STOP_MINS = 10
-
-    let trade = 'MIS'
-    let TARGET_PROF_PER_SHARE = 20;
-    let BUY_AT_MAX_FROM_PREV_DAY = 1;
-    let SHORT_SELL_AT_MIN_FROM_PREV_DAY = 10;
-    let FORCE_BUY = false;
-    let FORCE_SELL = false;
-    let FORCE_QTY = undefined;
-    let FORCE_SKIP_OUTLOOK_CHECK = false;
-
-    let calculator = trade == 'MIS' ? bCalc.cal_intra : bCalc.cal_delivery
 
 
     mod.init = async function () {
@@ -168,9 +150,9 @@ module.exports = function (config, log) {
      * @param {*} to yyyy-mm-dd hh:mm:ss 2015-12-28+09:30:00
      * @returns 
      */
-    mod.getHistoricalData = async function getHistoricalData(instrumentToken, interval, from, to, continuous) {
-        
-        return wrap(fetch(`https://kite.zerodha.com/oms/instruments/historical/${instrumentToken}/${interval}?user_id=AMC939&oi=1&continuous=${continuous ? 1 : 0}&from=${from}&to=${to}`, {
+    mod.getHistoricalData = async function getHistoricalData(stockData, interval, from, to, continuous) {
+
+        let response = await wrap(fetch(`https://kite.zerodha.com/oms/instruments/historical/${stockData.instrument_token}/${interval}?user_id=AMC939&oi=1&continuous=${continuous ? 1 : 0}&from=${from}&to=${to}`, {
             "headers": {
                 "accept": "application/json, text/plain, */*",
                 "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
@@ -190,10 +172,52 @@ module.exports = function (config, log) {
             "method": "GET",
             "mode": "cors",
             "credentials": "include"
-        }))
+        }));
+
+        let ticks = []
+        if (response.candles) {
+            response.candles.forEach(element => {
+                ticks.push(new Tick({
+                    symbol: stockData.tradingsymbol,
+                    stockData: stockData,
+                    close: element[4],
+                    datetime: element[0],
+                    high: element[2],
+                    low: element[3],
+                    open: element[1],
+                    volume: element[5],
+                    oi: element[6],
+                }))
+            });
+        }
+
+        return ticks;
     }
 
+    /**
+     * 
+     * @param {*} limitPrice 
+     * @param {*} qty 
+     * @param {*} type BUY or SELL
+     * @param {*} symbol 
+     * @returns 
+     */
+    mod.order = async function (limitPrice, qty, type, symbol, order_type) {
+        var data = `variety=regular&exchange=NSE&tradingsymbol=${symbol}&transaction_type=${type}&order_type=${order_type}&quantity=${qty}&price=${limitPrice}&product=${trade}&validity=DAY&disclosed_quantity=0&trigger_price=0&squareoff=0&stoploss=0&trailing_stoploss=0&user_id=${Z_USERID}`
 
+        try {
+
+            let result = await zerodhaCall('post', 'https://kite.zerodha.com/oms/orders/regular', data);
+            result.ok = true;
+            return result;
+        } catch (e) {
+            log('Couldnt place order >>', e.response.data.message)
+            return {
+                message: e.response.data.message,
+                ok: false
+            }
+        }
+    }
 
     return mod;
 }
