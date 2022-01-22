@@ -32,9 +32,9 @@ async function startTest() {
 
     await adapter.init()
     let formatDate = 'YYYY-MM-DD+HH:mm:ss'
-    let day = parseInt(process.argv[2]) || 21;
+    let day = parseInt(process.argv[2]) || 20;
     let from = moment(`2022-01-${day}T09:15:00`)
-    let to = moment(`2022-01-${day}T15:30:00`)
+    let to = moment(`2022-01-${day + 1}T15:30:00`)
 
 
     let historyCE = await adapter.getHistoricalData(stockDataCE, 'minute', from.format(formatDate), to.format(formatDate), 0)
@@ -90,15 +90,15 @@ async function startTest() {
         let mom = (moment(tce.datetime).format('HH:mm'))
 
         if (!cePur// && tce.close < pal.ceBuyLimit
-            ) {
+        ) {
             pal.ceinvestment = tce.close * lotSize;
             cePur = true;
             console.log("PURCHASE CE @", tce.close)
         }
 
         if (!pePur //&& tpe.close < pal.peBuyLimit
-            ) {
-            pal.peinvestment = pal.peBuyLimit * lotSize;
+        ) {
+            pal.peinvestment = tpe.close * lotSize;
             pePur = true;
             console.log("PURCHASE PE @", tpe.close)
         }
@@ -109,8 +109,8 @@ async function startTest() {
         }
 
         if (pePur) {
-            pal.peprofit = (pal.pevalue - pal.peinvestment).toFixed(2)
             pal.pevalue = (tpe.close * lotSize).toFixed(2)
+            pal.peprofit = (pal.pevalue - pal.peinvestment).toFixed(2)
         }
         pal.net = parseFloat(pal.ceprofit) + parseFloat(pal.peprofit)
 
