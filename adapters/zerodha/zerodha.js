@@ -67,12 +67,15 @@ module.exports = function (config, log) {
     mod.findScrip = function (ticker) {
         for (let j = 0; j < masterSymbolList.length; j++) {
             const symbol = masterSymbolList[j];
-            if (ticker.tradingsymbol == symbol.tradingsymbol &&
-                ticker.segment == symbol.segment &&
-                ticker.exchange == symbol.exchange) {
-                return symbol
+            if (ticker.tradingsymbol == symbol.tradingsymbol) {
+                if (
+                    ticker.segment == symbol.segment &&
+                    ticker.exchange == symbol.exchange) {
+                    return symbol
+                }
             }
             else if (
+                ticker.tradingsymbol == undefined &&
                 ticker.segment == symbol.segment &&
                 ticker.instrument_type == symbol.instrument_type &&
                 ticker.expiry == symbol.expiry &&
@@ -150,7 +153,7 @@ module.exports = function (config, log) {
      * @param {*} to yyyy-mm-dd hh:mm:ss 2015-12-28+09:30:00
      * @returns 
      */
-    mod.getHistoricalData = async function getHistoricalData(stockData, interval, from, to, continuous) {
+    mod.getHistoricalData = async function getHistoricalData(stockData, interval, from, to, continuous, flat) {
 
         let response = await wrap(fetch(`https://kite.zerodha.com/oms/instruments/historical/${stockData.instrument_token}/${interval}?user_id=AMC939&oi=1&continuous=${continuous ? 1 : 0}&from=${from}&to=${to}`, {
             "headers": {
@@ -179,7 +182,7 @@ module.exports = function (config, log) {
             response.candles.forEach(element => {
                 ticks.push(new Tick({
                     symbol: stockData.tradingsymbol,
-                    stockData: stockData,
+                    stockData: flat ? undefined : stockData,
                     close: element[4],
                     datetime: element[0],
                     high: element[2],

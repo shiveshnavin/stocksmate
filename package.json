@@ -6,6 +6,7 @@
   "scripts": {
     "start": " env TZ='Asia/Kolkata' && node server.js",
     "test": "node test.js",
+    "export": "node ./py/import.js",
     "fivepaisa:minify": "node adapters/fivepaisa/filterscrip.js",
     "angelone:minify": "node adapters/angelone/filterscrip.js",
     "zerodha:minify": "node adapters/zerodha/filterscrip.js"
