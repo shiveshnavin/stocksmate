@@ -8,6 +8,8 @@ import datetime as dt
 print('imported datetime')
 import mplcursors
 print('imported mplcursors')
+import os
+os.system("npm run export minute")
 
 f = open('data_minute.json')
 data = json.load(f) 
