@@ -9,6 +9,7 @@ print('imported datetime')
 import mplcursors
 print('imported mplcursors')
 import os
+import time
 os.system("npm run export minute")
 
 f = open('data_minute.json')
@@ -34,11 +35,11 @@ for group_name, df_group in grouped:
     x = df_group['time']
     ax = plt.gca()
     temp = ax.xaxis.get_ticklabels()
-    temp = list(set(temp) - set(temp[::3]))
+    temp = list(set(temp) - set(temp[::2]))
     for label in temp:
         label.set_visible(False)
     plt.legend()
     plt.plot(x, y, label=group_name)
-#     print(df_group)    
+
 mplcursors.cursor(hover=True)
-plt.show()
+plt.show()   

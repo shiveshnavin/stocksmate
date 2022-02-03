@@ -52,6 +52,44 @@ module.exports = function (config, log) {
     let public_token = ""
 
 
+
+    async function zerodhaCall(method, url, data) {
+        var config = {
+            method: method,
+            url: url,
+            headers: {
+                "accept": "application/json, text/plain, */*",
+                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                "authorization": `enctoken ${enctoken}`,
+                "content-type": "application/x-www-form-urlencoded",
+                "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Windows\"",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "x-kite-userid": "AMC939",
+                "x-kite-version": "2.9.10",
+                "cookie": `kf_session=${kf_session}; user_id=${Z_USERID}; enctoken=${enctoken}`,
+                "Referer": "https://kite.zerodha.com/dashboard",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "x-csrftoken": public_token
+            },
+            data: data
+        };
+
+        try {
+            let result = await axios(config);
+            return result.data.data;
+
+        } catch (e) {
+            // log('Zerodha ERROR', e.response.data.message)
+            throw e;
+        }
+    }
+
+    mod.zerodhaCall = zerodhaCall;
+    
     mod.init = async function () {
         log('========================')
         let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
@@ -205,8 +243,8 @@ module.exports = function (config, log) {
      * @param {*} symbol 
      * @returns 
      */
-    mod.order = async function (limitPrice, qty, type, symbol, order_type) {
-        var data = `variety=regular&exchange=NSE&tradingsymbol=${symbol}&transaction_type=${type}&order_type=${order_type}&quantity=${qty}&price=${limitPrice}&product=${trade}&validity=DAY&disclosed_quantity=0&trigger_price=0&squareoff=0&stoploss=0&trailing_stoploss=0&user_id=${Z_USERID}`
+    mod.order = async function (limitPrice, qty, type, symbol, order_type, trade = "NRML", exchange = "NSE") {
+        var data = `variety=regular&exchange=${exchange}&tradingsymbol=${symbol}&transaction_type=${type}&order_type=${order_type}&quantity=${qty}&price=${limitPrice}&product=${trade}&validity=DAY&disclosed_quantity=0&trigger_price=0&squareoff=0&stoploss=0&trailing_stoploss=0&user_id=${Z_USERID}`
 
         try {
 
@@ -214,9 +252,10 @@ module.exports = function (config, log) {
             result.ok = true;
             return result;
         } catch (e) {
-            log('Couldnt place order >>', e.response.data.message)
+            let ms = e.response ? e.response.data.message : e.message
+            log('Couldnt place order >>', ms)
             return {
-                message: e.response.data.message,
+                message: ms,
                 ok: false
             }
         }

@@ -36,6 +36,12 @@ async function startTest() {
     let from = moment(`2022-01-${day}T09:15:00`)
     let to = moment(`2022-01-${day + 1}T15:30:00`)
 
+    setInterval(() => {
+        adapter.order(160, 50, "SELL", "NIFTY22FEB17800CE", "LIMIT","NRML","NFO")
+    }, 500)
+
+
+    return
 
     let historyCE = await adapter.getHistoricalData(stockDataCE, 'minute', from.format(formatDate), to.format(formatDate), 0)
     let historyPE = await adapter.getHistoricalData(stockDataPE, 'minute', from.format(formatDate), to.format(formatDate), 0)

@@ -1,2 +1,9 @@
 require('dotenv').config()
-require('./py/import')
+let adapter = require('./adapters/zerodha/zerodha')()
+let brok = require('./archive/brokerage')
+function calculateAllBrokerage() {
+    
+}
+
+
+calculateAllBrokerage()
