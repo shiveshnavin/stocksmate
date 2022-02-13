@@ -51,6 +51,7 @@ module.exports = function (config, log) {
     let kf_session = ""
     let public_token = ""
 
+    let isKill = false;
 
 
     async function zerodhaCall(method, url, data) {
@@ -89,7 +90,7 @@ module.exports = function (config, log) {
     }
 
     mod.zerodhaCall = zerodhaCall;
-    
+
     mod.init = async function () {
         log('========================')
         let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
@@ -141,13 +142,13 @@ module.exports = function (config, log) {
                 for (let j = 0; j < symbols.length; j++) {
                     const symbol = symbols[j];
                     if (element.tradingsymbol == symbol) {
-                        instrument_tokens.push(element.instrument_token)
+                        instrument_tokens.push(parseInt(element.instrument_token))
                         break;
                     }
                 }
             }
             else {
-                instrument_tokens.push(element.instrument_token)
+                instrument_tokens.push(parseInt(element.instrument_token))
             }
         }
 
@@ -161,9 +162,10 @@ module.exports = function (config, log) {
             root: wsUrl
         }));
 
-        ticker.connect();
         ticker.on("ticks", onTicks);
         ticker.on("connect", subscribe);
+        ticker.connect();
+
         function onTicks(ticks) {
             if (isKill) {
                 ticker.autoReconnect(false, 0, 1)
@@ -253,7 +255,7 @@ module.exports = function (config, log) {
             return result;
         } catch (e) {
             let ms = e.response ? e.response.data.message : e.message
-            log('Couldnt place order >>', ms)
+            log(new Date(), 'Couldnt place order >>', ms)
             return {
                 message: ms,
                 ok: false

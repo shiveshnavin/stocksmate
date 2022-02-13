@@ -5,6 +5,7 @@ const { r, g, b, w, c, m, y, k } = [
 ].reduce((cols, col) => ({
     ...cols, [col[0]]: f => `\x1b[3${col[1]}m${f}\x1b[0m`
 }), {})
+let moment = require('moment')
 
 String.prototype.replaceAll = function (search, replacement) {
     var target = this;
@@ -14,6 +15,7 @@ String.prototype.replaceAll = function (search, replacement) {
 function trader(stockData, isBearTrade, onLog) {
 
     let jack = {};
+    let log = onLog;
     let usablableBalance = function (balance) {
         return balance * 0.45;
     }
@@ -38,14 +40,14 @@ function trader(stockData, isBearTrade, onLog) {
     async function start(stock) {
 
         await adapter.init()
-        // adapter.listen([stock], function (tick) {
-        //     jack.onTick(tick)
-        // })
+        adapter.listen([stock], function (tick) {
+            jack.onTick(tick)
+        })
 
     }
     jack.getInitialPrice = function (stockData) {
 
- 
+
 
 
     }
@@ -62,10 +64,24 @@ function trader(stockData, isBearTrade, onLog) {
 
 
 
-    } 
-    jack.onTick = function (tick) {
+    }
 
+    let lastTick = { abs_change: 0, last_price: 0, change: 0, total_buy_quantity: 0, total_sell_quantity: 0 }
 
+    jack.onTick = function (ticks) {
+
+        let tick = ticks[0]
+
+        tick.abs_change = (tick.last_price - lastTick.last_price).toFixed(3)
+        tick.change = ((tick.abs_change * 100) / lastTick.last_price).toFixed(3)
+        tick.pcr = tick.total_sell_quantity / tick.total_buy_quantity
+        tick.total_buy_quantity = tick.total_buy_quantity - lastTick.total_buy_quantity
+        tick.total_sell_quantity = tick.total_sell_quantity - lastTick.total_sell_quantity
+
+        lastTick = tick;
+        let strip = `${c(moment(tick.last_trade_time).format('YYYY-MM-DD HH:mm:ss'))} | abs_change=${tick.abs_change < 0 ? r(tick.abs_change) : g(tick.change)} | change=${tick.change < 0 ? r(tick.change) : g(tick.change)} | last_price=${g(tick.last_price)} | sells ${tick.total_sell_quantity} | buys ${tick.total_buy_quantity} | S/B ${tick.pcr}`
+        if (tick.abs_change > 0)
+            log(strip)
 
 
 
