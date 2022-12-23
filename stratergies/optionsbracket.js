@@ -11,7 +11,7 @@ String.prototype.replaceAll = function (search, replacement) {
     var target = this;
     return target.replace(new RegExp(search, 'g'), replacement);
 };
-
+let fs = require('fs')
 function trader(stockData, isBearTrade, onLog) {
 
     let jack = {};
@@ -40,7 +40,26 @@ function trader(stockData, isBearTrade, onLog) {
     async function start(stock) {
 
         await adapter.init()
+        let file = './data'+stock+'.json';
+        let buf = []
         adapter.listen([stock], function (tick) {
+            tick[0].depth = undefined;
+            let x = []
+            if(buf.length > 10){
+                if (fs.existsSync(file)) {
+                    x = JSON.parse(fs.readFileSync(file).toString())
+                }
+                buf.forEach(element => {
+                    x.push(element)
+                });
+                fs.writeFileSync(file, JSON.stringify(x, null, 2))  
+                console.log('written')  
+                buf = []
+            }
+            else{
+                buf.push(tick[0])
+            }
+          
             jack.onTick(tick)
         })
 

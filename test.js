@@ -15,15 +15,15 @@ let range = parseInt(process.argv[4]) || 0;
 let stockDataCE = adapter.findScrip({
     "name": "NIFTY",
     "expiry": "2022-02-24",
-    "strike": "" + (strike + range),
+    "strike": "17500",
     "instrument_type": "CE",
     "segment": "NFO-OPT",
     "exchange": "NFO"
 })
 let stockDataPE = adapter.findScrip({
     "name": "NIFTY",
-    "expiry": "2022-01-27",
-    "strike": "" + (strike - range),
+    "expiry": "2022-02-24",
+    "strike": "17100",
     "instrument_type": "PE",
     "segment": "NFO-OPT",
     "exchange": "NFO"
@@ -31,12 +31,28 @@ let stockDataPE = adapter.findScrip({
 async function startTest() {
 
     // await adapter.init()
+    console.log(stockDataPE)
+    console.log(stockDataCE)
+
     let formatDate = 'YYYY-MM-DD+HH:mm:ss'
     let day = parseInt(process.argv[2]) || 20;
     let from = moment(`2022-01-${day}T09:15:00`)
     let to = moment(`2022-01-${day + 1}T15:30:00`)
 
-    trader(stockDataCE, false, function (params) {
+    trader({
+        "instrument_token": "256265",
+        "exchange_token": "1001",
+        "tradingsymbol": "NIFTY 50",
+        "name": "NIFTY 50",
+        "last_price": "0",
+        "expiry": "",
+        "strike": "0",
+        "tick_size": "0",
+        "lot_size": "0",
+        "instrument_type": "EQ",
+        "segment": "INDICES",
+        "exchange": "NSE"
+      }, false, function (params) {
         console.log(params)
     })
 }
