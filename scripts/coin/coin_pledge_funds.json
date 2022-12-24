@@ -1,0 +1,920 @@
+[
+  {
+    "type": "mf",
+    "name": "CPIGG",
+    "full_name": "UTI LIQUID CASH PLAN - REGULAR GROWTH",
+    "isin": "INF789F01PH1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789F01PH1"
+  },
+  {
+    "type": "mf",
+    "name": "BOILFRGG",
+    "full_name": "BANK OF INDIA LIQUID FUNDREGULAR PLAN - GROWTH",
+    "isin": "INF761K01306",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF761K01306"
+  },
+  {
+    "type": "mf",
+    "name": "B403DZ",
+    "full_name": "ADITYA BIRLA SUN LIFE GOVERNMENT SECURITIES FUND- QUARTERLY DIRECT PLAN-IDCW PAYOUT",
+    "isin": "INF209KA1LC4",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209KA1LC4"
+  },
+  {
+    "type": "mf",
+    "name": "AXISMDGP",
+    "full_name": "AXIS MONEY MARKET FUND DIRECT GROWTH",
+    "isin": "INF846K01Q62",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF846K01Q62"
+  },
+  {
+    "type": "mf",
+    "name": "DSPTREDGR",
+    "full_name": "DSP SAVINGS FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF740K01NU2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740K01NU2"
+  },
+  {
+    "type": "mf",
+    "name": "BSL402AG",
+    "full_name": "ADITYA BIRLA SUN LIFE GOVERNMENT SECURITIES FUND-GROWTH",
+    "isin": "INF209K01AC3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01AC3"
+  },
+  {
+    "type": "mf",
+    "name": "DSPONDGR",
+    "full_name": "DSP OVERNIGHT FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF740KA1MC8",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740KA1MC8"
+  },
+  {
+    "type": "mf",
+    "name": "FILFDSIPGP",
+    "full_name": "FRANKLIN INDIA LIQUID FUND - SUPER INSTITUTIONAL PLAN - DIRECT -GROWTH",
+    "isin": "INF090I01JV2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01JV2"
+  },
+  {
+    "type": "mf",
+    "name": "CPIMD",
+    "full_name": "UTI LIQUID CASH PLAN-REGULAR MONTHLY DIVIDEND PLAN-IDCW PAYOUT",
+    "isin": "INF789F01PI9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789F01PI9"
+  },
+  {
+    "type": "mf",
+    "name": "H53TGR",
+    "full_name": "HDFC MONEY MARKET FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF179KB1HU9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HU9"
+  },
+  {
+    "type": "mf",
+    "name": "FLDGP",
+    "full_name": "FRANKLIN INDIA SAVINGS FUND RETAIL OPTION - DIRECT GROWTH",
+    "isin": "INF090I01GV8",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01GV8"
+  },
+  {
+    "type": "mf",
+    "name": "QMFLFMDP",
+    "full_name": "QUANTUM LIQUID FUND - DIRECT PLAN MONTHLY IDCW PAYOUT OPTION",
+    "isin": "INF082J01143",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF082J01143"
+  },
+  {
+    "type": "mf",
+    "name": "IDLFM1D",
+    "full_name": "IDBI LIQUID FUND-DIRECT PLAN - MONTHLY IDCW PAYOUT",
+    "isin": "INF397L01AK7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF397L01AK7"
+  },
+  {
+    "type": "mf",
+    "name": "FLMDP",
+    "full_name": "FRANKLIN INDIA SAVINGS FUND RETAIL OPTION-MONTHLY IDCW PAYOUT",
+    "isin": "INF090I01LA2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01LA2"
+  },
+  {
+    "type": "mf",
+    "name": "IGIF2028DG",
+    "full_name": "IDFC CRISIL GILT 2028 INDEX FUND DIRECT PLAN-GROWTH",
+    "isin": "INF194KB1BV1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1BV1"
+  },
+  {
+    "type": "mf",
+    "name": "HDFCGLG",
+    "full_name": "HDFC GILT FUND - REGULAR PLAN- GROWTH",
+    "isin": "INF179K01756",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179K01756"
+  },
+  {
+    "type": "mf",
+    "name": "IDGIF2028G",
+    "full_name": "IDFC CRISIL GILT 2028 INDEX FUND REGULAR PLAN-GROWTH",
+    "isin": "INF194KB1BS7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1BS7"
+  },
+  {
+    "type": "mf",
+    "name": "HGLGTGR",
+    "full_name": "HDFC GILT FUND - DIRECT PLAN - GROWTH OPTION",
+    "isin": "INF179K01VS0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179K01VS0"
+  },
+  {
+    "type": "mf",
+    "name": "FLGP",
+    "full_name": "FRANKLIN INDIA SAVINGS FUND RETAIL OPTION-GROWTH",
+    "isin": "INF090I01CA1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01CA1"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1567",
+    "full_name": "ICICI PRUDENTIAL LIQUID FUND - WEEKLY IDCW REINVESTMENT",
+    "isin": "INF109K01VS7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01VS7"
+  },
+  {
+    "type": "mf",
+    "name": "HLQDLFG",
+    "full_name": "HDFC LIQUID FUND - GROWTH",
+    "isin": "INF179KB1HK0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HK0"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCFCCG",
+    "full_name": "IDFC CASH FUND -REGULAR PLAN-GROWTH",
+    "isin": "INF194K01VX9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01VX9"
+  },
+  {
+    "type": "mf",
+    "name": "IP54P",
+    "full_name": "ICICI PRUDENTIAL GILT FUND - IDCW PAYOUT",
+    "isin": "INF109K01JQ6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01JQ6"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCONF",
+    "full_name": "IDFC OVERNIGHT FUND REGULAR PLAN-GROWTH",
+    "isin": "INF194KB1314",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1314"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCONFDG",
+    "full_name": "IDFC OVERNIGHT FUND DIRECT PLAN-GROWTH",
+    "isin": "INF194KB1447",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1447"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCFCCM",
+    "full_name": "IDFC CASH FUND - MONTHLY - IDCW REINVESTMENT",
+    "isin": "INF194K01WF4",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01WF4"
+  },
+  {
+    "type": "mf",
+    "name": "IDGIF2027G",
+    "full_name": "IDFC CRISIL GILT 2027 INDEX FUND REGULAR PLAN-GROWTH",
+    "isin": "INF194KB1BL2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1BL2"
+  },
+  {
+    "type": "mf",
+    "name": "IGIF2027DG",
+    "full_name": "IDFC CRISIL GILT 2027 INDEX FUND DIRECT PLAN-GROWTH",
+    "isin": "INF194KB1BP3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194KB1BP3"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCDFCCG",
+    "full_name": "IDFC CASH FUND-GROWTH-(DIRECT PLAN)",
+    "isin": "INF194K01I60",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01I60"
+  },
+  {
+    "type": "mf",
+    "name": "HLQD53",
+    "full_name": "HDFC MONEY MARKET FUND - REGULAR PLAN - GROWTH",
+    "isin": "INF179KB1HR5",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HR5"
+  },
+  {
+    "type": "mf",
+    "name": "EMFONFDRGP",
+    "full_name": "EDELWEISS OVERNIGHT FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF754K01JV9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF754K01JV9"
+  },
+  {
+    "type": "mf",
+    "name": "FILFSIPGP",
+    "full_name": "FRANKLIN INDIA LIQUID FUND - SUPER INSTITUTIONAL PLAN-GROWTH",
+    "isin": "INF090I01BG0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01BG0"
+  },
+  {
+    "type": "mf",
+    "name": "B153GZ",
+    "full_name": "ADITYA BIRLA SUN LIFE LIQUID FUND DIRECT PLAN - GROWTH",
+    "isin": "INF209K01VA3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01VA3"
+  },
+  {
+    "type": "mf",
+    "name": "IMFONDRDRD",
+    "full_name": "INVESCO INDIA OVERNIGHT FUND-REGULAR -GROWTH",
+    "isin": "INF205KA1114",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF205KA1114"
+  },
+  {
+    "type": "mf",
+    "name": "H57TGR",
+    "full_name": "HDFC OVERNIGHT FUND DIRECT PLAN - GROWTH",
+    "isin": "INF179KB1HT1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HT1"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1571",
+    "full_name": "ICICI PRUDENTIAL MONEY MARKET FUND - GROWTH",
+    "isin": "INF109K01TX1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01TX1"
+  },
+  {
+    "type": "mf",
+    "name": "BSL402IG",
+    "full_name": "ADITYA BIRLA SUN LIFE GOVERNMENT SECURITIES FUND-INSTANT GAIN-GROWTH",
+    "isin": "INF209K01AD1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01AD1"
+  },
+  {
+    "type": "mf",
+    "name": "HLQDLFDM",
+    "full_name": "HDFC LIQUID FUND - MONTHLY IDCW PAYOUT",
+    "isin": "INF179KB1HM6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HM6"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCD86",
+    "full_name": "IDFC GOVERNMENT SECURITIES FUND-INVESTMENT PLAN-GROWTH-(DIRECT PLAN)",
+    "isin": "INF194K01Q29",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01Q29"
+  },
+  {
+    "type": "mf",
+    "name": "IMFONFRGDR",
+    "full_name": "INVESCO INDIA OVERNIGHT FUND-DIRECT-GROWTH",
+    "isin": "INF205KA1163",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF205KA1163"
+  },
+  {
+    "type": "mf",
+    "name": "CRLIDG",
+    "full_name": "CANARA ROBECO LIQUID FUND DIRECT GROWTH",
+    "isin": "INF760K01FU6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF760K01FU6"
+  },
+  {
+    "type": "mf",
+    "name": "EMFLIQDRGR",
+    "full_name": "EDELWEISS LIQUID FUND - REGULAR PLAN GROWTH - GROWTH",
+    "isin": "INF754K01GZ6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF754K01GZ6"
+  },
+  {
+    "type": "mf",
+    "name": "EMFLIQDGP",
+    "full_name": "EDELWEISS LIQUID FUND - DIRECT PLAN GROWTH OPTION",
+    "isin": "INF754K01GM4",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF754K01GM4"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU9425",
+    "full_name": "ICICI PRUDENTIAL OVERNIGHT FUND DIRECT PLAN GROWTH",
+    "isin": "INF109KC11G1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109KC11G1"
+  },
+  {
+    "type": "mf",
+    "name": "IDFC86",
+    "full_name": "IDFC GOVERNMENT SECURITIES FUND- INVESTMENT PLAN-REGULAR PLAN-GROWTH",
+    "isin": "INF194K01DZ2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01DZ2"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU3223",
+    "full_name": "ICICI PRUDENTIAL OVERNIGHT FUND GROWTH",
+    "isin": "INF109KC17E3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109KC17E3"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1573",
+    "full_name": "ICICI PRUDENTIAL MONEY MARKET FUND - WEEKLY IDCW REINVESTMENT",
+    "isin": "INF109K01TZ6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01TZ6"
+  },
+  {
+    "type": "mf",
+    "name": "JARDI",
+    "full_name": "EDELWEISS MONEY MARKET FUND - REGULAR PLAN - IDCW PAYOUT",
+    "isin": "INF843K01351",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF843K01351"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1564",
+    "full_name": "ICICI PRUDENTIAL LIQUID FUND - DAILY IDCW REINVESTMENT",
+    "isin": "INF109K01VP3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01VP3"
+  },
+  {
+    "type": "mf",
+    "name": "JMLFRG",
+    "full_name": "JM LIQUID FUND - GROWTH OPTION",
+    "isin": "INF192K01882",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF192K01882"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU8015",
+    "full_name": "ICICI PRUDENTIAL GILT FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF109K018C5",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K018C5"
+  },
+  {
+    "type": "mf",
+    "name": "JARGR",
+    "full_name": "EDELWEISS MONEY MARKET FUND - REGULAR PLAN - GROWTH OPTION",
+    "isin": "INF843K01344",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF843K01344"
+  },
+  {
+    "type": "mf",
+    "name": "HLFDMTDP",
+    "full_name": "HDFC LIQUID FUND - DIRECT PLAN - MONTHLY IDCW PAYOUT OPTION",
+    "isin": "INF179KB1HO2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HO2"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU53",
+    "full_name": "ICICI PRUDENTIAL GILT FUND - GROWTH",
+    "isin": "INF109K01JR4",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01JR4"
+  },
+  {
+    "type": "mf",
+    "name": "IDLFG1",
+    "full_name": "IDBI LIQUID FUND-DIRECT PLAN - GROWTH-GROWTH",
+    "isin": "INF397L01AH3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF397L01AH3"
+  },
+  {
+    "type": "mf",
+    "name": "KGIREGG",
+    "full_name": "KOTAK GILT FUND - REGULAR PLAN - GROWTH",
+    "isin": "INF174K01FI5",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF174K01FI5"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1565",
+    "full_name": "ICICI PRUDENTIAL LIQUID FUND - GROWTH",
+    "isin": "INF109K01VQ1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01VQ1"
+  },
+  {
+    "type": "mf",
+    "name": "HLQD57",
+    "full_name": "HDFC OVERNIGHT FUND REGULAR PLAN - GROWTH",
+    "isin": "INF179KB1HS3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HS3"
+  },
+  {
+    "type": "mf",
+    "name": "KLIQPREG",
+    "full_name": "KOTAK LIQUID FUND - REGULAR PLAN - GROWTH",
+    "isin": "INF174K01NI9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF174K01NI9"
+  },
+  {
+    "type": "mf",
+    "name": "HLFGTGR",
+    "full_name": "HDFC LIQUID FUND - DIRECT PLAN - GROWTH OPTION",
+    "isin": "INF179KB1HP9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179KB1HP9"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU8016P",
+    "full_name": "ICICI PRUDENTIAL GILT FUND - DIRECT PLAN - IDCW PAYOUT",
+    "isin": "INF109K016C9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K016C9"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU1780P",
+    "full_name": "ICICI PRUDENTIAL LIQUID FUND - IDCW PAYOUT",
+    "isin": "INF109K01VU3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01VU3"
+  },
+  {
+    "type": "mf",
+    "name": "CPD2G",
+    "full_name": "UTI LIQUID CASH PLAN-DIRECT GROWTH",
+    "isin": "INF789F01XQ6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789F01XQ6"
+  },
+  {
+    "type": "mf",
+    "name": "QMFLFGPG",
+    "full_name": "QUANTUM LIQUID FUND - DIRECT PLAN GROWTH OPTION",
+    "isin": "INF082J01127",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF082J01127"
+  },
+  {
+    "type": "mf",
+    "name": "MMD2G",
+    "full_name": "UTI MONEY MARKET FUND-DIRECT GROWTH",
+    "isin": "INF789F01XV6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789F01XV6"
+  },
+  {
+    "type": "mf",
+    "name": "CPFTD",
+    "full_name": "UTI LIQUID CASH PLAN-REGULAR FORTNIGHTLY DIVIDEND PLAN-IDCW PAYOUT",
+    "isin": "INF789FA1J09",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789FA1J09"
+  },
+  {
+    "type": "mf",
+    "name": "SORGGR",
+    "full_name": "SUNDARAM OVERNIGHT FUND REGULAR GROWTH",
+    "isin": "INF903JA1GZ7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF903JA1GZ7"
+  },
+  {
+    "type": "mf",
+    "name": "RELGILDPDM",
+    "full_name": "NIPPON INDIA GILT SECURITIES FUND DIRECT PLAN DEFINED MATURITY DATE OPTION GROWTH",
+    "isin": "INF204K01E88",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF204K01E88"
+  },
+  {
+    "type": "mf",
+    "name": "AXISCFWD",
+    "full_name": "AXIS LIQUID FUND - REGULAR WEEKLY IDCW PAYOUT",
+    "isin": "INF846K01438",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF846K01438"
+  },
+  {
+    "type": "mf",
+    "name": "B402AZ",
+    "full_name": "ADITYA BIRLA SUN LIFE GOVERNMENT SECURITIES FUND- GROWTH-DIRECT PLAN",
+    "isin": "INF209K01XP7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01XP7"
+  },
+  {
+    "type": "mf",
+    "name": "B151IG",
+    "full_name": "ADITYA BIRLA SUN LIFE MONEY MANAGER FUND - GROWTH-REGULAR PLAN",
+    "isin": "INF209K01RV7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01RV7"
+  },
+  {
+    "type": "mf",
+    "name": "B151GZ",
+    "full_name": "ADITYA BIRLA SUN LIFE MONEY MANAGER FUND - GROWTH-DIRECT PLAN",
+    "isin": "INF209K01UU3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01UU3"
+  },
+  {
+    "type": "mf",
+    "name": "DSPBRLIGF",
+    "full_name": "DSP LIQUIDITY FUND - GROWTH",
+    "isin": "INF740K01FK9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740K01FK9"
+  },
+  {
+    "type": "mf",
+    "name": "DSPBRTBF",
+    "full_name": "DSP SAVINGS FUND - GROWTH",
+    "isin": "INF740K01714",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740K01714"
+  },
+  {
+    "type": "mf",
+    "name": "B153G",
+    "full_name": "ADITYA BIRLA SUN LIFE LIQUID FUND REGULAR PLAN - GROWTH",
+    "isin": "INF209K01RU9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01RU9"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU8101",
+    "full_name": "ICICI PRUDENTIAL MONEY MARKET FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF109K01R14",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01R14"
+  },
+  {
+    "type": "mf",
+    "name": "DSPONRGR",
+    "full_name": "DSP OVERNIGHT FUND - REGULAR PLAN - GROWTH",
+    "isin": "INF740KA1MB0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740KA1MB0"
+  },
+  {
+    "type": "mf",
+    "name": "BSL403QD",
+    "full_name": "ADITYA BIRLA SUN LIFE GOVERNMENT SECURITIES FUND-QUARTERLY IDCW PAYOUT",
+    "isin": "INF209K01AF6",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01AF6"
+  },
+  {
+    "type": "mf",
+    "name": "FLDP",
+    "full_name": "FRANKLIN INDIA SAVINGS FUND RETAIL OPTION QUARTERLY IDCW PAYOUT",
+    "isin": "INF090I01BZ0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01BZ0"
+  },
+  {
+    "type": "mf",
+    "name": "FILFSIPWDP",
+    "full_name": "FRANKLIN INDIA LIQUID FUND - SUPER INSTITUTIONAL PLAN WEEKLY IDCW PAYOUT",
+    "isin": "INF090I01BM8",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01BM8"
+  },
+  {
+    "type": "mf",
+    "name": "BPLFG",
+    "full_name": "BARODA BNP PARIBAS LIQUID FUND PLAN A - GROWTH",
+    "isin": "INF955L01484",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF955L01484"
+  },
+  {
+    "type": "mf",
+    "name": "HGLDTDP",
+    "full_name": "HDFC GILT FUND - DIRECT PLAN - IDCW PAYOUT",
+    "isin": "INF179K01VR2",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF179K01VR2"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCDFRG",
+    "full_name": "IDFC MONEY MANAGER FUND-GROWTH-(DIRECT PLAN)",
+    "isin": "INF194K01M80",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01M80"
+  },
+  {
+    "type": "mf",
+    "name": "IDFCFRG",
+    "full_name": "IDFC MONEY MANAGER FUND -REGULAR PLAN-GROWTH",
+    "isin": "INF194K01LJ9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF194K01LJ9"
+  },
+  {
+    "type": "mf",
+    "name": "IMFCOD1GR",
+    "full_name": "INVESCO INDIA MONEY MARKET FUND - DIRECT PLAN GROWTH",
+    "isin": "INF205K01RY9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF205K01RY9"
+  },
+  {
+    "type": "mf",
+    "name": "CPD6D",
+    "full_name": "UTI LIQUID CASH PLAN-DIRECT QUARTERLY DIVIDEND PLAN-IDCW PAYOUT",
+    "isin": "INF789FA1K22",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789FA1K22"
+  },
+  {
+    "type": "mf",
+    "name": "SODGGR",
+    "full_name": "SUNDARAM OVERNIGHT FUND DIRECT GROWTH",
+    "isin": "INF903JA1HG5",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF903JA1HG5"
+  },
+  {
+    "type": "mf",
+    "name": "DSPLQDGR",
+    "full_name": "DSP LIQUIDITY FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF740K01QL4",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF740K01QL4"
+  },
+  {
+    "type": "mf",
+    "name": "LNT125",
+    "full_name": "L&T MONEY MARKET FUND - DAILY IDCW REINVESTENT PLAN",
+    "isin": "INF917K01AY5",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF917K01AY5"
+  },
+  {
+    "type": "mf",
+    "name": "QMFLFDDR",
+    "full_name": "QUANTUM LIQUID FUND - DIRECT PLAN DAILY IDCW REINVESTMENT OPTION",
+    "isin": "INF082J01135",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF082J01135"
+  },
+  {
+    "type": "mf",
+    "name": "154LD",
+    "full_name": "L&T LIQUID FUND DIRECT PLAN - GROWTH",
+    "isin": "INF917K01HF9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF917K01HF9"
+  },
+  {
+    "type": "mf",
+    "name": "MMD6D",
+    "full_name": "UTI MONEY MARKET FUND-DIRECT QUARTERLY DIVIDEND PLAN-IDCW PAYOUT",
+    "isin": "INF789FA1M61",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF789FA1M61"
+  },
+  {
+    "type": "mf",
+    "name": "AXISMMGPG",
+    "full_name": "AXIS MONEY MARKET FUND REGULAR GROWTH",
+    "isin": "INF846K01R46",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF846K01R46"
+  },
+  {
+    "type": "mf",
+    "name": "AXISCFGP",
+    "full_name": "AXIS LIQUID FUND - REGULAR GROWTH",
+    "isin": "INF846K01412",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF846K01412"
+  },
+  {
+    "type": "mf",
+    "name": "AXISCFDP",
+    "full_name": "AXIS LIQUID FUND - REGULAR MONTHLY IDCW PAYOUT",
+    "isin": "INF846K01453",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF846K01453"
+  },
+  {
+    "type": "mf",
+    "name": "CRLISGG",
+    "full_name": "CANARA ROBECO LIQUID FUND REGULAR GROWTH",
+    "isin": "INF760K01CW9",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF760K01CW9"
+  },
+  {
+    "type": "mf",
+    "name": "B153Z",
+    "full_name": "ADITYA BIRLA SUN LIFE LIQUID FUND - DIRECT PLAN-IDCW PAYOUT",
+    "isin": "INF209K01VD7",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF209K01VD7"
+  },
+  {
+    "type": "mf",
+    "name": "IPRU8096",
+    "full_name": "ICICI PRUDENTIAL LIQUID FUND - DIRECT PLAN - GROWTH",
+    "isin": "INF109K01Q49",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF109K01Q49"
+  },
+  {
+    "type": "mf",
+    "name": "154L",
+    "full_name": "L&T LIQUID FUND - REGULAR GROWTH",
+    "isin": "INF917K01JH1",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF917K01JH1"
+  },
+  {
+    "type": "mf",
+    "name": "FILFDSIPDP",
+    "full_name": "FRANKLIN INDIA LIQUID FUND - SUPER INSTITUTIONAL PLAN - DIRECT WEEKLY IDCW PAYOUT",
+    "isin": "INF090I01JX8",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF090I01JX8"
+  },
+  {
+    "type": "mf",
+    "name": "EMFONFRGGP",
+    "full_name": "EDELWEISS OVERNIGHT FUND - REGULAR PLAN - GROWTH",
+    "isin": "INF754K01KE3",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF754K01KE3"
+  },
+  {
+    "type": "mf",
+    "name": "BPMFLFD2",
+    "full_name": "BARODA BNP PARIBAS LIQUID FUND PLAN B GROWTH",
+    "isin": "INF955L01AL0",
+    "haircut": 10,
+    "value": 90,
+    "url": "https://coin.zerodha.com/mf/fund/INF955L01AL0"
+  }
+]
