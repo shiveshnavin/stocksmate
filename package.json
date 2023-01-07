@@ -35,8 +35,6 @@
     "moment": "^2.29.1",
     "multi-db-orm": "^1.3.0",
     "node-fetch": "^2.6.6",
-    "notp": "^2.0.3",
-    "smartapi-javascript": "^1.0.14",
-    "totp-generator": "0.0.14"
+    "smartapi-javascript": "^1.0.14"
   }
 }
