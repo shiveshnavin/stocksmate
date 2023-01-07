@@ -36,15 +36,15 @@ String.prototype.replaceAll = function (search, replacement) {
 };
 let masterSymbolList = require('./scrips_full.json')
 
-module.exports = function (config, log) {
+module.exports = function (zerodhaConfig, log) {
     if (!log) {
         log = console.log
     }
 
     let mod = {};
 
-    let Z_USERID = process.env.Z_USERID
-    let Z_PASSWORD = process.env.Z_PASSWORD
+    let Z_USERID = zerodhaConfig.userid || process.env.Z_USERID
+    let Z_PASSWORD = zerodhaConfig.password || process.env.Z_PASSWORD
     let Z_PIN = process.env.Z_PIN
 
     let enctoken = ""
