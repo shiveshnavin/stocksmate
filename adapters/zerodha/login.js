@@ -36,7 +36,7 @@ function parseCookies(cookieHeader) {
     return list;
 }
 
-async function login(userId, password, pin) {
+async function login(userId, password, getPin, getOTP) {
     console.log('Logging in to', userId)
 
     let home = await wrap(fetch("https://kite.zerodha.com/", {
@@ -84,6 +84,33 @@ async function login(userId, password, pin) {
 
     let request_id = res.request_id;
 
+    let tw2 = await loginWith2fa(userId, kf_session, request_id, getPin, getOTP)
+    let headerSetCok = tw2.headers.get('set-cookie')
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    headerSetCok = headerSetCok.replace('SameSite=None,', "")
+    let encToken = parseCookies(headerSetCok)["enctoken"]
+    let public_token = parseCookies(headerSetCok)['public_token']
+    console.log('Zerodha login complete')
+    return {
+        enctoken: encToken,
+        kf_session: kf_session,
+        public_token: public_token
+    };
+}
+
+async function loginWith2fa(userId, kf_session, request_id, getPin, getOTP) {
+    let pin;
+    let pinType;
+    if (getPin) {
+        pinType = 'app_code'
+        pin = await getPin(userId)
+    }
+    else if (getOTP) {
+        pinType = 'app_code'
+        pin = await getOTP(userId)
+    }
+
     let tw2 = await wrap(fetch("https://kite.zerodha.com/api/twofa", {
         "headers": {
             "accept": "application/json, text/plain, */*",
@@ -103,21 +130,11 @@ async function login(userId, password, pin) {
             "origin": "https://kite.zerodha.com",
             "Referrer-Policy": "strict-origin-when-cross-origin"
         },
-        "body": "user_id=" + userId + "&request_id=" + request_id + "&twofa_value=" + pin + "&skip_session=",
+        "body": "user_id=" + userId + "&request_id=" + request_id + "&twofa_value=" + pin + "&twofa_type" + pinType + "&skip_session=",
         "method": "POST"
     }))
-    let headerSetCok = tw2.headers.get('set-cookie')
-    headerSetCok = headerSetCok.replace('SameSite=None,', "")
-    headerSetCok = headerSetCok.replace('SameSite=None,', "")
-    headerSetCok = headerSetCok.replace('SameSite=None,', "")
-    let encToken = parseCookies(headerSetCok)["enctoken"]
-    let public_token = parseCookies(headerSetCok)['public_token']
-    console.log('Zerodha login complete')
-    return {
-        enctoken: encToken,
-        kf_session: kf_session,
-        public_token: public_token
-    };
+
+    return tw2
 }
 
 module.exports = login;

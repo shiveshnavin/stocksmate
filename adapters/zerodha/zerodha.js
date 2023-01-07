@@ -45,7 +45,12 @@ module.exports = function (zerodhaConfig, log) {
 
     let Z_USERID = zerodhaConfig.userid || process.env.Z_USERID
     let Z_PASSWORD = zerodhaConfig.password || process.env.Z_PASSWORD
-    let Z_PIN = process.env.Z_PIN
+    let Z_PIN = zerodhaConfig.getPin || (() => {
+        return process.env.Z_PIN
+    })
+    let Z_OTP = zerodhaConfig.getOTP || (() => {
+        return process.env.Z_PIN
+    })
 
     let enctoken = ""
     let kf_session = ""
@@ -91,12 +96,25 @@ module.exports = function (zerodhaConfig, log) {
 
     mod.zerodhaCall = zerodhaCall;
 
-    mod.init = async function () {
+    mod.init = async function (existingLogin) {
         log('========================')
-        let loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN)
+        let loginData;
+        if (existingLogin) {
+            loginData = existingLogin
+        }
+        else {
+            loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN, Z_OTP)
+
+        }
+        loginData.id = Z_USERID
         enctoken = loginData.enctoken;
         kf_session = loginData.kf_session;
         public_token = loginData.public_token;
+        return loginData
+    }
+
+    mod.getProfile = async function () {
+        return (zerodhaCall('get', 'https://kite.zerodha.com/oms/user/profile/full'))
     }
 
     /**
