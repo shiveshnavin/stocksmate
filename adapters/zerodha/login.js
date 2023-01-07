@@ -36,7 +36,7 @@ function parseCookies(cookieHeader) {
     return list;
 }
 
-async function login(userId, password, getPin, getOTP) {
+async function login(userId, password, Z_TOTP_KEY, getPin, getOTP) {
     console.log('Logging in to', userId)
 
     let home = await wrap(fetch("https://kite.zerodha.com/", {
@@ -84,7 +84,7 @@ async function login(userId, password, getPin, getOTP) {
 
     let request_id = res.request_id;
 
-    let tw2 = await loginWith2fa(userId, kf_session, request_id, getPin, getOTP)
+    let tw2 = await loginWith2fa(userId, kf_session, request_id, Z_TOTP_KEY, getPin, getOTP)
     let headerSetCok = tw2.headers.get('set-cookie')
     headerSetCok = headerSetCok.replace('SameSite=None,', "")
     headerSetCok = headerSetCok.replace('SameSite=None,', "")
@@ -99,16 +99,41 @@ async function login(userId, password, getPin, getOTP) {
     };
 }
 
-async function loginWith2fa(userId, kf_session, request_id, getPin, getOTP) {
+async function loginWith2fa(userId, kf_session, request_id, Z_TOTP_KEY, getPin, getOTP) {
     let pin;
     let pinType;
     if (getPin) {
         pinType = 'app_code'
-        pin = await getPin(userId)
+        pin = await getPin(userId, Z_TOTP_KEY)
     }
     else if (getOTP) {
-        pinType = 'app_code'
+        pinType = 'sms'
+        let otpUrl = 'https://kite.zerodha.com/oms/trusted/kitefront/user/AMC939/twofa/generate_otp'
+
+        let otpRes = await wrap(fetch(otpUrl, {
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "accept-language": "en-US,en;q=0.9",
+                "content-type": "application/x-www-form-urlencoded",
+                "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"97\", \"Chromium\";v=\"97\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Windows\"",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "x-csrftoken": "52lDwPxv8mA59GlUTCkHAbTcqjARPeuj",
+                "x-kite-userid": userId,
+                "x-kite-version": "2.9.10",
+                "cookie": "public_token=null; kf_session=" + kf_session,
+                "Referer": "https://kite.zerodha.com/",
+                "origin": "https://kite.zerodha.com",
+                "Referrer-Policy": "strict-origin-when-cross-origin"
+            },
+            "body": "user_id=" + userId + "&request_id=" + request_id + "&twofa_value=" + pin + "&twofa_type" + pinType + "&skip_session=",
+            "method": "POST"
+        }))
         pin = await getOTP(userId)
+
     }
 
     let tw2 = await wrap(fetch("https://kite.zerodha.com/api/twofa", {

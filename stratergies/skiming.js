@@ -1,6 +1,6 @@
 // High Volume Low Price Skimming
 const zerodha = require("../adapters/zerodha/zerodha");
-const readInputFromFirebase = require("../dao/readInputFromFirebase");
+const readOTPFrom2FA = require("../dao/readOTPFrom2FA");
 require('dotenv').config()
 const FireStoreDB = require('multi-db-orm').FireStoreDB
 const fs = require('fs')
@@ -10,9 +10,10 @@ const multiDb = new FireStoreDB(creds)
 let db = multiDb.db;
 let onLog = console.log
 
-async function getPin(amcId) {
+async function getPin(amcId, totpKey) {
     let key = amcId + "_2mfapin"
-    let pin = await readInputFromFirebase(key, undefined, db)
+    // let pin = await readInputFromFirebase(key, undefined, db)
+    let pin = await readOTPFrom2FA(totpKey)
     return pin;
 }
 
@@ -20,11 +21,11 @@ let adapters = {
 
 }
 
-
-async function start(userid, password, isRetry) {
+async function initAdapter(userid, password, totpKey, isRetry) {
     let adapter = zerodha({
         username: userid,
         password: password,
+        totp_key: totpKey,
         getPin: getPin
     }, console.log)
 
@@ -45,9 +46,18 @@ async function start(userid, password, isRetry) {
         onLog('Zerodha Error logging in...', !isRetry ? 'retrying' : '')
         await multiDb.delete('stocksmate_logins', { id: userid })
         if (!isRetry)
-            start(userid, password, true)
+            start(userid, password, totpKey, true)
+    }
+
+    adapters[userid] = adapter
+}
+
+async function start(userid, password, totpKey, isRetry) {
+
+    if (!adapters[userid]) {
+        initAdapter(userid, password, totpKey, isRetry)
     }
 }
 
 
-start(process.env.Z_USERID, process.env.Z_PASSWORD, false);
+start(process.env.Z_USERID, process.env.Z_PASSWORD, process.env.Z_TOTP_KEY, false);

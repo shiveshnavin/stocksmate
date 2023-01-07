@@ -45,11 +45,12 @@ module.exports = function (zerodhaConfig, log) {
 
     let Z_USERID = zerodhaConfig.userid || process.env.Z_USERID
     let Z_PASSWORD = zerodhaConfig.password || process.env.Z_PASSWORD
-    let Z_PIN = zerodhaConfig.getPin || (() => {
-        return process.env.Z_PIN
+    let Z_TOTP_KEY = zerodhaConfig.totp_key || process.env.Z_TOTP_KEY
+    let getPin = zerodhaConfig.getPin || (() => {
+        return process.env.Z_TOTP_KEY
     })
-    let Z_OTP = zerodhaConfig.getOTP || (() => {
-        return process.env.Z_PIN
+    let getOtp = zerodhaConfig.getOTP || (() => {
+        return process.env.Z_TOTP_KEY
     })
 
     let enctoken = ""
@@ -103,7 +104,7 @@ module.exports = function (zerodhaConfig, log) {
             loginData = existingLogin
         }
         else {
-            loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_PIN, Z_OTP)
+            loginData = await zlogin(Z_USERID, Z_PASSWORD, Z_TOTP_KEY, getPin, getOtp)
 
         }
         loginData.id = Z_USERID
