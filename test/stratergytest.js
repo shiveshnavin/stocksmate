@@ -21,6 +21,8 @@ async function initAdapter(userid, password, totpKey, isRetry) {
         totp_key: totpKey
     }, console.log)
 
+    return adapter;
+
     let existingLogin = await multiDb.getOne('stocksmate_logins', { id: userid })
     if (!existingLogin) {
         existingLogin = await adapter.init()
@@ -56,6 +58,7 @@ const { r, g, b, w, c, m, y, k } = [
     ...cols, [col[0]]: f => `\x1b[3${col[1]}m${f}\x1b[0m`
 }), {})
 const moment = require('moment');
+const brokerage = require('../archive/brokerage');
 let strike = parseInt(process.argv[3]) || 17800;
 let range = parseInt(process.argv[4]) || 0;
 
@@ -67,14 +70,61 @@ async function startTest() {
     let adapter = await initAdapter(process.env.Z_USERID, process.env.Z_PASSWORD, process.env.Z_TOTP_KEY, false)
     let trader = new HVLPSkimStratergy(adapter, onLog)
     let testOrders = []
-    async function testOrder(limit_price, qty, type, symbol, order_type, trade, exchange) {
+    function testOrder(limit_price, qty, type, symbol, order_type, trade, exchange, sp, tick) {
+        let id = Date.now()
         let order = {
-            limit_price, qty, type, symbol, order_type, trade, exchange, timestamp: Date.now()
+            sp,
+            limit_price, qty, type, symbol, order_type, trade, exchange, timestamp: tick.datetime, id
         }
         testOrders.push(order)
-        console.log('Order Placed ', symbol, 'x', qty, '@ Rs.', limit_price, ' at ', moment().format('YYYY-MM-DD+HH:mm:ss'))
+        console.log(type, 'Order Placed ', symbol, 'x', qty, '@ Rs.', limit_price, ' at ', order.timestamp)
+        return order
+    }
+    function evaluatePendingOrders(tick) {
+        testOrders.forEach(async ord => {
+
+            if (ord.status != 'COMPLETED') {
+                if (ord.type == 'BUY') {
+                    if (tick.last_price <= ord.limit_price) {
+                        console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        ord.status = 'COMPLETED'
+                        // testOrdersPromises[ord.id]()
+                        let sellorder = adapter.order(ord.sp, ord.qty, 'SELL', ord.symbol, 'LIMIT', 'NRML', 'NSE', 0, tick)
+
+                    }
+                }
+                else if (ord.type == 'SELL') {
+
+                    if (tick.last_price >= ord.limit_price) {
+                        console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        ord.status = 'COMPLETED'
+                        // testOrdersPromises[ord.id]()
+                        trader.waitingForOrder = false;
+
+                    }
+                    else if (moment(ord.timestamp).isBefore(moment(tick.datetime).subtract(5, 'minutes'))) {
+                        ord.limit_price = tick.last_price
+                        console.log(ord.type, 'Order Completed with loss ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        ord.status = 'COMPLETED'
+                        // testOrdersPromises[ord.id]()
+                        trader.waitingForOrder = false;
+                    }
+                }
+            }
+        })
     }
     adapter.order = testOrder;
+
+    let testOrdersPromises = {}
+    adapter.waitTillOrderIsExecuted = function (orderId, type) {
+
+        let promis = new Promise((res, rej) => {
+            testOrdersPromises[orderId] = res
+        })
+
+        return promis
+    }
+
 
     let scip = adapter.findScrip({
         "tradingsymbol": "IDEA",
@@ -85,24 +135,75 @@ async function startTest() {
 
     console.log(scip)
 
-    adapter.order(7.0, 2, 'BUY', 'IDEA', 'LIMIT', 'NRML', 'NSE')
+    // adapter.order(7.0, 2, 'BUY', 'IDEA', 'LIMIT', 'NRML', 'NSE')
 
     let formatDate = 'YYYY-MM-DD+HH:mm:ss'
-    let day = parseInt(process.argv[2]) || 2;
+    let day = parseInt(process.argv[2]) || 6;
+    let durationInFutureDays = 0;
     let from = moment(`2023-01-${day < 10 ? `0${day}` : day}T09:15:00`)
-    let to = moment(`2023-01-${day + 1 < 10 ? `0${day + 1}` : day}T15:30:00`)
+    let to = moment(`2023-01-${day + durationInFutureDays < 10 ? `0${day + durationInFutureDays}` : day}T15:30:00`)
 
-    for (var tStart = moment(from); tStart.diff(to, 'days') <= 0; tStart.add(1, 'days')) {
+    for (var tStart = moment(from); tStart.isBetween(from, to, 'day', '[]'); tStart.add(1, 'days')) {
         let tEnd = tStart.clone().add(6, 'hours')
-        console.log(tStart.format(formatDate));
+        console.log(tStart.format(formatDate), '<->', tEnd.format(formatDate));
 
-        let historyToday = await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
-        historyToday.forEach(tick => {
-            trader.evaluate(tick)
-        })
+        let historyToday = require('../test_IDEA.json')
+
+            ;//await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
+        // fs.writeFileSync('test_IDEA.json', JSON.stringify(historyToday, null, 2))
+
+        if (historyToday.length < 10) {
+            continue
+        }
+        for (let index = 0; index < historyToday.length; index++) {
+            const tick = historyToday[index];
+            evaluatePendingOrders(tick)
+            await trader.evaluate(tick)
+        }
 
     }
 
+
+    let stockStats = {
+        totalBuy: 0,
+        totalSell: 0,
+
+        losses: 0,
+        profits: 0,
+        breakevenLoss: 0,
+
+        profit: 0,
+        profit2: 0,
+    }
+
+    let lastBuy = 0;
+    testOrders.forEach(o => {
+        if (o.type == 'BUY') {
+            lastBuy = o;
+        }
+        else {
+
+            let bork = brokerage.cal_delivery(lastBuy.limit_price, o.limit_price, lastBuy.qty, true)
+            let profit = bork.net_profit
+            if (profit > 0) {
+                stockStats.profits++
+            }
+            else if (profit < 0) {
+                stockStats.losses++
+            }
+            else if (profit == 0) {
+                stockStats.breakevenLoss++
+            }
+            stockStats.totalSell += (o.limit_price) * lastBuy.qty
+            stockStats.totalBuy += (lastBuy.limit_price) * lastBuy.qty
+            onLog('Buy@', lastBuy.limit_price, 'Sell@', o.limit_price, 'Profit', profit, 'bork', (bork.brokerage + bork.total_tax))
+            stockStats.profit += profit
+        }
+
+    })
+
+    stockStats.profit2 = stockStats.totalSell - stockStats.totalBuy
+    console.log(JSON.stringify(stockStats, null, 2))
 
 
 

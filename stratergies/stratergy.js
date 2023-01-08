@@ -15,7 +15,7 @@ class Stratergy {
     }
 
 
-    execute(tick) {
+    _execute(tick) {
 
     }
 

@@ -8,6 +8,7 @@ class Tick {
     close;
     volume;
     oi;
+    last_price;
 
     constructor(body) {
         this.symbol = body.symbol;
@@ -18,6 +19,7 @@ class Tick {
         this.close = parseFloat(body.close);
         this.volume = parseFloat(body.volume);
         this.oi = parseFloat(body.oi);
+        this.last_price = parseFloat(body.last_price || body.close)
         this.stockData = body.stockData;
     }
 

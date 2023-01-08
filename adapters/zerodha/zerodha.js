@@ -211,6 +211,15 @@ module.exports = function (zerodhaConfig, log) {
 
     }
 
+    mod.createTicker = function () {
+        let wsUrl = `wss://ws.zerodha.com/?api_key=kitefront&user_id=${Z_USERID}&enctoken=${encodeURIComponent(enctoken)}&uid=${(new Date().getTime().toString())}&user-agent=kite3-web&version=2.9.10`
+
+        let ticker = new KiteTicker(({
+            root: wsUrl
+        }));
+
+        return ticker;
+    }
     /**
      * 
      * @param {*} instrumentToken 
@@ -287,6 +296,205 @@ module.exports = function (zerodhaConfig, log) {
                 ok: false
             }
         }
+    }
+    mod.getMargins = async function () {
+
+        let marginData = await zerodhaCall('get', "https://kite.zerodha.com/oms/user/margins")
+        return marginData.equity;
+    }
+
+    mod.waitTillOrderIsOpen = async function (orderId, type) {
+        log('Waiting for order', type, orderId, 'to reach OPEN or REJECTED state')
+
+        return new Promise(async (resolve, reject) => {
+
+            async function callMyself() {
+
+                if (isKill) {
+                    return;
+                }
+                let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
+                    "headers": {
+                        "accept": "application/json, text/plain, */*",
+                        "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                        "authorization": "enctoken " + enctoken,
+                        "if-none-match": "W/\"5tkudQ119aB023AJ\"",
+                        "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"Windows\"",
+                        "sec-fetch-dest": "empty",
+                        "sec-fetch-mode": "cors",
+                        "sec-fetch-site": "same-origin",
+                        "x-kite-version": "2.9.10"
+                    },
+                    "referrer": "https://kite.zerodha.com/orders",
+                    "referrerPolicy": "strict-origin-when-cross-origin",
+                    "body": null,
+                    "method": "GET",
+                    "mode": "cors",
+                    "credentials": "include"
+                }))
+
+                for (let index = 0; index < orders.length; index++) {
+                    const order = orders[index];
+                    if (order.order_id == orderId) {
+                        if (order.status == "OPEN" || order.status == "COMPLETE") {
+                            log('Order', orderId, 'is now OPEN. @', order.average_price || order.price)
+                            resolve(1)
+                        }
+                        else if (order.status == "REJECTED" || order.status == "CANCELLED") {
+                            log('Order', orderId, 'rejected.', order.status_message)
+                            resolve(-1)
+                        }
+                        else {
+                            await delay(5000)
+                            callMyself()
+                        }
+                    }
+                }
+            }
+            callMyself()
+        })
+    }
+
+    mod.waitTillOrderIsExecuted = async function (orderId, type) {
+        log('Waiting for order', type, orderId, 'to reach COMPLETE | CANCELLED state')
+
+        return new Promise(async (resolve, reject) => {
+
+            async function callMyself() {
+
+                if (isKill) {
+                    return;
+                }
+                let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
+                    "headers": {
+                        "accept": "application/json, text/plain, */*",
+                        "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                        "authorization": "enctoken " + enctoken,
+                        "if-none-match": "W/\"5tkudQ119aB023AJ\"",
+                        "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"Windows\"",
+                        "sec-fetch-dest": "empty",
+                        "sec-fetch-mode": "cors",
+                        "sec-fetch-site": "same-origin",
+                        "x-kite-version": "2.9.10"
+                    },
+                    "referrer": "https://kite.zerodha.com/orders",
+                    "referrerPolicy": "strict-origin-when-cross-origin",
+                    "body": null,
+                    "method": "GET",
+                    "mode": "cors",
+                    "credentials": "include"
+                }))
+
+                for (let index = 0; index < orders.length; index++) {
+                    const order = orders[index];
+                    if (order.order_id == orderId) {
+                        if (order.status == "COMPLETE") {
+                            log('Order', orderId, 'is now COMPLETE. actual average_price @', order.average_price)
+                            order.ok = true;
+                            resolve(order)
+                        }
+                        else if (order.status == "CANCELLED") {
+                            log('Order', orderId, 'rejected.', order.status_message)
+                            order.ok = false;
+                            resolve(order)
+                        }
+                        else {
+                            await delay(5000)
+                            callMyself()
+                        }
+                    }
+                }
+            }
+            callMyself()
+        })
+    }
+
+
+    mod.checkIfAnyOrderIsPlacedAlready = async function (type) {
+        log('Waiting for an order', type, 'to reach OPEN | COMPLETE state')
+
+        return new Promise(async (resolve, reject) => {
+
+            async function callMyself() {
+
+                if (isKill) {
+                    return;
+                }
+                let orders = await wrap(fetch("https://kite.zerodha.com/oms/orders", {
+                    "headers": {
+                        "accept": "application/json, text/plain, */*",
+                        "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                        "authorization": "enctoken " + enctoken,
+                        "if-none-match": "W/\"5tkudQ119aB023AJ\"",
+                        "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"Windows\"",
+                        "sec-fetch-dest": "empty",
+                        "sec-fetch-mode": "cors",
+                        "sec-fetch-site": "same-origin",
+                        "x-kite-version": "2.9.10"
+                    },
+                    "referrer": "https://kite.zerodha.com/orders",
+                    "referrerPolicy": "strict-origin-when-cross-origin",
+                    "body": null,
+                    "method": "GET",
+                    "mode": "cors",
+                    "credentials": "include"
+                }))
+
+                for (let index = 0; index < orders.length; index++) {
+                    const order = orders[index];
+                    if (order.transaction_type == type && (order.status == "COMPLETE" || order.status == "OPEN")) {
+                        log('Order', order.transaction_type, order.order_id, 'is now COMPLETE|OPEN. actual average_price @', order.average_price)
+                        order.ok = true;
+                        resolve(order)
+                    }
+                }
+                resolve({ ok: false })
+            }
+            callMyself()
+        })
+    }
+
+
+    mod.zerodhaRequiredMargin = async function (limitPrice, qty, type, symbol) {
+
+        return new Promise((resolve, reject) => {
+
+            fetch("https://kite.zerodha.com/oms/margins/orders", {
+                "headers": {
+                    "accept": "application/json, text/plain, */*",
+                    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                    "authorization": "enctoken " + enctoken,
+                    "content-type": "application/json",
+                    "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\", \"Google Chrome\";v=\"100\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "sec-fetch-dest": "empty",
+                    "sec-fetch-mode": "cors",
+                    "sec-fetch-site": "same-origin",
+                    "x-kite-version": "2.9.10"
+                },
+                "referrer": "https://kite.zerodha.com/dashboard",
+                "referrerPolicy": "strict-origin-when-cross-origin",
+                "body": `[{\"exchange\":\"NSE\",\"tradingsymbol\":\"${symbol}\",\"transaction_type\":\"${type}\",\"variety\":\"regular\",\"product\":\"${trade}\",\"order_type\":\"LIMIT\",\"quantity\":${qty},\"price\":${limitPrice}}]`,
+                "method": "POST",
+                "mode": "cors",
+                "credentials": "include"
+            })
+                .then(res => res.json())
+                .then(json => {
+                    resolve(json.data[0])
+                })
+                .catch(err => {
+                    reject(err)
+                });
+        })
+
     }
 
     return mod;
