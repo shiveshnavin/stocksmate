@@ -3,11 +3,15 @@
 class HVLPSkimStratergy {
 
     adapter;
-    constructor(userid, password, totpKey) {
+    onLog;
+    constructor(adapter, onLog) {
+        this.adapter = adapter
+        this.onLog = onLog
+        this.init(adapter)
+
 
     }
     init(adapter) {
-        this.adapter = initAdapter(userid, password, totpKey, isRetry);
     }
 
     /**
@@ -15,7 +19,7 @@ class HVLPSkimStratergy {
      * @param {Tick} tick 
      */
     evaluate(tick) {
-
+        this.onLog('Evaluating tick', 'Price=', tick.close)
     }
 
 
