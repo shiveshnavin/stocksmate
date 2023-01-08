@@ -104,7 +104,7 @@ async function startTest() {
                     }
                     else if (moment(ord.timestamp).isBefore(moment(tick.datetime).subtract(5, 'minutes'))) {
                         ord.limit_price = tick.last_price
-                        console.log(ord.type, 'Order Completed with loss ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        console.log(ord.type, 'Order Completed with Atloss ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
                         ord.status = 'COMPLETED'
                         // testOrdersPromises[ord.id]()
                         trader.waitingForOrder = false;
@@ -138,21 +138,23 @@ async function startTest() {
     // adapter.order(7.0, 2, 'BUY', 'IDEA', 'LIMIT', 'NRML', 'NSE')
 
     let formatDate = 'YYYY-MM-DD+HH:mm:ss'
-    let day = parseInt(process.argv[2]) || 6;
-    let durationInFutureDays = 0;
+    let day = parseInt(process.argv[2]) || 2;
+    let durationInFutureDays = 4;
     let from = moment(`2023-01-${day < 10 ? `0${day}` : day}T09:15:00`)
     let to = moment(`2023-01-${day + durationInFutureDays < 10 ? `0${day + durationInFutureDays}` : day}T15:30:00`)
 
     for (var tStart = moment(from); tStart.isBetween(from, to, 'day', '[]'); tStart.add(1, 'days')) {
         let tEnd = tStart.clone().add(6, 'hours')
         console.log(tStart.format(formatDate), '<->', tEnd.format(formatDate));
+        trader = new HVLPSkimStratergy(adapter, onLog)
 
-        let historyToday = require('../test_IDEA.json')
-
-            ;//await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
-        // fs.writeFileSync('test_IDEA.json', JSON.stringify(historyToday, null, 2))
+        let file = `../test_IDEA_${tStart.format('DD')}.json`
+        let historyToday = require(file)
+        // await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
+        // fs.writeFileSync(file, JSON.stringify(historyToday, null, 2))
 
         if (historyToday.length < 10) {
+            onLog("Skip ", tStart, 'probably a holiday')
             continue
         }
         for (let index = 0; index < historyToday.length; index++) {
@@ -161,49 +163,53 @@ async function startTest() {
             await trader.evaluate(tick)
         }
 
+
+        let stockStats = {
+            totalBuy: 0,
+            totalSell: 0,
+
+            losses: 0,
+            profits: 0,
+            breakevenLoss: 0,
+
+            profit: 0,
+            profit2: 0,
+        }
+
+        trader.waitingForOrder = false
+        let lastBuy = 0;
+        testOrders.forEach(o => {
+            if (o.type == 'BUY') {
+                lastBuy = o;
+            }
+            else {
+
+                let bork = brokerage.cal_delivery(lastBuy.limit_price, o.limit_price, lastBuy.qty, true)
+                let profit = bork.net_profit
+                if (profit > 0) {
+                    stockStats.profits++
+                }
+                else if (profit < 0) {
+                    stockStats.losses++
+                }
+                else if (profit == 0) {
+                    stockStats.breakevenLoss++
+                }
+                stockStats.totalSell += (o.limit_price) * lastBuy.qty
+                stockStats.totalBuy += (lastBuy.limit_price) * lastBuy.qty
+                // onLog('Buy@', lastBuy.limit_price, 'Sell@', o.limit_price, 'Profit', profit, 'bork', (bork.brokerage + bork.total_tax))
+                stockStats.profit += profit
+            }
+
+        })
+
+        stockStats.profit2 = stockStats.totalSell - stockStats.totalBuy
+        console.log(tStart.format(formatDate), JSON.stringify(stockStats, null, 2))
+        testOrders = []
+
     }
 
 
-    let stockStats = {
-        totalBuy: 0,
-        totalSell: 0,
-
-        losses: 0,
-        profits: 0,
-        breakevenLoss: 0,
-
-        profit: 0,
-        profit2: 0,
-    }
-
-    let lastBuy = 0;
-    testOrders.forEach(o => {
-        if (o.type == 'BUY') {
-            lastBuy = o;
-        }
-        else {
-
-            let bork = brokerage.cal_delivery(lastBuy.limit_price, o.limit_price, lastBuy.qty, true)
-            let profit = bork.net_profit
-            if (profit > 0) {
-                stockStats.profits++
-            }
-            else if (profit < 0) {
-                stockStats.losses++
-            }
-            else if (profit == 0) {
-                stockStats.breakevenLoss++
-            }
-            stockStats.totalSell += (o.limit_price) * lastBuy.qty
-            stockStats.totalBuy += (lastBuy.limit_price) * lastBuy.qty
-            onLog('Buy@', lastBuy.limit_price, 'Sell@', o.limit_price, 'Profit', profit, 'bork', (bork.brokerage + bork.total_tax))
-            stockStats.profit += profit
-        }
-
-    })
-
-    stockStats.profit2 = stockStats.totalSell - stockStats.totalBuy
-    console.log(JSON.stringify(stockStats, null, 2))
 
 
 

@@ -89,7 +89,7 @@ class HVLPSkimStratergy {
         this._removeOlderThanNMins()
         let stats = this._getWindowStats();
 
-        this.onLog('Evaluating tick', 'Price=', tick.last_price, tick.datetime, JSON.stringify(stats))
+        // this.onLog('Evaluating tick', 'Price=', tick.last_price, tick.datetime, JSON.stringify(stats))
 
     }
 

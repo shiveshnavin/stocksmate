@@ -14,605 +14,812 @@ Firestore Initialized
   segment: 'NSE',
   exchange: 'NSE'
 }
+2023-01-02+09:15:00 <-> 2023-01-02+15:15:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T09:20:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+09:21:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T09:21:00+0530
+SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+09:27:00
+BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-02T09:30:00+0530
+BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-02+09:32:00
+SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-02T09:32:00+0530
+SELL Order Completed  IDEA x 2547 @ Rs. 7.9  at  2023-01-02+09:33:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T09:57:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:02:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:02:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:04:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:05:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:07:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:07:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:11:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:14:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:15:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:15:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:19:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:22:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:23:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:23:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:25:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:26:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:27:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:27:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:29:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:30:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:31:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:31:00+0530
+SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:37:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:37:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:38:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:38:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:40:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:41:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:42:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:42:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:46:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:47:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:50:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:50:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:51:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:00:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:04:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:04:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:05:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:08:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:11:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:11:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:12:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:16:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:31:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:31:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:33:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:38:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:39:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:39:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:41:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:46:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:48:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:48:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:51:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:53:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:00:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:00:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:05:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:06:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:12:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:12:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:14:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:18:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:20:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:20:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:23:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:26:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:32:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:32:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:33:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:34:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:36:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:36:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:41:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:42:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:47:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:47:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:48:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:55:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:58:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:58:00+0530
+SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:04:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:04:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:06:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:06:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:07:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:08:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:09:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:09:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:10:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:14:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:21:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:21:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:22:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:23:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:26:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:26:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:27:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:35:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:39:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:39:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:40:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:41:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:45:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:45:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:46:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:47:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:02:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:02:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:03:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:09:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:12:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:12:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:13:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:22:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:26:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:26:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:30:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:31:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:32:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:32:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:33:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:35:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:36:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:36:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:38:00
+BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:45:00+0530
+BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:49:00
+SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:49:00+0530
+SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:53:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T14:58:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02+15:02:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-02T15:02:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-02+15:03:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T15:07:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02+15:08:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-02T15:08:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-02+15:11:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T15:14:00+0530
+2023-01-02+09:15:00 {
+  "totalBuy": 739809.0500000004,
+  "totalSell": 744110.9499999998,
+  "losses": 3,
+  "profits": 34,
+  "breakevenLoss": 0,
+  "profit": 2649.1100000000015,
+  "profit2": 4301.899999999441
+}
+2023-01-03+09:15:00 <-> 2023-01-03+15:15:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:19:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:20:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:20:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:22:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:23:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:24:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:24:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:26:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:27:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:30:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:30:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:33:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:34:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:36:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:36:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:37:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:39:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:41:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:41:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:43:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:52:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:53:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:53:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:54:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:56:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:59:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:59:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:00:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:19:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:23:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:23:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:26:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:27:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:29:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:29:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:30:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:33:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:35:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:35:00+0530
+SELL Order Completed with Atloss  IDEA x 2500 @ Rs. 7.95  at  2023-01-03+10:41:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:41:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:44:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:44:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:45:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:47:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:48:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:48:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:50:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:52:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:53:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:53:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:56:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:00:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:02:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:02:00+0530
+SELL Order Completed with Atloss  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:08:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:08:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:09:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:09:00+0530
+SELL Order Completed with Atloss  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:15:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:15:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:16:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:16:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:17:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:21:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:22:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:22:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:26:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:28:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:30:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:30:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:31:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:32:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:36:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:36:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:38:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:39:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:40:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:40:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:43:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:44:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:45:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:45:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:46:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:48:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:50:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:50:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:51:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:54:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:59:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:59:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:00:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:01:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:04:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:04:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:05:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:09:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:11:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:11:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:12:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:16:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:18:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:18:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:19:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:21:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:22:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:22:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:23:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:25:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:26:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:26:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:28:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:31:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:33:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:33:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:35:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:39:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:40:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:40:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:41:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:42:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:43:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:43:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:45:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:46:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:52:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:52:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:55:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:57:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:58:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:58:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+13:01:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T13:03:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+13:04:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T13:04:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+13:06:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:12:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:13:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:13:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:14:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:16:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:19:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:19:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:21:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:24:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:25:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:25:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:26:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:27:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:28:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:28:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:29:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:31:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:33:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:33:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:34:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:37:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:43:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:43:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:45:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:48:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:51:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:51:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:52:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:54:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:56:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:56:00+0530
+SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:58:00
+BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T14:03:00+0530
+BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+14:05:00
+SELL Order Placed  IDEA x 2500 @ Rs. 8.1  at  2023-01-03T14:05:00+0530
+SELL Order Completed with Atloss  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+14:11:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:15:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:16:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:16:00+0530
+SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:17:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:18:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:19:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:19:00+0530
+SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:20:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:21:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:23:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:23:00+0530
+SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:24:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:25:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:26:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:26:00+0530
+SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:27:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:29:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:34:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:34:00+0530
+SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:35:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:36:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:37:00
+SELL Order Placed  IDEA x 2484 @ Rs. NaN  at  2023-01-03T14:37:00+0530
+SELL Order Completed with Atloss  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:43:00
+BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:44:00+0530
+BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:48:00
+SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:48:00+0530
+SELL Order Completed with Atloss  IDEA x 2484 @ Rs. 7.95  at  2023-01-03+14:54:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T14:54:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+14:57:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T14:57:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+14:58:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T14:59:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+15:10:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T15:10:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+15:11:00
+BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T15:12:00+0530
+BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+15:13:00
+SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T15:13:00+0530
+SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+15:15:00
+2023-01-03+09:15:00 {
+  "totalBuy": 1059818.1499999997,
+  "totalSell": 1065583.7000000002,
+  "losses": 4,
+  "profits": 49,
+  "breakevenLoss": 0,
+  "profit": 3398.0499999999997,
+  "profit2": 5765.550000000512
+}
+2023-01-04+09:15:00 <-> 2023-01-04+15:15:00
+BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04T09:19:00+0530
+BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04+09:25:00
+SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04T09:25:00+0530
+SELL Order Completed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04+09:29:00
+BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04T09:30:00+0530
+BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04+09:35:00
+SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04T09:35:00+0530
+SELL Order Completed with Atloss  IDEA x 2547 @ Rs. 7.8  at  2023-01-04+09:41:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T09:43:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+09:46:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T09:46:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+09:47:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T09:49:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+09:53:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T09:53:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+09:55:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T09:56:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+09:58:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.85  at  2023-01-04T09:58:00+0530
+SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+10:04:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:11:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:19:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:19:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:20:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:21:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:26:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:26:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:27:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:29:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:30:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:30:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:32:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:33:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:35:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:35:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:36:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:39:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:42:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:42:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:43:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:45:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:53:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:53:00+0530
+SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:54:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:55:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+11:06:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T11:06:00+0530
+SELL Order Completed with Atloss  IDEA x 2564 @ Rs. 7.75  at  2023-01-04+11:12:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:12:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:14:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:14:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:15:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:21:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:28:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:28:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:29:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:42:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:52:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:52:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:54:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:55:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:56:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:56:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:57:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:58:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:00:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:00:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:01:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:04:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:07:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:07:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:08:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:15:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:24:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:24:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:25:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:28:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:39:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:39:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:40:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:44:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:45:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:45:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:46:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:56:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:07:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:07:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:09:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:11:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:12:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:12:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:14:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:17:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:21:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:21:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:22:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:23:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:25:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:25:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:26:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:28:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:29:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:29:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:30:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:31:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:32:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:32:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:33:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:38:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:43:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:43:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:44:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:45:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:49:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:49:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:50:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:52:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:54:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:54:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:55:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:57:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:09:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:09:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:10:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:12:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:14:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:14:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:15:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:20:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:21:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:21:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:22:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:24:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:26:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:26:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:27:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:32:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:38:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:38:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:41:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:44:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:45:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:45:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:46:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:47:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:53:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:53:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:56:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:57:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:58:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:58:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:59:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T15:02:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+15:03:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T15:03:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+15:04:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T15:05:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+15:07:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T15:07:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+15:09:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T15:13:00+0530
+2023-01-04+09:15:00 {
+  "totalBuy": 799835.7000000001,
+  "totalSell": 804474.1,
+  "losses": 2,
+  "profits": 38,
+  "breakevenLoss": 0,
+  "profit": 2851.5999999999985,
+  "profit2": 4638.399999999907
+}
+2023-01-05+09:15:00 <-> 2023-01-05+15:15:00
+BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-05T09:19:00+0530
+BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-05+09:20:00
+SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-05T09:20:00+0530
+SELL Order Completed with Atloss  IDEA x 2564 @ Rs. 7.75  at  2023-01-05+09:26:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:30:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:31:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05T09:31:00+0530
+SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05+09:32:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:36:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:42:00
+SELL Order Placed  IDEA x 2580 @ Rs. NaN  at  2023-01-05T09:42:00+0530
+SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:48:00
+BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:48:00+0530
+BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:49:00
+SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05T09:49:00+0530
+SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.7  at  2023-01-05+09:55:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T09:55:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+09:59:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.8  at  2023-01-05T09:59:00+0530
+SELL Order Completed with Atloss  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:05:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:05:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:08:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:08:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:10:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:15:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:17:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:17:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:18:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:20:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:22:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:22:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:23:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:24:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:28:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:28:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:29:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:30:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:36:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:36:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:37:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:38:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:40:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:40:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:41:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:45:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:47:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:47:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:49:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:50:00+0530
+BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:58:00
+SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:58:00+0530
+SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:59:00
+BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T11:12:00+0530
+2023-01-05+09:15:00 {
+  "totalBuy": 259956.29999999996,
+  "totalSell": 260866.9,
+  "losses": 4,
+  "profits": 9,
+  "breakevenLoss": 0,
+  "profit": 329.89000000000004,
+  "profit2": 910.6000000000349
+}
 2023-01-06+09:15:00 <-> 2023-01-06+15:15:00
-Evaluating tick Price= 7.9 2023-01-06T09:15:00+0530 {"highs":[7.9],"lows":[7.85],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.85 2023-01-06T09:16:00+0530 {"highs":[7.9,7.9],"lows":[7.85,7.8],"upperbound":7.9,"lowerbound":[7.85,7.8]}
-Evaluating tick Price= 7.85 2023-01-06T09:17:00+0530 {"highs":[7.9,7.9,7.85],"lows":[7.85,7.8,7.8],"upperbound":7.9,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T09:18:00+0530 {"highs":[7.9,7.9,7.85,7.85],"lows":[7.85,7.8,7.8,7.8],"upperbound":{},"lowerbound":7.8}
-Evaluating tick Price= 7.85 2023-01-06T09:19:00+0530 {"highs":[7.9,7.9,7.85,7.85,7.85],"lows":[7.85,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T09:20:00+0530 {"highs":[7.9,7.9,7.85,7.85,7.85,7.85],"lows":[7.85,7.8,7.8,7.8,7.8,7.75],"upperbound":7.85,"lowerbound":7.8}
 BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:20:00+0530
 BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:21:00
 SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:21:00+0530
-Evaluating tick Price= 7.75 2023-01-06T09:21:00+0530 {"highs":[7.9,7.85,7.85,7.85,7.85,7.8],"lows":[7.8,7.8,7.8,7.8,7.75,7.75],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.75 2023-01-06T09:22:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.8,7.8],"lows":[7.8,7.8,7.8,7.75,7.75,7.75],"upperbound":7.85,"lowerbound":{}}
-Evaluating tick Price= 7.8 2023-01-06T09:23:00+0530 {"highs":[7.85,7.85,7.85,7.8,7.8,7.85],"lows":[7.8,7.8,7.75,7.75,7.75,7.75],"upperbound":7.85,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T09:24:00+0530 {"highs":[7.85,7.85,7.8,7.8,7.85,7.85],"lows":[7.8,7.75,7.75,7.75,7.75,7.8],"upperbound":7.85,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:25:00
-Evaluating tick Price= 7.85 2023-01-06T09:25:00+0530 {"highs":[7.85,7.8,7.8,7.85,7.85,7.85],"lows":[7.75,7.75,7.75,7.75,7.8,7.8],"upperbound":7.85,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T09:26:00+0530 {"highs":[7.8,7.8,7.85,7.85,7.85,7.85],"lows":[7.75,7.75,7.75,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":{}}
-Evaluating tick Price= 7.85 2023-01-06T09:27:00+0530 {"highs":[7.8,7.85,7.85,7.85,7.85,7.85],"lows":[7.75,7.75,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T09:28:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.75,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
 BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:28:00+0530
 BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:29:00
 SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:29:00+0530
-Evaluating tick Price= 7.8 2023-01-06T09:29:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
 SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:30:00
-Evaluating tick Price= 7.85 2023-01-06T09:30:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T09:31:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
 BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:31:00+0530
-Evaluating tick Price= 7.85 2023-01-06T09:32:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
 BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:33:00
 SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:33:00+0530
-Evaluating tick Price= 7.8 2023-01-06T09:33:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T09:34:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
 SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:35:00
-Evaluating tick Price= 7.85 2023-01-06T09:35:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.85 2023-01-06T09:36:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.85 2023-01-06T09:37:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.9 2023-01-06T09:38:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.9],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.85 2023-01-06T09:39:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.9,7.9],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.9 2023-01-06T09:40:00+0530 {"highs":[7.85,7.85,7.85,7.9,7.9,7.9],"lows":[7.8,7.8,7.8,7.8,7.8,7.85],"upperbound":{},"lowerbound":7.8}
-Evaluating tick Price= 7.9 2023-01-06T09:41:00+0530 {"highs":[7.85,7.85,7.9,7.9,7.9,7.9],"lows":[7.8,7.8,7.8,7.8,7.85,7.85],"upperbound":7.9,"lowerbound":7.8}
-Evaluating tick Price= 7.85 2023-01-06T09:42:00+0530 {"highs":[7.85,7.9,7.9,7.9,7.9,7.9],"lows":[7.8,7.8,7.8,7.85,7.85,7.85],"upperbound":7.9,"lowerbound":{}}
-Evaluating tick Price= 7.9 2023-01-06T09:43:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.9,7.9],"lows":[7.8,7.8,7.85,7.85,7.85,7.85],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.85 2023-01-06T09:44:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.9,7.9],"lows":[7.8,7.85,7.85,7.85,7.85,7.85],"upperbound":7.9,"lowerbound":7.85}
 BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-06T09:44:00+0530
 BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-06+09:45:00
 SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-06T09:45:00+0530
-Evaluating tick Price= 7.85 2023-01-06T09:45:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.9,7.9],"lows":[7.85,7.85,7.85,7.85,7.85,7.85],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.85 2023-01-06T09:46:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.9,7.9],"lows":[7.85,7.85,7.85,7.85,7.85,7.8],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.75 2023-01-06T09:47:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.9,7.85],"lows":[7.85,7.85,7.85,7.85,7.8,7.75],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.75 2023-01-06T09:48:00+0530 {"highs":[7.9,7.9,7.9,7.9,7.85,7.8],"lows":[7.85,7.85,7.85,7.8,7.75,7.75],"upperbound":7.9,"lowerbound":7.85}
-Evaluating tick Price= 7.75 2023-01-06T09:49:00+0530 {"highs":[7.9,7.9,7.9,7.85,7.8,7.8],"lows":[7.85,7.85,7.8,7.75,7.75,7.75],"upperbound":7.9,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T09:50:00+0530 {"highs":[7.9,7.9,7.85,7.8,7.8,7.8],"lows":[7.85,7.8,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-SELL Order Completed with loss  IDEA x 2547 @ Rs. 7.8  at  2023-01-06+09:51:00
-Evaluating tick Price= 7.8 2023-01-06T09:51:00+0530 {"highs":[7.9,7.85,7.8,7.8,7.8,7.8],"lows":[7.8,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T09:52:00+0530 {"highs":[7.85,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T09:53:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
+SELL Order Completed with Atloss  IDEA x 2547 @ Rs. 7.8  at  2023-01-06+09:51:00
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T09:53:00+0530
-Evaluating tick Price= 7.8 2023-01-06T09:54:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+09:55:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T09:55:00+0530
-Evaluating tick Price= 7.75 2023-01-06T09:55:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+09:56:00
-Evaluating tick Price= 7.8 2023-01-06T09:56:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T09:57:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T09:57:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+09:58:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T09:58:00+0530
-Evaluating tick Price= 7.75 2023-01-06T09:58:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+09:59:00
-Evaluating tick Price= 7.8 2023-01-06T09:59:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:00:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:01:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:02:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:03:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:03:00+0530
-Evaluating tick Price= 7.8 2023-01-06T10:04:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:05:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:05:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:05:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:06:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:07:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:08:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:09:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:10:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-SELL Order Completed with loss  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:11:00
-Evaluating tick Price= 7.75 2023-01-06T10:11:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
+SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:11:00
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:11:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:12:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:12:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:12:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:13:00
-Evaluating tick Price= 7.8 2023-01-06T10:13:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:14:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:15:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:16:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:17:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:18:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:18:00+0530
-Evaluating tick Price= 7.8 2023-01-06T10:19:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:20:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:20:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:20:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:21:00
-Evaluating tick Price= 7.8 2023-01-06T10:21:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:22:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:22:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:23:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:23:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:23:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:24:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:25:00
-Evaluating tick Price= 7.8 2023-01-06T10:25:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:26:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:26:00+0530
-Evaluating tick Price= 7.8 2023-01-06T10:27:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:28:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:28:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:28:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:29:00
-Evaluating tick Price= 7.8 2023-01-06T10:29:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:30:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:31:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:32:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:33:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:33:00+0530
-Evaluating tick Price= 7.8 2023-01-06T10:34:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:35:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:36:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:37:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:37:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:37:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:38:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:39:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:40:00
-Evaluating tick Price= 7.8 2023-01-06T10:40:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:41:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:42:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:43:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:43:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:44:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:44:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:44:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:45:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:46:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:47:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:48:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:49:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:50:00
-Evaluating tick Price= 7.8 2023-01-06T10:50:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:51:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:52:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:52:00+0530
-Evaluating tick Price= 7.8 2023-01-06T10:53:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:54:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:55:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:56:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:56:00+0530
-Evaluating tick Price= 7.75 2023-01-06T10:56:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:57:00
-Evaluating tick Price= 7.8 2023-01-06T10:57:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T10:58:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T10:59:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:59:00+0530
-Evaluating tick Price= 7.8 2023-01-06T11:00:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:01:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:01:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:01:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:02:00
-Evaluating tick Price= 7.8 2023-01-06T11:02:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:03:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:03:00+0530
-Evaluating tick Price= 7.8 2023-01-06T11:04:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:05:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:06:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:07:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:08:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:09:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:10:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:10:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:10:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:11:00
-Evaluating tick Price= 7.8 2023-01-06T11:11:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:12:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:12:00+0530
-Evaluating tick Price= 7.8 2023-01-06T11:13:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:14:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:14:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:14:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:15:00
-Evaluating tick Price= 7.8 2023-01-06T11:15:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:16:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:17:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:18:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:19:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:20:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:21:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:21:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:22:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:22:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:22:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:23:00
-Evaluating tick Price= 7.8 2023-01-06T11:23:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:24:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:24:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:25:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:25:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:25:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:26:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:27:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:28:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:29:00
-Evaluating tick Price= 7.8 2023-01-06T11:29:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:30:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:31:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:31:00+0530
-Evaluating tick Price= 7.8 2023-01-06T11:32:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:33:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:34:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:35:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:36:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:36:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:36:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:37:00
-Evaluating tick Price= 7.8 2023-01-06T11:37:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:38:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:39:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:39:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:40:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:40:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:40:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:41:00
-Evaluating tick Price= 7.8 2023-01-06T11:41:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:42:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:43:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:43:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:44:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:44:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:44:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:45:00
-Evaluating tick Price= 7.8 2023-01-06T11:45:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:46:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:46:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:47:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:47:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:47:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:48:00
-Evaluating tick Price= 7.8 2023-01-06T11:48:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:49:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:49:00+0530
-Evaluating tick Price= 7.8 2023-01-06T11:50:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:51:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:52:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T11:53:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:54:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:54:00+0530
-Evaluating tick Price= 7.75 2023-01-06T11:54:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:55:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:56:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:57:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:58:00
-Evaluating tick Price= 7.8 2023-01-06T11:58:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T11:59:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:59:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:00:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:00:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:00:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:01:00
-Evaluating tick Price= 7.8 2023-01-06T12:01:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:02:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:03:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:04:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:05:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:05:00+0530
-Evaluating tick Price= 7.8 2023-01-06T12:06:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:07:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:07:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:07:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:08:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:09:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:10:00
-Evaluating tick Price= 7.8 2023-01-06T12:10:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:11:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:12:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:13:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:14:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:14:00+0530
-Evaluating tick Price= 7.8 2023-01-06T12:15:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:16:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:17:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:18:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:19:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:20:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:20:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:20:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:21:00
-Evaluating tick Price= 7.8 2023-01-06T12:21:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:22:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:22:00+0530
-Evaluating tick Price= 7.8 2023-01-06T12:23:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:24:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:25:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:25:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:25:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:26:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:27:00
-Evaluating tick Price= 7.8 2023-01-06T12:27:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:28:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:28:00+0530
-Evaluating tick Price= 7.8 2023-01-06T12:29:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:30:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:31:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:32:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:32:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:32:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:33:00
-Evaluating tick Price= 7.8 2023-01-06T12:33:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:34:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:35:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:36:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:37:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:37:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:38:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:38:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:38:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:39:00
-Evaluating tick Price= 7.8 2023-01-06T12:39:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:40:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:41:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:42:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:43:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:43:00+0530
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:44:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:44:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:44:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:45:00
-Evaluating tick Price= 7.8 2023-01-06T12:45:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:46:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:46:00+0530
-Evaluating tick Price= 7.8 2023-01-06T12:47:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T12:48:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
 BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:49:00
 SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:49:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:49:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.7],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:50:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.75],"lows":[7.75,7.75,7.75,7.75,7.7,7.7],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.75 2023-01-06T12:51:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.75,7.75],"lows":[7.75,7.75,7.75,7.7,7.7,7.7],"upperbound":7.8,"lowerbound":{}}
-Evaluating tick Price= 7.75 2023-01-06T12:52:00+0530 {"highs":[7.8,7.8,7.8,7.75,7.75,7.75],"lows":[7.75,7.75,7.7,7.7,7.7,7.7],"upperbound":{},"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T12:53:00+0530 {"highs":[7.8,7.8,7.75,7.75,7.75,7.75],"lows":[7.75,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T12:54:00+0530 {"highs":[7.8,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-SELL Order Completed with loss  IDEA x 2580 @ Rs. 7.7  at  2023-01-06+12:55:00
-Evaluating tick Price= 7.7 2023-01-06T12:55:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
+SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.7  at  2023-01-06+12:55:00
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T12:55:00+0530
-Evaluating tick Price= 7.75 2023-01-06T12:56:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T12:57:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T12:58:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+12:59:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T12:59:00+0530
-Evaluating tick Price= 7.7 2023-01-06T12:59:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:00:00
-Evaluating tick Price= 7.75 2023-01-06T13:00:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:01:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:02:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:03:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:04:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:04:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:05:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:06:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:07:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:07:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:07:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:08:00
-Evaluating tick Price= 7.75 2023-01-06T13:08:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:09:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.8 2023-01-06T13:10:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.8],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:11:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.8,7.8],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:12:00+0530 {"highs":[7.75,7.75,7.75,7.8,7.8,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:12:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:13:00+0530 {"highs":[7.75,7.75,7.8,7.8,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:14:00+0530 {"highs":[7.75,7.8,7.8,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:15:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:15:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:15:00+0530 {"highs":[7.8,7.8,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:16:00
-Evaluating tick Price= 7.75 2023-01-06T13:16:00+0530 {"highs":[7.8,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:17:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:18:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:19:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:20:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:21:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:21:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:22:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:23:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:24:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:25:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:26:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:27:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:28:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:28:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:28:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:29:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:30:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:31:00
-Evaluating tick Price= 7.75 2023-01-06T13:31:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:32:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:33:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:34:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:35:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:36:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:37:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:37:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:38:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:39:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:40:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:40:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:40:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:41:00
-Evaluating tick Price= 7.75 2023-01-06T13:41:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:42:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:42:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:43:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:44:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:45:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:46:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:47:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:48:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:49:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:50:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:50:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:50:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:51:00
-Evaluating tick Price= 7.75 2023-01-06T13:51:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:52:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:53:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:54:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T13:55:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T13:56:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:56:00+0530
-Evaluating tick Price= 7.75 2023-01-06T13:57:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:58:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:58:00+0530
-Evaluating tick Price= 7.7 2023-01-06T13:58:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:59:00
-Evaluating tick Price= 7.75 2023-01-06T13:59:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:00:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:01:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:02:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:03:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:03:00+0530
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:04:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:04:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:04:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:05:00
-Evaluating tick Price= 7.75 2023-01-06T14:05:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:06:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:06:00+0530
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:07:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:07:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:07:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:08:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:09:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:10:00
-Evaluating tick Price= 7.75 2023-01-06T14:10:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:11:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:11:00+0530
-Evaluating tick Price= 7.75 2023-01-06T14:12:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:13:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:14:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:15:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:15:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:15:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:16:00
-Evaluating tick Price= 7.75 2023-01-06T14:16:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:17:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:18:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:19:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:20:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:21:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:22:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:22:00+0530
-Evaluating tick Price= 7.75 2023-01-06T14:23:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:24:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:25:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:25:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:25:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:26:00
-Evaluating tick Price= 7.75 2023-01-06T14:26:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:27:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:28:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:29:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:29:00+0530
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:30:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:30:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:30:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:31:00
-Evaluating tick Price= 7.75 2023-01-06T14:31:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:32:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:33:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:33:00+0530
-Evaluating tick Price= 7.75 2023-01-06T14:34:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:35:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:36:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:36:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:36:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:37:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:38:00
-Evaluating tick Price= 7.75 2023-01-06T14:38:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:39:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:39:00+0530
-Evaluating tick Price= 7.75 2023-01-06T14:40:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:41:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:41:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:41:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:42:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:43:00
-Evaluating tick Price= 7.75 2023-01-06T14:43:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:44:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:45:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:45:00+0530
-Evaluating tick Price= 7.75 2023-01-06T14:46:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:47:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:48:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:49:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:50:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:51:00
 SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:51:00+0530
-Evaluating tick Price= 7.7 2023-01-06T14:51:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
 SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:52:00
-Evaluating tick Price= 7.75 2023-01-06T14:52:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.75],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:53:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.75,7.8],"lows":[7.7,7.7,7.7,7.7,7.7,7.7],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.75 2023-01-06T14:54:00+0530 {"highs":[7.75,7.75,7.75,7.75,7.8,7.8],"lows":[7.7,7.7,7.7,7.7,7.7,7.75],"upperbound":7.75,"lowerbound":7.7}
-Evaluating tick Price= 7.8 2023-01-06T14:55:00+0530 {"highs":[7.75,7.75,7.75,7.8,7.8,7.8],"lows":[7.7,7.7,7.7,7.7,7.75,7.75],"upperbound":{},"lowerbound":7.7}
-Evaluating tick Price= 7.7 2023-01-06T14:56:00+0530 {"highs":[7.75,7.75,7.8,7.8,7.8,7.8],"lows":[7.7,7.7,7.7,7.75,7.75,7.7],"upperbound":7.8,"lowerbound":7.7}
 BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:56:00+0530
-Evaluating tick Price= 7.8 2023-01-06T14:57:00+0530 {"highs":[7.75,7.8,7.8,7.8,7.8,7.8],"lows":[7.7,7.7,7.75,7.75,7.7,7.7],"upperbound":7.8,"lowerbound":7.7}
-Evaluating tick Price= 7.8 2023-01-06T14:58:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.7,7.75,7.75,7.7,7.7,7.75],"upperbound":7.8,"lowerbound":{}}
-Evaluating tick Price= 7.75 2023-01-06T14:59:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.7,7.7,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:00:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.7,7.7,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:01:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.7,7.7,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:02:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.7,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:03:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:04:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:05:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:06:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:07:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:08:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.8],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.85 2023-01-06T15:09:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.8,7.85],"lows":[7.75,7.75,7.75,7.75,7.75,7.75],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.85 2023-01-06T15:10:00+0530 {"highs":[7.8,7.8,7.8,7.8,7.85,7.85],"lows":[7.75,7.75,7.75,7.75,7.75,7.8],"upperbound":7.8,"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:11:00+0530 {"highs":[7.8,7.8,7.8,7.85,7.85,7.85],"lows":[7.75,7.75,7.75,7.75,7.8,7.8],"upperbound":{},"lowerbound":7.75}
-Evaluating tick Price= 7.8 2023-01-06T15:12:00+0530 {"highs":[7.8,7.8,7.85,7.85,7.85,7.85],"lows":[7.75,7.75,7.75,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":{}}
-Evaluating tick Price= 7.85 2023-01-06T15:13:00+0530 {"highs":[7.8,7.85,7.85,7.85,7.85,7.85],"lows":[7.75,7.75,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T15:14:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.75,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Evaluating tick Price= 7.8 2023-01-06T15:15:00+0530 {"highs":[7.85,7.85,7.85,7.85,7.85,7.85],"lows":[7.8,7.8,7.8,7.8,7.8,7.8],"upperbound":7.85,"lowerbound":7.8}
-Buy@ 7.8 Sell@ 7.85 Profit 83.53 bork 44.67
-Buy@ 7.8 Sell@ 7.85 Profit 83.53 bork 44.67
-Buy@ 7.8 Sell@ 7.85 Profit 83.53 bork 44.67
-Buy@ 7.85 Sell@ 7.8 Profit -172.02 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.75 Profit -44.67 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.8 Profit 84.33 bork 44.67
-Buy@ 7.75 Sell@ 7.7 Profit -173.67 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-Buy@ 7.7 Sell@ 7.75 Profit 85.18 bork 44.67
-{
+2023-01-06+09:15:00 {
   "totalBuy": 939805.0500000004,
   "totalSell": 945235.05,
   "losses": 3,
