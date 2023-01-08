@@ -3,6 +3,13 @@ const fetch = require('node-fetch');
 const zlogin = require('./login')
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 const Tick = require('../../dao/tick')
+var authenticator = require('authenticator');
+
+function readOTPFrom2FA(totpKey) {
+    const token = authenticator.generateToken(totpKey);
+    console.log('Generated TOTP', token)
+    return token
+}
 
 var axios = require('axios');
 let bCalc = require('../../archive/brokerage')
@@ -46,8 +53,8 @@ module.exports = function (zerodhaConfig, log) {
     let Z_USERID = zerodhaConfig.userid || process.env.Z_USERID
     let Z_PASSWORD = zerodhaConfig.password || process.env.Z_PASSWORD
     let Z_TOTP_KEY = zerodhaConfig.totp_key || process.env.Z_TOTP_KEY
-    let getPin = zerodhaConfig.getPin || (() => {
-        return process.env.Z_TOTP_KEY
+    let getPin = zerodhaConfig.getPin || (async (user, ky) => {
+        return readOTPFrom2FA(ky)
     })
     let getOtp = zerodhaConfig.getOTP || (() => {
         return process.env.Z_TOTP_KEY
