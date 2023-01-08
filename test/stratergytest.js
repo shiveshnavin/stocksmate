@@ -21,7 +21,7 @@ async function initAdapter(userid, password, totpKey, isRetry) {
         totp_key: totpKey
     }, console.log)
 
-    return adapter;
+    // return adapter;
 
     let existingLogin = await multiDb.getOne('stocksmate_logins', { id: userid })
     if (!existingLogin) {
@@ -77,7 +77,7 @@ async function startTest() {
             limit_price, qty, type, symbol, order_type, trade, exchange, timestamp: tick.datetime, id
         }
         testOrders.push(order)
-        console.log(type, 'Order Placed ', symbol, 'x', qty, '@ Rs.', limit_price, ' at ', order.timestamp)
+        // console.log(type, 'Order Placed ', symbol, 'x', qty, '@ Rs.', limit_price, ' at ', order.timestamp)
         return order
     }
     function evaluatePendingOrders(tick) {
@@ -86,7 +86,7 @@ async function startTest() {
             if (ord.status != 'COMPLETED') {
                 if (ord.type == 'BUY') {
                     if (tick.last_price <= ord.limit_price) {
-                        console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        // console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
                         ord.status = 'COMPLETED'
                         // testOrdersPromises[ord.id]()
                         let sellorder = adapter.order(ord.sp, ord.qty, 'SELL', ord.symbol, 'LIMIT', 'NRML', 'NSE', 0, tick)
@@ -96,7 +96,7 @@ async function startTest() {
                 else if (ord.type == 'SELL') {
 
                     if (tick.last_price >= ord.limit_price) {
-                        console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        // console.log(ord.type, 'Order Completed ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
                         ord.status = 'COMPLETED'
                         // testOrdersPromises[ord.id]()
                         trader.waitingForOrder = false;
@@ -104,7 +104,7 @@ async function startTest() {
                     }
                     else if (moment(ord.timestamp).isBefore(moment(tick.datetime).subtract(5, 'minutes'))) {
                         ord.limit_price = tick.last_price
-                        console.log(ord.type, 'Order Completed with Atloss ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
+                        // console.log(ord.type, 'Order Completed with Atloss ', ord.symbol, 'x', ord.qty, '@ Rs.', ord.limit_price, ' at ', moment(tick.datetime).format('YYYY-MM-DD+HH:mm:ss'))
                         ord.status = 'COMPLETED'
                         // testOrdersPromises[ord.id]()
                         trader.waitingForOrder = false;
@@ -139,18 +139,24 @@ async function startTest() {
 
     let formatDate = 'YYYY-MM-DD+HH:mm:ss'
     let day = parseInt(process.argv[2]) || 2;
-    let durationInFutureDays = 4;
-    let from = moment(`2023-01-${day < 10 ? `0${day}` : day}T09:15:00`)
-    let to = moment(`2023-01-${day + durationInFutureDays < 10 ? `0${day + durationInFutureDays}` : day}T15:30:00`)
+    // let durationInFutureDays = 4;
+    // let from = moment(`2022-01-${day < 10 ? `0${day}` : day}T09:15:00`)
+    // let to = moment(`2023-01-${day + durationInFutureDays < 10 ? `0${day + durationInFutureDays}` : day}T15:30:00`)
+
+
+    let from = moment(`2022-11-08T09:15:00`)
+    let to = moment(`2023-01-06T15:30:00`)
+
 
     for (var tStart = moment(from); tStart.isBetween(from, to, 'day', '[]'); tStart.add(1, 'days')) {
         let tEnd = tStart.clone().add(6, 'hours')
         console.log(tStart.format(formatDate), '<->', tEnd.format(formatDate));
         trader = new HVLPSkimStratergy(adapter, onLog)
 
-        let file = `../test_IDEA_${tStart.format('DD')}.json`
-        let historyToday = require(file)
-        // await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
+        let file = `../test_IDEA_${tStart.format('YYYY_MM_DD')}.json`
+        let historyToday =
+            require(file)
+        //     await adapter.getHistoricalData(scip, 'minute', tStart.format(formatDate), tEnd.format(formatDate), 0)
         // fs.writeFileSync(file, JSON.stringify(historyToday, null, 2))
 
         if (historyToday.length < 10) {
@@ -184,7 +190,7 @@ async function startTest() {
             }
             else {
 
-                let bork = brokerage.cal_delivery(lastBuy.limit_price, o.limit_price, lastBuy.qty, true)
+                let bork = brokerage.cal_intra(lastBuy.limit_price, o.limit_price, lastBuy.qty, true)
                 let profit = bork.net_profit
                 if (profit > 0) {
                     stockStats.profits++
@@ -197,12 +203,12 @@ async function startTest() {
                 }
                 stockStats.totalSell += (o.limit_price) * lastBuy.qty
                 stockStats.totalBuy += (lastBuy.limit_price) * lastBuy.qty
-                // onLog('Buy@', lastBuy.limit_price, 'Sell@', o.limit_price, 'Profit', profit, 'bork', (bork.brokerage + bork.total_tax))
+                // onLog('Buy@', lastBuy.limit_price, 'Sell@', o.limit_price, 'Profit', profit, lastBuy.qty, o.qty, 'bork', (bork.brokerage + bork.total_tax))
                 stockStats.profit += profit
             }
 
         })
-
+        stockStats.profit -= 15.93
         stockStats.profit2 = stockStats.totalSell - stockStats.totalBuy
         console.log(tStart.format(formatDate), JSON.stringify(stockStats, null, 2))
         testOrders = []

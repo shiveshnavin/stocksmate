@@ -1,5 +1,8 @@
 Warning : Multi region sync not enabled.
 Firestore Initialized
+========================
+Zerodha using cached credentials
+Zerodha Connected to user Shivesh Navin
 {
   instrument_token: '3677697',
   exchange_token: '14366',
@@ -14,817 +17,467 @@ Firestore Initialized
   segment: 'NSE',
   exchange: 'NSE'
 }
+2022-11-08+09:15:00 <-> 2022-11-08+15:15:00
+Skip  Moment<2022-11-08T09:15:00+05:30> probably a holiday
+2022-11-09+09:15:00 <-> 2022-11-09+15:15:00
+2022-11-09+09:15:00 {
+  "totalBuy": 199982.5,
+  "totalSell": 201060.25,
+  "losses": 1,
+  "profits": 9,
+  "breakevenLoss": 0,
+  "profit": 847.0699999999999,
+  "profit2": 1077.75
+}
+2022-11-10+09:15:00 <-> 2022-11-10+15:15:00
+2022-11-10+09:15:00 {
+  "totalBuy": 379848.7,
+  "totalSell": 382202.0999999999,
+  "losses": 0,
+  "profits": 19,
+  "breakevenLoss": 0,
+  "profit": 1929.6700000000005,
+  "profit2": 2353.399999999907
+}
+2022-11-11+09:15:00 <-> 2022-11-11+15:15:00
+2022-11-11+09:15:00 {
+  "totalBuy": 1099604.7499999993,
+  "totalSell": 1105495.3499999996,
+  "losses": 4,
+  "profits": 51,
+  "breakevenLoss": 0,
+  "profit": 4694.540000000002,
+  "profit2": 5890.600000000326
+}
+2022-11-12+09:15:00 <-> 2022-11-12+15:15:00
+Skip  Moment<2022-11-12T09:15:00+05:30> probably a holiday
+2022-11-13+09:15:00 <-> 2022-11-13+15:15:00
+Skip  Moment<2022-11-13T09:15:00+05:30> probably a holiday
+2022-11-14+09:15:00 <-> 2022-11-14+15:15:00
+2022-11-14+09:15:00 {
+  "totalBuy": 759767.6,
+  "totalSell": 763467.7999999997,
+  "losses": 5,
+  "profits": 33,
+  "breakevenLoss": 0,
+  "profit": 2868.839999999999,
+  "profit2": 3700.1999999997206
+}
+2022-11-15+09:15:00 <-> 2022-11-15+15:15:00
+2022-11-15+09:15:00 {
+  "totalBuy": 1119565.2999999998,
+  "totalSell": 1124314.8,
+  "losses": 14,
+  "profits": 42,
+  "breakevenLoss": 0,
+  "profit": 3532.3299999999995,
+  "profit2": 4749.500000000233
+}
+2022-11-16+09:15:00 <-> 2022-11-16+15:15:00
+2022-11-16+09:15:00 {
+  "totalBuy": 999801.4,
+  "totalSell": 1003752.35,
+  "losses": 15,
+  "profits": 35,
+  "breakevenLoss": 0,
+  "profit": 2861.95,
+  "profit2": 3950.9499999999534
+}
+2022-11-17+09:15:00 <-> 2022-11-17+15:15:00
+2022-11-17+09:15:00 {
+  "totalBuy": 1039584,
+  "totalSell": 1045415,
+  "losses": 3,
+  "profits": 49,
+  "breakevenLoss": 0,
+  "profit": 4699.239999999998,
+  "profit2": 5831
+}
+2022-11-18+09:15:00 <-> 2022-11-18+15:15:00
+2022-11-18+09:15:00 {
+  "totalBuy": 779835.8999999997,
+  "totalSell": 784285.5500000005,
+  "losses": 2,
+  "profits": 37,
+  "breakevenLoss": 0,
+  "profit": 3596.639999999997,
+  "profit2": 4449.650000000838
+}
+2022-11-19+09:15:00 <-> 2022-11-19+15:15:00
+Skip  Moment<2022-11-19T09:15:00+05:30> probably a holiday
+2022-11-20+09:15:00 <-> 2022-11-20+15:15:00
+Skip  Moment<2022-11-20T09:15:00+05:30> probably a holiday
+2022-11-21+09:15:00 <-> 2022-11-21+15:15:00
+2022-11-21+09:15:00 {
+  "totalBuy": 859681,
+  "totalSell": 864444,
+  "losses": 3,
+  "profits": 40,
+  "breakevenLoss": 0,
+  "profit": 3824.299999999999,
+  "profit2": 4763
+}
+2022-11-22+09:15:00 <-> 2022-11-22+15:15:00
+2022-11-22+09:15:00 {
+  "totalBuy": 1099697.5,
+  "totalSell": 1105424.5,
+  "losses": 7,
+  "profits": 48,
+  "breakevenLoss": 0,
+  "profit": 4530.580000000001,
+  "profit2": 5727
+}
+2022-11-23+09:15:00 <-> 2022-11-23+15:15:00
+2022-11-23+09:15:00 {
+  "totalBuy": 999927.000000001,
+  "totalSell": 1005399.0000000002,
+  "losses": 4,
+  "profits": 46,
+  "breakevenLoss": 0,
+  "profit": 4382.379999999997,
+  "profit2": 5471.999999999185
+}
+2022-11-24+09:15:00 <-> 2022-11-24+15:15:00
+2022-11-24+09:15:00 {
+  "totalBuy": 939883.3499999995,
+  "totalSell": 943709.5500000003,
+  "losses": 12,
+  "profits": 35,
+  "breakevenLoss": 0,
+  "profit": 2801.529999999999,
+  "profit2": 3826.2000000007683
+}
+2022-11-25+09:15:00 <-> 2022-11-25+15:15:00
+2022-11-25+09:15:00 {
+  "totalBuy": 739942.6,
+  "totalSell": 744322,
+  "losses": 2,
+  "profits": 35,
+  "breakevenLoss": 0,
+  "profit": 3568.81,
+  "profit2": 4379.400000000023
+}
+2022-11-26+09:15:00 <-> 2022-11-26+15:15:00
+Skip  Moment<2022-11-26T09:15:00+05:30> probably a holiday
+2022-11-27+09:15:00 <-> 2022-11-27+15:15:00
+Skip  Moment<2022-11-27T09:15:00+05:30> probably a holiday
+2022-11-28+09:15:00 <-> 2022-11-28+15:15:00
+2022-11-28+09:15:00 {
+  "totalBuy": 1099815.2999999989,
+  "totalSell": 1106392.6500000006,
+  "losses": 2,
+  "profits": 53,
+  "breakevenLoss": 0,
+  "profit": 5380.119999999999,
+  "profit2": 6577.350000001723
+}
+2022-11-29+09:15:00 <-> 2022-11-29+15:15:00
+2022-11-29+09:15:00 {
+  "totalBuy": 1019820.7999999991,
+  "totalSell": 1023421.9000000007,
+  "losses": 21,
+  "profits": 30,
+  "breakevenLoss": 0,
+  "profit": 2490.7899999999995,
+  "profit2": 3601.1000000016065
+}
+2022-11-30+09:15:00 <-> 2022-11-30+15:15:00
+2022-11-30+09:15:00 {
+  "totalBuy": 1059844.7500000002,
+  "totalSell": 1066270.1000000006,
+  "losses": 1,
+  "profits": 52,
+  "breakevenLoss": 0,
+  "profit": 5271.049999999999,
+  "profit2": 6425.350000000326
+}
+2022-12-01+09:15:00 <-> 2022-12-01+15:15:00
+2022-12-01+09:15:00 {
+  "totalBuy": 939937.1000000007,
+  "totalSell": 944254.8499999993,
+  "losses": 11,
+  "profits": 36,
+  "breakevenLoss": 0,
+  "profit": 3292.879999999998,
+  "profit2": 4317.749999998603
+}
+2022-12-02+09:15:00 <-> 2022-12-02+15:15:00
+2022-12-02+09:15:00 {
+  "totalBuy": 1099586.8499999992,
+  "totalSell": 1104243.9999999993,
+  "losses": 17,
+  "profits": 38,
+  "breakevenLoss": 0,
+  "profit": 3461.3500000000004,
+  "profit2": 4657.15000000014
+}
+2022-12-03+09:15:00 <-> 2022-12-03+15:15:00
+Skip  Moment<2022-12-03T09:15:00+05:30> probably a holiday
+2022-12-04+09:15:00 <-> 2022-12-04+15:15:00
+Skip  Moment<2022-12-04T09:15:00+05:30> probably a holiday
+2022-12-05+09:15:00 <-> 2022-12-05+15:15:00
+2022-12-05+09:15:00 {
+  "totalBuy": 799907.7500000001,
+  "totalSell": 803920.6000000001,
+  "losses": 5,
+  "profits": 35,
+  "breakevenLoss": 0,
+  "profit": 3138.169999999999,
+  "profit2": 4012.8499999999767
+}
+2022-12-06+09:15:00 <-> 2022-12-06+15:15:00
+2022-12-06+09:15:00 {
+  "totalBuy": 959837.0000000003,
+  "totalSell": 965389.4999999997,
+  "losses": 2,
+  "profits": 46,
+  "breakevenLoss": 0,
+  "profit": 4505.939999999998,
+  "profit2": 5552.4999999993015
+}
+2022-12-07+09:15:00 <-> 2022-12-07+15:15:00
+2022-12-07+09:15:00 {
+  "totalBuy": 939904.2,
+  "totalSell": 944916.2,
+  "losses": 7,
+  "profits": 40,
+  "breakevenLoss": 0,
+  "profit": 3986.8599999999997,
+  "profit2": 5012
+}
+2022-12-08+09:15:00 <-> 2022-12-08+15:15:00
+2022-12-08+09:15:00 {
+  "totalBuy": 1040000,
+  "totalSell": 1046500,
+  "losses": 0,
+  "profits": 52,
+  "breakevenLoss": 0,
+  "profit": 5367.110000000005,
+  "profit2": 6500
+}
+2022-12-09+09:15:00 <-> 2022-12-09+15:15:00
+2022-12-09+09:15:00 {
+  "totalBuy": 939779.0000000001,
+  "totalSell": 945311.4999999998,
+  "losses": 2,
+  "profits": 45,
+  "breakevenLoss": 0,
+  "profit": 4507.159999999998,
+  "profit2": 5532.499999999651
+}
+2022-12-10+09:15:00 <-> 2022-12-10+15:15:00
+Skip  Moment<2022-12-10T09:15:00+05:30> probably a holiday
+2022-12-11+09:15:00 <-> 2022-12-11+15:15:00
+Skip  Moment<2022-12-11T09:15:00+05:30> probably a holiday
+2022-12-12+09:15:00 <-> 2022-12-12+15:15:00
+2022-12-12+09:15:00 {
+  "totalBuy": 979749.4500000008,
+  "totalSell": 985698.0999999992,
+  "losses": 1,
+  "profits": 48,
+  "breakevenLoss": 0,
+  "profit": 4880.3,
+  "profit2": 5948.6499999983935
+}
+2022-12-13+09:15:00 <-> 2022-12-13+15:15:00
+2022-12-13+09:15:00 {
+  "totalBuy": 959755.2000000008,
+  "totalSell": 965829.5999999992,
+  "losses": 0,
+  "profits": 48,
+  "breakevenLoss": 0,
+  "profit": 5027.429999999999,
+  "profit2": 6074.3999999983935
+}
+2022-12-14+09:15:00 <-> 2022-12-14+15:15:00
+2022-12-14+09:15:00 {
+  "totalBuy": 639863.8500000001,
+  "totalSell": 643468.55,
+  "losses": 3,
+  "profits": 29,
+  "breakevenLoss": 0,
+  "profit": 2901.61,
+  "profit2": 3604.6999999999534
+}
+2022-12-15+09:15:00 <-> 2022-12-15+15:15:00
+2022-12-15+09:15:00 {
+  "totalBuy": 899776.5499999998,
+  "totalSell": 902773.5000000001,
+  "losses": 16,
+  "profits": 29,
+  "breakevenLoss": 0,
+  "profit": 2015.8799999999997,
+  "profit2": 2996.9500000003027
+}
+2022-12-16+09:15:00 <-> 2022-12-16+15:15:00
+2022-12-16+09:15:00 {
+  "totalBuy": 139977.2,
+  "totalSell": 140221.09999999998,
+  "losses": 3,
+  "profits": 4,
+  "breakevenLoss": 0,
+  "profit": 77.85999999999999,
+  "profit2": 243.89999999996508
+}
+2022-12-17+09:15:00 <-> 2022-12-17+15:15:00
+Skip  Moment<2022-12-17T09:15:00+05:30> probably a holiday
+2022-12-18+09:15:00 <-> 2022-12-18+15:15:00
+Skip  Moment<2022-12-18T09:15:00+05:30> probably a holiday
+2022-12-19+09:15:00 <-> 2022-12-19+15:15:00
+2022-12-19+09:15:00 {
+  "totalBuy": 1019848.4999999993,
+  "totalSell": 1025898,
+  "losses": 1,
+  "profits": 50,
+  "breakevenLoss": 0,
+  "profit": 4938.419999999995,
+  "profit2": 6049.5000000006985
+}
+2022-12-20+09:15:00 <-> 2022-12-20+15:15:00
+2022-12-20+09:15:00 {
+  "totalBuy": 559875.8500000002,
+  "totalSell": 562328.5499999997,
+  "losses": 8,
+  "profits": 20,
+  "breakevenLoss": 0,
+  "profit": 1835.9700000000003,
+  "profit2": 2452.6999999994878
+}
+2022-12-21+09:15:00 <-> 2022-12-21+15:15:00
+2022-12-21+09:15:00 {
+  "totalBuy": 859939.1999999997,
+  "totalSell": 864102.7499999999,
+  "losses": 7,
+  "profits": 36,
+  "breakevenLoss": 0,
+  "profit": 3224.449999999998,
+  "profit2": 4163.550000000163
+}
+2022-12-22+09:15:00 <-> 2022-12-22+15:15:00
+2022-12-22+09:15:00 {
+  "totalBuy": 559897.9500000002,
+  "totalSell": 561669.6000000002,
+  "losses": 11,
+  "profits": 17,
+  "breakevenLoss": 0,
+  "profit": 1154.9799999999998,
+  "profit2": 1771.6500000000233
+}
+2022-12-23+09:15:00 <-> 2022-12-23+15:15:00
+2022-12-23+09:15:00 {
+  "totalBuy": 979878.5999999997,
+  "totalSell": 984884.7500000005,
+  "losses": 8,
+  "profits": 41,
+  "breakevenLoss": 0,
+  "profit": 3938.1999999999985,
+  "profit2": 5006.150000000722
+}
+2022-12-24+09:15:00 <-> 2022-12-24+15:15:00
+Skip  Moment<2022-12-24T09:15:00+05:30> probably a holiday
+2022-12-25+09:15:00 <-> 2022-12-25+15:15:00
+Skip  Moment<2022-12-25T09:15:00+05:30> probably a holiday
+2022-12-26+09:15:00 <-> 2022-12-26+15:15:00
+2022-12-26+09:15:00 {
+  "totalBuy": 0,
+  "totalSell": 0,
+  "losses": 0,
+  "profits": 0,
+  "breakevenLoss": 0,
+  "profit": -15.93,
+  "profit2": 0
+}
+2022-12-27+09:15:00 <-> 2022-12-27+15:15:00
+2022-12-27+09:15:00 {
+  "totalBuy": 599837.9000000003,
+  "totalSell": 603120.2,
+  "losses": 2,
+  "profits": 28,
+  "breakevenLoss": 0,
+  "profit": 2622.1700000000005,
+  "profit2": 3282.2999999996973
+}
+2022-12-28+09:15:00 <-> 2022-12-28+15:15:00
+2022-12-28+09:15:00 {
+  "totalBuy": 99974.5,
+  "totalSell": 100607.25,
+  "losses": 0,
+  "profits": 5,
+  "breakevenLoss": 0,
+  "profit": 509.4199999999999,
+  "profit2": 632.75
+}
+2022-12-29+09:15:00 <-> 2022-12-29+15:15:00
+2022-12-29+09:15:00 {
+  "totalBuy": 1119665.9499999988,
+  "totalSell": null,
+  "losses": 4,
+  "profits": 52,
+  "breakevenLoss": 0,
+  "profit": -14580.640000000003,
+  "profit2": null
+}
+2022-12-30+09:15:00 <-> 2022-12-30+15:15:00
+2022-12-30+09:15:00 {
+  "totalBuy": 639822.5,
+  "totalSell": 643375.5000000002,
+  "losses": 3,
+  "profits": 29,
+  "breakevenLoss": 0,
+  "profit": 2849.9099999999985,
+  "profit2": 3553.000000000233
+}
+2022-12-31+09:15:00 <-> 2022-12-31+15:15:00
+Skip  Moment<2022-12-31T09:15:00+05:30> probably a holiday
+2023-01-01+09:15:00 <-> 2023-01-01+15:15:00
+Skip  Moment<2023-01-01T09:15:00+05:30> probably a holiday
 2023-01-02+09:15:00 <-> 2023-01-02+15:15:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T09:20:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+09:21:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T09:21:00+0530
-SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+09:27:00
-BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-02T09:30:00+0530
-BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-02+09:32:00
-SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-02T09:32:00+0530
-SELL Order Completed  IDEA x 2547 @ Rs. 7.9  at  2023-01-02+09:33:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T09:57:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:02:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:02:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:04:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:05:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:07:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:07:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:11:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:14:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:15:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:15:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:19:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:22:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:23:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:23:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:25:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:26:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:27:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:27:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:29:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:30:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:31:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:31:00+0530
-SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:37:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:37:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:38:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:38:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:40:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:41:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:42:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:42:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:46:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T10:47:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+10:50:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T10:50:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+10:51:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:00:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:04:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:04:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:05:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:08:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:11:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:11:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:12:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:16:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:31:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:31:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:33:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:38:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:39:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:39:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:41:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:46:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+11:48:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T11:48:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+11:51:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T11:53:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:00:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:00:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:05:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:06:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:12:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:12:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:14:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:18:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:20:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:20:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:23:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:26:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:32:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:32:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:33:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:34:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:36:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:36:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:41:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:42:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:47:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:47:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+12:48:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T12:55:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+12:58:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T12:58:00+0530
-SELL Order Completed with Atloss  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:04:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:04:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:06:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:06:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:07:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:08:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:09:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:09:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:10:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:14:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:21:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:21:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:22:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:23:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:26:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:26:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:27:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:35:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:39:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:39:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:40:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:41:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+13:45:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T13:45:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+13:46:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T13:47:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:02:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:02:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:03:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:09:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:12:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:12:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:13:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:22:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:26:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:26:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:30:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:31:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:32:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:32:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:33:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:35:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:36:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:36:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:38:00
-BUY Order Placed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02T14:45:00+0530
-BUY Order Completed  IDEA x 2531 @ Rs. 7.9  at  2023-01-02+14:49:00
-SELL Order Placed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02T14:49:00+0530
-SELL Order Completed  IDEA x 2531 @ Rs. 7.95  at  2023-01-02+14:53:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T14:58:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02+15:02:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-02T15:02:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-02+15:03:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T15:07:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02+15:08:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-02T15:08:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-02+15:11:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-02T15:14:00+0530
 2023-01-02+09:15:00 {
   "totalBuy": 739809.0500000004,
   "totalSell": 744110.9499999998,
   "losses": 3,
   "profits": 34,
   "breakevenLoss": 0,
-  "profit": 2649.1100000000015,
+  "profit": 3491.360000000001,
   "profit2": 4301.899999999441
 }
 2023-01-03+09:15:00 <-> 2023-01-03+15:15:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:19:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:20:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:20:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:22:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:23:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:24:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:24:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:26:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:27:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:30:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:30:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:33:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:34:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:36:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:36:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:37:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:39:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:41:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:41:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:43:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:52:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:53:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:53:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+09:54:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T09:56:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+09:59:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T09:59:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:00:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:19:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:23:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:23:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:26:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:27:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:29:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:29:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+10:30:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T10:33:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+10:35:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T10:35:00+0530
-SELL Order Completed with Atloss  IDEA x 2500 @ Rs. 7.95  at  2023-01-03+10:41:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:41:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:44:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:44:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:45:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:47:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:48:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:48:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:50:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T10:52:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+10:53:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T10:53:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+10:56:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:00:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:02:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:02:00+0530
-SELL Order Completed with Atloss  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:08:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:08:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:09:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:09:00+0530
-SELL Order Completed with Atloss  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:15:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:15:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:16:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:16:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:17:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:21:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:22:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:22:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:26:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:28:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:30:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:30:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:31:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:32:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:36:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:36:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:38:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:39:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:40:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:40:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:43:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:44:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:45:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:45:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:46:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:48:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:50:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:50:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+11:51:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T11:54:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+11:59:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T11:59:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:00:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:01:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:04:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:04:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:05:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:09:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:11:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:11:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:12:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:16:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:18:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:18:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:19:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:21:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:22:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:22:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:23:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:25:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:26:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:26:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:28:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:31:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:33:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:33:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:35:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:39:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:40:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:40:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:41:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:42:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:43:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:43:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:45:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:46:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:52:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:52:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+12:55:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T12:57:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+12:58:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T12:58:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+13:01:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T13:03:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+13:04:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T13:04:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+13:06:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:12:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:13:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:13:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:14:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:16:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:19:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:19:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:21:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:24:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:25:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:25:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:26:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:27:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:28:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:28:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:29:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:31:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:33:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:33:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:34:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:37:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:43:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:43:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:45:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:48:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:51:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:51:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:52:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T13:54:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+13:56:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03T13:56:00+0530
-SELL Order Completed  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+13:58:00
-BUY Order Placed  IDEA x 2500 @ Rs. 8  at  2023-01-03T14:03:00+0530
-BUY Order Completed  IDEA x 2500 @ Rs. 8  at  2023-01-03+14:05:00
-SELL Order Placed  IDEA x 2500 @ Rs. 8.1  at  2023-01-03T14:05:00+0530
-SELL Order Completed with Atloss  IDEA x 2500 @ Rs. 8.05  at  2023-01-03+14:11:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:15:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:16:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:16:00+0530
-SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:17:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:18:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:19:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:19:00+0530
-SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:20:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:21:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:23:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:23:00+0530
-SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:24:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:25:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:26:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:26:00+0530
-SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:27:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:29:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:34:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:34:00+0530
-SELL Order Completed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:35:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:36:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:37:00
-SELL Order Placed  IDEA x 2484 @ Rs. NaN  at  2023-01-03T14:37:00+0530
-SELL Order Completed with Atloss  IDEA x 2484 @ Rs. 8.1  at  2023-01-03+14:43:00
-BUY Order Placed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03T14:44:00+0530
-BUY Order Completed  IDEA x 2484 @ Rs. 8.05  at  2023-01-03+14:48:00
-SELL Order Placed  IDEA x 2484 @ Rs. 8.1  at  2023-01-03T14:48:00+0530
-SELL Order Completed with Atloss  IDEA x 2484 @ Rs. 7.95  at  2023-01-03+14:54:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T14:54:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+14:57:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T14:57:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+14:58:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T14:59:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+15:10:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T15:10:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+15:11:00
-BUY Order Placed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03T15:12:00+0530
-BUY Order Completed  IDEA x 2515 @ Rs. 7.95  at  2023-01-03+15:13:00
-SELL Order Placed  IDEA x 2515 @ Rs. 8  at  2023-01-03T15:13:00+0530
-SELL Order Completed  IDEA x 2515 @ Rs. 8  at  2023-01-03+15:15:00
 2023-01-03+09:15:00 {
   "totalBuy": 1059818.1499999997,
   "totalSell": 1065583.7000000002,
   "losses": 4,
   "profits": 49,
   "breakevenLoss": 0,
-  "profit": 3398.0499999999997,
+  "profit": 4611.540000000001,
   "profit2": 5765.550000000512
 }
 2023-01-04+09:15:00 <-> 2023-01-04+15:15:00
-BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04T09:19:00+0530
-BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04+09:25:00
-SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04T09:25:00+0530
-SELL Order Completed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04+09:29:00
-BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04T09:30:00+0530
-BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-04+09:35:00
-SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-04T09:35:00+0530
-SELL Order Completed with Atloss  IDEA x 2547 @ Rs. 7.8  at  2023-01-04+09:41:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T09:43:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+09:46:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T09:46:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+09:47:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T09:49:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+09:53:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T09:53:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+09:55:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T09:56:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+09:58:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.85  at  2023-01-04T09:58:00+0530
-SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+10:04:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:11:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:19:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:19:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:20:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:21:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:26:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:26:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:27:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:29:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:30:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:30:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:32:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:33:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:35:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:35:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:36:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:39:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:42:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:42:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:43:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:45:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+10:53:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T10:53:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04+10:54:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T10:55:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04+11:06:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-04T11:06:00+0530
-SELL Order Completed with Atloss  IDEA x 2564 @ Rs. 7.75  at  2023-01-04+11:12:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:12:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:14:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:14:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:15:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:21:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:28:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:28:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:29:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:42:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:52:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:52:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:54:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:55:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+11:56:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T11:56:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+11:57:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T11:58:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:00:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:00:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:01:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:04:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:07:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:07:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:08:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:15:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:24:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:24:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:25:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:28:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:39:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:39:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:40:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:44:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+12:45:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T12:45:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+12:46:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T12:56:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:07:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:07:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:09:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:11:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:12:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:12:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:14:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:17:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:21:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:21:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:22:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:23:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:25:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:25:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:26:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:28:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:29:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:29:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:30:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:31:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:32:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:32:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:33:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:38:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:43:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:43:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:44:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:45:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:49:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:49:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:50:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:52:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+13:54:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T13:54:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+13:55:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T13:57:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:09:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:09:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:10:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:12:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:14:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:14:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:15:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:20:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:21:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:21:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:22:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:24:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:26:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:26:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:27:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:32:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:38:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:38:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:41:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:44:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:45:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:45:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:46:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:47:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:53:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:53:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:56:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T14:57:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+14:58:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T14:58:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+14:59:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T15:02:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+15:03:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T15:03:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+15:04:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04T15:05:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-04+15:07:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04T15:07:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-04+15:09:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-04T15:13:00+0530
 2023-01-04+09:15:00 {
   "totalBuy": 799835.7000000001,
   "totalSell": 804474.1,
   "losses": 2,
   "profits": 38,
   "breakevenLoss": 0,
-  "profit": 2851.5999999999985,
+  "profit": 3763.47,
   "profit2": 4638.399999999907
 }
 2023-01-05+09:15:00 <-> 2023-01-05+15:15:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-05T09:19:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-05+09:20:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-05T09:20:00+0530
-SELL Order Completed with Atloss  IDEA x 2564 @ Rs. 7.75  at  2023-01-05+09:26:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:30:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:31:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05T09:31:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05+09:32:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:36:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:42:00
-SELL Order Placed  IDEA x 2580 @ Rs. NaN  at  2023-01-05T09:42:00+0530
-SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:48:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05T09:48:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-05+09:49:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-05T09:49:00+0530
-SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.7  at  2023-01-05+09:55:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T09:55:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+09:59:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.8  at  2023-01-05T09:59:00+0530
-SELL Order Completed with Atloss  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:05:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:05:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:08:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:08:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:10:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:15:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:17:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:17:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:18:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:20:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:22:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:22:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:23:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:24:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:28:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:28:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:29:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:30:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:36:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:36:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:37:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:38:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:40:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:40:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:41:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:45:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:47:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:47:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:49:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T10:50:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05+10:58:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05T10:58:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-05+10:59:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-05T11:12:00+0530
 2023-01-05+09:15:00 {
   "totalBuy": 259956.29999999996,
   "totalSell": 260866.9,
   "losses": 4,
   "profits": 9,
   "breakevenLoss": 0,
-  "profit": 329.89000000000004,
+  "profit": 615.73,
   "profit2": 910.6000000000349
 }
 2023-01-06+09:15:00 <-> 2023-01-06+15:15:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:20:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:21:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:21:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:25:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:28:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:29:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:29:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:30:00
-BUY Order Placed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06T09:31:00+0530
-BUY Order Completed  IDEA x 2564 @ Rs. 7.8  at  2023-01-06+09:33:00
-SELL Order Placed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06T09:33:00+0530
-SELL Order Completed  IDEA x 2564 @ Rs. 7.85  at  2023-01-06+09:35:00
-BUY Order Placed  IDEA x 2547 @ Rs. 7.85  at  2023-01-06T09:44:00+0530
-BUY Order Completed  IDEA x 2547 @ Rs. 7.85  at  2023-01-06+09:45:00
-SELL Order Placed  IDEA x 2547 @ Rs. 7.9  at  2023-01-06T09:45:00+0530
-SELL Order Completed with Atloss  IDEA x 2547 @ Rs. 7.8  at  2023-01-06+09:51:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T09:53:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+09:55:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T09:55:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+09:56:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T09:57:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+09:58:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T09:58:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+09:59:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:03:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:05:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:05:00+0530
-SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:11:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:11:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:12:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:12:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:13:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:18:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:20:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:20:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:21:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:22:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:23:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:23:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:25:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:26:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:28:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:28:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:29:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:33:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:37:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:37:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:40:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:43:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:44:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:44:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:50:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:52:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+10:56:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T10:56:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+10:57:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T10:59:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:01:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:01:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:02:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:03:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:10:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:10:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:11:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:12:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:14:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:14:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:15:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:21:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:22:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:22:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:23:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:24:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:25:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:25:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:29:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:31:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:36:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:36:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:37:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:39:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:40:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:40:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:41:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:43:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:44:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:44:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:45:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:46:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:47:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:47:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:48:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:49:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+11:54:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T11:54:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+11:58:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T11:59:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:00:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:00:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:01:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:05:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:07:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:07:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:10:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:14:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:20:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:20:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:21:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:22:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:25:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:25:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:27:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:28:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:32:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:32:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:33:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:37:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:38:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:38:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:39:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:43:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:44:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:44:00+0530
-SELL Order Completed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06+12:45:00
-BUY Order Placed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06T12:46:00+0530
-BUY Order Completed  IDEA x 2580 @ Rs. 7.75  at  2023-01-06+12:49:00
-SELL Order Placed  IDEA x 2580 @ Rs. 7.8  at  2023-01-06T12:49:00+0530
-SELL Order Completed with Atloss  IDEA x 2580 @ Rs. 7.7  at  2023-01-06+12:55:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T12:55:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+12:59:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T12:59:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:00:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:04:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:07:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:07:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:08:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:12:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:15:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:15:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:16:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:21:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:28:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:28:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:31:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:37:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:40:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:40:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:41:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:42:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:50:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:50:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:51:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T13:56:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+13:58:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T13:58:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+13:59:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:03:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:04:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:04:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:05:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:06:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:07:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:07:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:10:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:11:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:15:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:15:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:16:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:22:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:25:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:25:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:26:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:29:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:30:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:30:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:31:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:33:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:36:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:36:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:38:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:39:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:41:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:41:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:43:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:45:00+0530
-BUY Order Completed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06+14:51:00
-SELL Order Placed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06T14:51:00+0530
-SELL Order Completed  IDEA x 2597 @ Rs. 7.75  at  2023-01-06+14:52:00
-BUY Order Placed  IDEA x 2597 @ Rs. 7.7  at  2023-01-06T14:56:00+0530
 2023-01-06+09:15:00 {
   "totalBuy": 939805.0500000004,
   "totalSell": 945235.05,
   "losses": 3,
   "profits": 44,
   "breakevenLoss": 0,
-  "profit": 3330.5099999999966,
+  "profit": 4404.7599999999975,
   "profit2": 5429.999999999651
 }
